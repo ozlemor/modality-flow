@@ -43,7 +43,7 @@ from pydantic import BaseModel
 # ══════════════════════════════════════════════════════════════════
 
 # ML model path — works locally and on Railway
-BASE_DIR   = Path(os.environ.get("VELO_DIR", str(Path.home() / "Desktop" / "Velo")))
+BASE_DIR   = BASE_DIR = Path(os.environ.get("VELO_DIR", "/app"))
 MODEL_PATH = BASE_DIR / "ML" / "models" / "availability_model.pkl"
 
 # PostgreSQL — Railway or local
