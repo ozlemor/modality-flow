@@ -44,7 +44,7 @@ from pydantic import BaseModel
 import os
 
 # Works both locally and on Railway
-BASE_DIR = Path(os.environ.get("VELO_DIR", str(Path.home() / "Desktop" / "Velo")))
+BASE_DIR = Path(os.environ.get("VELO_DIR", "/app"))
 DUCKDB_PATH = BASE_DIR / "ETL" / "gold" / "modality_flow.duckdb"
 MODEL_PATH  = BASE_DIR / "ML" / "models" / "availability_model.pkl"
 
