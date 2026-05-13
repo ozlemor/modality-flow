@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+psycopg2-binary
+duckdb
+pandas
+numpy
+pydantic
+scikit-learn
+pyarrow
+requests
