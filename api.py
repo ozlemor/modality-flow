@@ -49,8 +49,10 @@ DUCKDB_PATH = BASE_DIR / "ETL" / "gold" / "modality_flow.duckdb"
 MODEL_PATH  = BASE_DIR / "ML" / "models" / "availability_model.pkl"
 
 # PostgreSQL connection config — real-time data
-DATABASE_URL = os.environ.get("postgresql://postgres:PfbeGtHyxglIyRBZppgxBxPtYMQUmoyy@gondola.proxy.rlwy.net:46226/railway", "postgresql://postgres:postgres@localhost:5432/modality_flow")
-
+DATABASE_URL = os.environ.get(
+    "DATABASE_PUBLIC_URL",
+    "postgresql://postgres:postgres@localhost:5432/modality_flow"
+)
 # Parse DATABASE_URL for psycopg2
 import urllib.parse
 url = urllib.parse.urlparse(DATABASE_URL)
