@@ -1,0 +1,4905 @@
+{
+  "last_updated": 1778625712,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "bikes": [
+      {
+        "bike_id": "360a5696-a028-4840-bbdd-473ba6633316",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.626163,
+        "lon": 3.882492,
+        "is_reserved": false,
+        "is_disabled": true,
+        "rental_uris": {
+          "android": "velomagg://app?vid=360a5696-a028-4840-bbdd-473ba6633316",
+          "ios": "velomagg://app?vid=360a5696-a028-4840-bbdd-473ba6633316"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 0,
+        "station_id": "039",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "63f3f3fa-99ea-4381-9202-57c53c4d3c9a",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616812,
+        "lon": 3.855075,
+        "is_reserved": false,
+        "is_disabled": true,
+        "rental_uris": {
+          "android": "velomagg://app?vid=63f3f3fa-99ea-4381-9202-57c53c4d3c9a",
+          "ios": "velomagg://app?vid=63f3f3fa-99ea-4381-9202-57c53c4d3c9a"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 0,
+        "station_id": "047",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a999fb5a-b9c0-4495-8edf-be24be73afc9",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.606301,
+        "lon": 3.87724,
+        "is_reserved": false,
+        "is_disabled": true,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a999fb5a-b9c0-4495-8edf-be24be73afc9",
+          "ios": "velomagg://app?vid=a999fb5a-b9c0-4495-8edf-be24be73afc9"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 400,
+        "station_id": "009",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "dcf05c93-8ed9-4ba7-b399-243881b8e52b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.584211,
+        "lon": 3.860031,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=dcf05c93-8ed9-4ba7-b399-243881b8e52b",
+          "ios": "velomagg://app?vid=dcf05c93-8ed9-4ba7-b399-243881b8e52b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 2400,
+        "station_id": "043",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e0258b25-0e50-44ed-96d4-20dfe0013777",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603889,
+        "lon": 3.879362,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e0258b25-0e50-44ed-96d4-20dfe0013777",
+          "ios": "velomagg://app?vid=e0258b25-0e50-44ed-96d4-20dfe0013777"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 2800,
+        "station_id": "050",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "10fc2329-c92e-4c6b-a970-a1adfa40d8d5",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616768,
+        "lon": 3.873375,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=10fc2329-c92e-4c6b-a970-a1adfa40d8d5",
+          "ios": "velomagg://app?vid=10fc2329-c92e-4c6b-a970-a1adfa40d8d5"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 4000,
+        "station_id": "006",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "caa36df8-bf37-4a9f-ab8d-9de2fc479f05",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616812,
+        "lon": 3.855075,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=caa36df8-bf37-4a9f-ab8d-9de2fc479f05",
+          "ios": "velomagg://app?vid=caa36df8-bf37-4a9f-ab8d-9de2fc479f05"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 6400,
+        "station_id": "047",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "44391daf-7d63-4390-8c9f-b9992781189d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.614642,
+        "lon": 3.877648,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=44391daf-7d63-4390-8c9f-b9992781189d",
+          "ios": "velomagg://app?vid=44391daf-7d63-4390-8c9f-b9992781189d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 8000,
+        "station_id": "019",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "ff3328f5-23b0-435e-bcfc-42224b06f6ca",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.613989,
+        "lon": 3.8816,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=ff3328f5-23b0-435e-bcfc-42224b06f6ca",
+          "ios": "velomagg://app?vid=ff3328f5-23b0-435e-bcfc-42224b06f6ca"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 8800,
+        "station_id": "005",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f12f1b38-86a3-4a11-b8e2-d1e8e02f55fb",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f12f1b38-86a3-4a11-b8e2-d1e8e02f55fb",
+          "ios": "velomagg://app?vid=f12f1b38-86a3-4a11-b8e2-d1e8e02f55fb"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 9200,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "473ced25-0d21-4212-a62c-5243391d9ce3",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.614005,
+        "lon": 3.873218,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=473ced25-0d21-4212-a62c-5243391d9ce3",
+          "ios": "velomagg://app?vid=473ced25-0d21-4212-a62c-5243391d9ce3"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 9600,
+        "station_id": "009",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a680678e-f2c5-4bb3-b1f3-d330b2c3627a",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.614642,
+        "lon": 3.877648,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a680678e-f2c5-4bb3-b1f3-d330b2c3627a",
+          "ios": "velomagg://app?vid=a680678e-f2c5-4bb3-b1f3-d330b2c3627a"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 10000,
+        "station_id": "019",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4e1a9559-a9ff-484f-80f8-f0281b107960",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.621983,
+        "lon": 3.855603,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4e1a9559-a9ff-484f-80f8-f0281b107960",
+          "ios": "velomagg://app?vid=4e1a9559-a9ff-484f-80f8-f0281b107960"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 10000,
+        "station_id": "046",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "ed3509b4-d908-4771-bc5b-b45c9a51c3e8",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=ed3509b4-d908-4771-bc5b-b45c9a51c3e8",
+          "ios": "velomagg://app?vid=ed3509b4-d908-4771-bc5b-b45c9a51c3e8"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 10400,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "aaef5aa9-114c-4aac-baaa-6d9e8f9e537b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607859,
+        "lon": 3.886644,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=aaef5aa9-114c-4aac-baaa-6d9e8f9e537b",
+          "ios": "velomagg://app?vid=aaef5aa9-114c-4aac-baaa-6d9e8f9e537b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 10400,
+        "station_id": "018",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "6ebecffb-6f72-4389-b595-90aba60ba74b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616768,
+        "lon": 3.873375,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=6ebecffb-6f72-4389-b595-90aba60ba74b",
+          "ios": "velomagg://app?vid=6ebecffb-6f72-4389-b595-90aba60ba74b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 10800,
+        "station_id": "006",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a87db14a-e7fb-4d9c-b660-7e7cd57f1fc3",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a87db14a-e7fb-4d9c-b660-7e7cd57f1fc3",
+          "ios": "velomagg://app?vid=a87db14a-e7fb-4d9c-b660-7e7cd57f1fc3"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 10800,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f99c13ea-e1b4-4a5c-abad-981abb4244c5",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599088,
+        "lon": 3.894866,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f99c13ea-e1b4-4a5c-abad-981abb4244c5",
+          "ios": "velomagg://app?vid=f99c13ea-e1b4-4a5c-abad-981abb4244c5"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 11200,
+        "station_id": "004",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a7c2259d-f927-41b3-9c02-2e0dfccd27ec",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a7c2259d-f927-41b3-9c02-2e0dfccd27ec",
+          "ios": "velomagg://app?vid=a7c2259d-f927-41b3-9c02-2e0dfccd27ec"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 11600,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "6ffc9b7f-808a-49b3-a741-c07a4c4a210b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.635689,
+        "lon": 3.849597,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=6ffc9b7f-808a-49b3-a741-c07a4c4a210b",
+          "ios": "velomagg://app?vid=6ffc9b7f-808a-49b3-a741-c07a4c4a210b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 11600,
+        "station_id": "036",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e9446b85-0e04-45ba-9b32-42a12920b171",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.588239,
+        "lon": 3.853421,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e9446b85-0e04-45ba-9b32-42a12920b171",
+          "ios": "velomagg://app?vid=e9446b85-0e04-45ba-9b32-42a12920b171"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 11600,
+        "station_id": "054",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "5e90cfc6-0ef9-4792-a9ed-e159c2f69271",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.613989,
+        "lon": 3.8816,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=5e90cfc6-0ef9-4792-a9ed-e159c2f69271",
+          "ios": "velomagg://app?vid=5e90cfc6-0ef9-4792-a9ed-e159c2f69271"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 12000,
+        "station_id": "005",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7cc3df21-09c0-4b51-9a78-cf3d64ad36ce",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608491,
+        "lon": 3.868389,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7cc3df21-09c0-4b51-9a78-cf3d64ad36ce",
+          "ios": "velomagg://app?vid=7cc3df21-09c0-4b51-9a78-cf3d64ad36ce"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 12000,
+        "station_id": "011",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7589a2cd-67b9-4e12-8064-7dd00f4f64ef",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60585,
+        "lon": 3.911576,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7589a2cd-67b9-4e12-8064-7dd00f4f64ef",
+          "ios": "velomagg://app?vid=7589a2cd-67b9-4e12-8064-7dd00f4f64ef"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 12000,
+        "station_id": "045",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "29a3142f-edb1-49cd-bc29-3fe8c99a3d2d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.635689,
+        "lon": 3.849597,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=29a3142f-edb1-49cd-bc29-3fe8c99a3d2d",
+          "ios": "velomagg://app?vid=29a3142f-edb1-49cd-bc29-3fe8c99a3d2d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 12400,
+        "station_id": "036",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d4552f56-404b-489b-99da-c57b4f67d674",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.59048,
+        "lon": 3.884611,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d4552f56-404b-489b-99da-c57b4f67d674",
+          "ios": "velomagg://app?vid=d4552f56-404b-489b-99da-c57b4f67d674"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 12800,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "59ccc555-a5f4-4e62-a80d-7ad707a4493c",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.635689,
+        "lon": 3.849597,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=59ccc555-a5f4-4e62-a80d-7ad707a4493c",
+          "ios": "velomagg://app?vid=59ccc555-a5f4-4e62-a80d-7ad707a4493c"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 12800,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "1d461d17-73c2-4800-bfef-57b789989c95",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603038,
+        "lon": 3.875796,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=1d461d17-73c2-4800-bfef-57b789989c95",
+          "ios": "velomagg://app?vid=1d461d17-73c2-4800-bfef-57b789989c95"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 12800,
+        "station_id": "010",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "07a9ef12-7ace-4e4e-8fb8-441e70a790f7",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=07a9ef12-7ace-4e4e-8fb8-441e70a790f7",
+          "ios": "velomagg://app?vid=07a9ef12-7ace-4e4e-8fb8-441e70a790f7"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 12800,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "c0950c77-26df-4e36-ab60-5fcc6cd53012",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.615155,
+        "lon": 3.839466,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=c0950c77-26df-4e36-ab60-5fcc6cd53012",
+          "ios": "velomagg://app?vid=c0950c77-26df-4e36-ab60-5fcc6cd53012"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 12800,
+        "station_id": "049",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "b62080a6-35f0-426d-9f2a-8dc78f7b5c4f",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.584211,
+        "lon": 3.860031,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=b62080a6-35f0-426d-9f2a-8dc78f7b5c4f",
+          "ios": "velomagg://app?vid=b62080a6-35f0-426d-9f2a-8dc78f7b5c4f"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 12800,
+        "station_id": "043",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "5ef561b4-a766-47aa-9302-cdf45ebab655",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608996,
+        "lon": 3.872752,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=5ef561b4-a766-47aa-9302-cdf45ebab655",
+          "ios": "velomagg://app?vid=5ef561b4-a766-47aa-9302-cdf45ebab655"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 12800,
+        "station_id": "057",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "38ed01cf-bc23-4200-8f6f-5bcbbf521fb2",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616742,
+        "lon": 3.87998,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=38ed01cf-bc23-4200-8f6f-5bcbbf521fb2",
+          "ios": "velomagg://app?vid=38ed01cf-bc23-4200-8f6f-5bcbbf521fb2"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 13200,
+        "station_id": "013",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f03c3d2a-c8d9-42e9-b51a-36bc86844547",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599817,
+        "lon": 3.875757,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f03c3d2a-c8d9-42e9-b51a-36bc86844547",
+          "ios": "velomagg://app?vid=f03c3d2a-c8d9-42e9-b51a-36bc86844547"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 13200,
+        "station_id": "025",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "c8d1fce7-620b-40c7-9fb0-0b4d7adc0b0d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.59048,
+        "lon": 3.884611,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=c8d1fce7-620b-40c7-9fb0-0b4d7adc0b0d",
+          "ios": "velomagg://app?vid=c8d1fce7-620b-40c7-9fb0-0b4d7adc0b0d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 14000,
+        "station_id": "032",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a6f0e1dd-a679-415e-9a26-62ead28ef7e0",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.63543,
+        "lon": 3.871179,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a6f0e1dd-a679-415e-9a26-62ead28ef7e0",
+          "ios": "velomagg://app?vid=a6f0e1dd-a679-415e-9a26-62ead28ef7e0"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 14000,
+        "station_id": "034",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "c2e63f5f-7b83-4b39-aea3-201f8590a151",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.590757,
+        "lon": 3.890616,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=c2e63f5f-7b83-4b39-aea3-201f8590a151",
+          "ios": "velomagg://app?vid=c2e63f5f-7b83-4b39-aea3-201f8590a151"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 14400,
+        "station_id": "033",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "fa5c40f4-06db-4997-8525-aaf4f2a962ef",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.63543,
+        "lon": 3.871179,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=fa5c40f4-06db-4997-8525-aaf4f2a962ef",
+          "ios": "velomagg://app?vid=fa5c40f4-06db-4997-8525-aaf4f2a962ef"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 14400,
+        "station_id": "034",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "55668ed4-c6b1-41f6-8404-b51defe732d0",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60585,
+        "lon": 3.911576,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=55668ed4-c6b1-41f6-8404-b51defe732d0",
+          "ios": "velomagg://app?vid=55668ed4-c6b1-41f6-8404-b51defe732d0"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 14400,
+        "station_id": "045",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d85b7850-c015-49d7-b50f-2760eabc017e",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d85b7850-c015-49d7-b50f-2760eabc017e",
+          "ios": "velomagg://app?vid=d85b7850-c015-49d7-b50f-2760eabc017e"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 14800,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a92e5899-9fd9-4e0a-a446-8cafaebe8a45",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603889,
+        "lon": 3.879362,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a92e5899-9fd9-4e0a-a446-8cafaebe8a45",
+          "ios": "velomagg://app?vid=a92e5899-9fd9-4e0a-a446-8cafaebe8a45"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 14800,
+        "station_id": "050",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "1a7fbf0d-18fe-4d55-863a-c47539b0a3d6",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.614005,
+        "lon": 3.873218,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=1a7fbf0d-18fe-4d55-863a-c47539b0a3d6",
+          "ios": "velomagg://app?vid=1a7fbf0d-18fe-4d55-863a-c47539b0a3d6"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 14800,
+        "station_id": "056",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "b1107463-f633-4851-aef4-e47f556ae14c",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.618692,
+        "lon": 3.893844,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=b1107463-f633-4851-aef4-e47f556ae14c",
+          "ios": "velomagg://app?vid=b1107463-f633-4851-aef4-e47f556ae14c"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 15200,
+        "station_id": "015",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "8b1c4baf-4a22-49b8-85e0-d31035f1d7c0",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.601143,
+        "lon": 3.884373,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=8b1c4baf-4a22-49b8-85e0-d31035f1d7c0",
+          "ios": "velomagg://app?vid=8b1c4baf-4a22-49b8-85e0-d31035f1d7c0"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 15200,
+        "station_id": "024",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "1532032f-0006-4a0a-9a84-32a537d8b57d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.626163,
+        "lon": 3.882492,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=1532032f-0006-4a0a-9a84-32a537d8b57d",
+          "ios": "velomagg://app?vid=1532032f-0006-4a0a-9a84-32a537d8b57d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 15200,
+        "station_id": "039",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "c53eba8f-98f6-45c4-8505-950c7b0d4e40",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608996,
+        "lon": 3.872752,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=c53eba8f-98f6-45c4-8505-950c7b0d4e40",
+          "ios": "velomagg://app?vid=c53eba8f-98f6-45c4-8505-950c7b0d4e40"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 15200,
+        "station_id": "057",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "9b185107-afae-47e2-9fce-53fe710815ce",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.613989,
+        "lon": 3.8816,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=9b185107-afae-47e2-9fce-53fe710815ce",
+          "ios": "velomagg://app?vid=9b185107-afae-47e2-9fce-53fe710815ce"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 15600,
+        "station_id": "005",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "01cda4d7-d5de-4d99-be65-dd2ce4aebd24",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.618692,
+        "lon": 3.893844,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=01cda4d7-d5de-4d99-be65-dd2ce4aebd24",
+          "ios": "velomagg://app?vid=01cda4d7-d5de-4d99-be65-dd2ce4aebd24"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 15600,
+        "station_id": "015",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "2f8005b6-46cf-4d45-968d-494a6aa8c1ab",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=2f8005b6-46cf-4d45-968d-494a6aa8c1ab",
+          "ios": "velomagg://app?vid=2f8005b6-46cf-4d45-968d-494a6aa8c1ab"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 15600,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "8db4acdc-da17-4689-8598-8a639dee385d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=8db4acdc-da17-4689-8598-8a639dee385d",
+          "ios": "velomagg://app?vid=8db4acdc-da17-4689-8598-8a639dee385d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 16000,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7d713097-45a1-436b-ba86-82fa6f8aff44",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607106,
+        "lon": 3.870693,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7d713097-45a1-436b-ba86-82fa6f8aff44",
+          "ios": "velomagg://app?vid=7d713097-45a1-436b-ba86-82fa6f8aff44"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 16000,
+        "station_id": "020",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "99cbd479-8b81-461e-b3cf-693df6a08e6c",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=99cbd479-8b81-461e-b3cf-693df6a08e6c",
+          "ios": "velomagg://app?vid=99cbd479-8b81-461e-b3cf-693df6a08e6c"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 16000,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "6851a841-b84c-4f26-9faa-e5843cce0f1d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=6851a841-b84c-4f26-9faa-e5843cce0f1d",
+          "ios": "velomagg://app?vid=6851a841-b84c-4f26-9faa-e5843cce0f1d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 16000,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "36cc5b04-b930-4650-a763-308ea159158e",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.622629,
+        "lon": 3.868375,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=36cc5b04-b930-4650-a763-308ea159158e",
+          "ios": "velomagg://app?vid=36cc5b04-b930-4650-a763-308ea159158e"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 16400,
+        "station_id": "012",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "53608e51-8b68-4199-8538-4928632f1848",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.619701,
+        "lon": 3.883831,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=53608e51-8b68-4199-8538-4928632f1848",
+          "ios": "velomagg://app?vid=53608e51-8b68-4199-8538-4928632f1848"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 16400,
+        "station_id": "040",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e6a9643f-06b8-4966-921c-66cd61682d7f",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616812,
+        "lon": 3.855075,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e6a9643f-06b8-4966-921c-66cd61682d7f",
+          "ios": "velomagg://app?vid=e6a9643f-06b8-4966-921c-66cd61682d7f"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 16400,
+        "station_id": "047",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "0bfd7ec2-ad21-4a32-aae9-95c1a8aa23f6",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=0bfd7ec2-ad21-4a32-aae9-95c1a8aa23f6",
+          "ios": "velomagg://app?vid=0bfd7ec2-ad21-4a32-aae9-95c1a8aa23f6"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 16400,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "ac4160fa-d33d-4cff-94aa-9091b642f94a",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.609857,
+        "lon": 3.883884,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=ac4160fa-d33d-4cff-94aa-9091b642f94a",
+          "ios": "velomagg://app?vid=ac4160fa-d33d-4cff-94aa-9091b642f94a"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 16400,
+        "station_id": "061",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7a783ccf-72d6-4420-8b6b-b83f736f1a02",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616698,
+        "lon": 3.884981,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7a783ccf-72d6-4420-8b6b-b83f736f1a02",
+          "ios": "velomagg://app?vid=7a783ccf-72d6-4420-8b6b-b83f736f1a02"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 16800,
+        "station_id": "014",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "dba2e09d-d5b2-4f2f-b9f2-ecf9281ea1f4",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607859,
+        "lon": 3.886644,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=dba2e09d-d5b2-4f2f-b9f2-ecf9281ea1f4",
+          "ios": "velomagg://app?vid=dba2e09d-d5b2-4f2f-b9f2-ecf9281ea1f4"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 16800,
+        "station_id": "018",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "67001a78-69d9-442b-ac6c-c923dbdf742b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.635689,
+        "lon": 3.849597,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=67001a78-69d9-442b-ac6c-c923dbdf742b",
+          "ios": "velomagg://app?vid=67001a78-69d9-442b-ac6c-c923dbdf742b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 16800,
+        "station_id": "036",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4a36c673-a170-4d46-9f98-ea57fd93b203",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4a36c673-a170-4d46-9f98-ea57fd93b203",
+          "ios": "velomagg://app?vid=4a36c673-a170-4d46-9f98-ea57fd93b203"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 17200,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "1cdb70aa-0e7d-452c-86b0-5f12e36ccaea",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.601143,
+        "lon": 3.884373,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=1cdb70aa-0e7d-452c-86b0-5f12e36ccaea",
+          "ios": "velomagg://app?vid=1cdb70aa-0e7d-452c-86b0-5f12e36ccaea"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 17600,
+        "station_id": "024",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "042731b6-6637-4166-b964-7954121e1218",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.63543,
+        "lon": 3.871179,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=042731b6-6637-4166-b964-7954121e1218",
+          "ios": "velomagg://app?vid=042731b6-6637-4166-b964-7954121e1218"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 17600,
+        "station_id": "034",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "81071f3d-4920-4ab7-9bc0-3354b5ef71ec",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=81071f3d-4920-4ab7-9bc0-3354b5ef71ec",
+          "ios": "velomagg://app?vid=81071f3d-4920-4ab7-9bc0-3354b5ef71ec"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 17600,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "dd20c8ee-54a9-4f8e-942e-715cc0d59666",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616698,
+        "lon": 3.884981,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=dd20c8ee-54a9-4f8e-942e-715cc0d59666",
+          "ios": "velomagg://app?vid=dd20c8ee-54a9-4f8e-942e-715cc0d59666"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18000,
+        "station_id": "014",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a396df45-70ba-4b92-b888-a93acec78e9a",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.633679,
+        "lon": 3.832861,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a396df45-70ba-4b92-b888-a93acec78e9a",
+          "ios": "velomagg://app?vid=a396df45-70ba-4b92-b888-a93acec78e9a"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18000,
+        "station_id": "035",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "776133b6-f075-4b64-aace-ef4343b2a23b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.619701,
+        "lon": 3.883831,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=776133b6-f075-4b64-aace-ef4343b2a23b",
+          "ios": "velomagg://app?vid=776133b6-f075-4b64-aace-ef4343b2a23b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18000,
+        "station_id": "040",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "0750a62e-9a1e-4d53-81e0-f065935ea2af",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.606036,
+        "lon": 3.882393,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=0750a62e-9a1e-4d53-81e0-f065935ea2af",
+          "ios": "velomagg://app?vid=0750a62e-9a1e-4d53-81e0-f065935ea2af"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18000,
+        "station_id": "051",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "c23ceab1-fd7c-4d98-ae22-cc18c57ab797",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=c23ceab1-fd7c-4d98-ae22-cc18c57ab797",
+          "ios": "velomagg://app?vid=c23ceab1-fd7c-4d98-ae22-cc18c57ab797"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18400,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "612af798-5ad7-42fc-9026-ab15a284a7fd",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=612af798-5ad7-42fc-9026-ab15a284a7fd",
+          "ios": "velomagg://app?vid=612af798-5ad7-42fc-9026-ab15a284a7fd"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18400,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "eae4a656-ac26-4266-a772-480496fa8098",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=eae4a656-ac26-4266-a772-480496fa8098",
+          "ios": "velomagg://app?vid=eae4a656-ac26-4266-a772-480496fa8098"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18400,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "80b99c47-8c7e-4490-be4f-0f1268566aaf",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.601143,
+        "lon": 3.884373,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=80b99c47-8c7e-4490-be4f-0f1268566aaf",
+          "ios": "velomagg://app?vid=80b99c47-8c7e-4490-be4f-0f1268566aaf"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18800,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "effd6258-267e-4d5b-b0b3-2576d157ec46",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.606301,
+        "lon": 3.87724,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=effd6258-267e-4d5b-b0b3-2576d157ec46",
+          "ios": "velomagg://app?vid=effd6258-267e-4d5b-b0b3-2576d157ec46"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18800,
+        "station_id": "009",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "1c25f22f-e044-47a5-a4d3-f935f778d967",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=1c25f22f-e044-47a5-a4d3-f935f778d967",
+          "ios": "velomagg://app?vid=1c25f22f-e044-47a5-a4d3-f935f778d967"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18800,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "3acc183f-664c-4c1d-a830-686fe8376f29",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.601143,
+        "lon": 3.884373,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=3acc183f-664c-4c1d-a830-686fe8376f29",
+          "ios": "velomagg://app?vid=3acc183f-664c-4c1d-a830-686fe8376f29"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18800,
+        "station_id": "024",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e373c30f-f928-4657-87e3-5d16c0d13f75",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599817,
+        "lon": 3.875757,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e373c30f-f928-4657-87e3-5d16c0d13f75",
+          "ios": "velomagg://app?vid=e373c30f-f928-4657-87e3-5d16c0d13f75"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18800,
+        "station_id": "025",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "ad881ae4-f0cb-4bbc-9eea-1c97d6b1a69e",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603767,
+        "lon": 3.888659,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=ad881ae4-f0cb-4bbc-9eea-1c97d6b1a69e",
+          "ios": "velomagg://app?vid=ad881ae4-f0cb-4bbc-9eea-1c97d6b1a69e"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18800,
+        "station_id": "031",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "8f8a52df-432c-4397-92c9-50265cf98967",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.63543,
+        "lon": 3.871179,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=8f8a52df-432c-4397-92c9-50265cf98967",
+          "ios": "velomagg://app?vid=8f8a52df-432c-4397-92c9-50265cf98967"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18800,
+        "station_id": "034",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "58d71d9f-e9b3-4db1-a15e-7e220221badc",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616812,
+        "lon": 3.855075,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=58d71d9f-e9b3-4db1-a15e-7e220221badc",
+          "ios": "velomagg://app?vid=58d71d9f-e9b3-4db1-a15e-7e220221badc"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18800,
+        "station_id": "047",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "00651418-6a0e-420c-81b8-7f3444268b75",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.621682,
+        "lon": 3.83477,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=00651418-6a0e-420c-81b8-7f3444268b75",
+          "ios": "velomagg://app?vid=00651418-6a0e-420c-81b8-7f3444268b75"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18800,
+        "station_id": "048",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "685de6fa-deae-499f-afd4-1ad3e5726294",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=685de6fa-deae-499f-afd4-1ad3e5726294",
+          "ios": "velomagg://app?vid=685de6fa-deae-499f-afd4-1ad3e5726294"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18800,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f8f7705a-6d08-4359-a749-509ece936be0",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.609857,
+        "lon": 3.883884,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f8f7705a-6d08-4359-a749-509ece936be0",
+          "ios": "velomagg://app?vid=f8f7705a-6d08-4359-a749-509ece936be0"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 18800,
+        "station_id": "061",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "3d573bbf-a76c-4715-98bc-ff2b25727d70",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608491,
+        "lon": 3.868389,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=3d573bbf-a76c-4715-98bc-ff2b25727d70",
+          "ios": "velomagg://app?vid=3d573bbf-a76c-4715-98bc-ff2b25727d70"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 19200,
+        "station_id": "011",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d78daa52-2cc5-40eb-9610-4192e4cb2644",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.635689,
+        "lon": 3.849597,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d78daa52-2cc5-40eb-9610-4192e4cb2644",
+          "ios": "velomagg://app?vid=d78daa52-2cc5-40eb-9610-4192e4cb2644"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 19200,
+        "station_id": "036",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a10d969f-dbd6-4652-b588-81d9f35f55e2",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a10d969f-dbd6-4652-b588-81d9f35f55e2",
+          "ios": "velomagg://app?vid=a10d969f-dbd6-4652-b588-81d9f35f55e2"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 19200,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "41a25a37-c46b-44b7-b487-dd1c489e3a1b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.615155,
+        "lon": 3.839466,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=41a25a37-c46b-44b7-b487-dd1c489e3a1b",
+          "ios": "velomagg://app?vid=41a25a37-c46b-44b7-b487-dd1c489e3a1b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 19600,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "66a3e88f-e88e-4097-8df3-526bae79c371",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=66a3e88f-e88e-4097-8df3-526bae79c371",
+          "ios": "velomagg://app?vid=66a3e88f-e88e-4097-8df3-526bae79c371"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 19600,
+        "station_id": "001",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "dd1c2576-0497-406d-929d-bc3852652b80",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.618692,
+        "lon": 3.893844,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=dd1c2576-0497-406d-929d-bc3852652b80",
+          "ios": "velomagg://app?vid=dd1c2576-0497-406d-929d-bc3852652b80"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 19600,
+        "station_id": "015",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "68f99a67-106a-48de-bafd-c1f9754edf1f",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607106,
+        "lon": 3.870693,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=68f99a67-106a-48de-bafd-c1f9754edf1f",
+          "ios": "velomagg://app?vid=68f99a67-106a-48de-bafd-c1f9754edf1f"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 19600,
+        "station_id": "020",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "fda1d63e-e1bf-406b-a374-3425333731b3",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=fda1d63e-e1bf-406b-a374-3425333731b3",
+          "ios": "velomagg://app?vid=fda1d63e-e1bf-406b-a374-3425333731b3"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20000,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "516f121e-81de-4184-8cc9-203ed815efce",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603424,
+        "lon": 3.899263,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=516f121e-81de-4184-8cc9-203ed815efce",
+          "ios": "velomagg://app?vid=516f121e-81de-4184-8cc9-203ed815efce"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20000,
+        "station_id": "029",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "626600d0-4282-4db3-8ab8-a3f9cd4e9081",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.639119,
+        "lon": 3.828199,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=626600d0-4282-4db3-8ab8-a3f9cd4e9081",
+          "ios": "velomagg://app?vid=626600d0-4282-4db3-8ab8-a3f9cd4e9081"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20000,
+        "station_id": "041",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e79bbe83-477a-43af-9940-b52e54eee771",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.614005,
+        "lon": 3.873218,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e79bbe83-477a-43af-9940-b52e54eee771",
+          "ios": "velomagg://app?vid=e79bbe83-477a-43af-9940-b52e54eee771"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20000,
+        "station_id": "056",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "46dc7091-75d7-4f74-95b0-d85d79f9e75e",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607942,
+        "lon": 3.890634,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=46dc7091-75d7-4f74-95b0-d85d79f9e75e",
+          "ios": "velomagg://app?vid=46dc7091-75d7-4f74-95b0-d85d79f9e75e"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20400,
+        "station_id": "016",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e907980d-1dfb-4324-a1ea-b22155ab357d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e907980d-1dfb-4324-a1ea-b22155ab357d",
+          "ios": "velomagg://app?vid=e907980d-1dfb-4324-a1ea-b22155ab357d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20400,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e5ebdc23-1334-4a78-abc9-bbee53f31bc1",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.614005,
+        "lon": 3.873218,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e5ebdc23-1334-4a78-abc9-bbee53f31bc1",
+          "ios": "velomagg://app?vid=e5ebdc23-1334-4a78-abc9-bbee53f31bc1"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20400,
+        "station_id": "056",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f546dc77-5210-4b86-a612-ff3ca4a8831a",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f546dc77-5210-4b86-a612-ff3ca4a8831a",
+          "ios": "velomagg://app?vid=f546dc77-5210-4b86-a612-ff3ca4a8831a"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20800,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4820a80a-912e-4e10-be3f-bcb6574cb35e",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.618692,
+        "lon": 3.893844,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4820a80a-912e-4e10-be3f-bcb6574cb35e",
+          "ios": "velomagg://app?vid=4820a80a-912e-4e10-be3f-bcb6574cb35e"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20800,
+        "station_id": "015",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "038cfcb8-7e9a-496a-b674-f831b208955b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.612659,
+        "lon": 3.867734,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=038cfcb8-7e9a-496a-b674-f831b208955b",
+          "ios": "velomagg://app?vid=038cfcb8-7e9a-496a-b674-f831b208955b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20800,
+        "station_id": "023",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "562a5ed8-9bfe-4b00-9491-661c50344c58",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.61467,
+        "lon": 3.832624,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=562a5ed8-9bfe-4b00-9491-661c50344c58",
+          "ios": "velomagg://app?vid=562a5ed8-9bfe-4b00-9491-661c50344c58"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20800,
+        "station_id": "044",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "3cf9d991-3b58-457a-a70b-7669a876a149",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.621682,
+        "lon": 3.83477,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=3cf9d991-3b58-457a-a70b-7669a876a149",
+          "ios": "velomagg://app?vid=3cf9d991-3b58-457a-a70b-7669a876a149"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20800,
+        "station_id": "048",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "9189b364-85f5-4a93-a07e-dd9512502a37",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=9189b364-85f5-4a93-a07e-dd9512502a37",
+          "ios": "velomagg://app?vid=9189b364-85f5-4a93-a07e-dd9512502a37"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20800,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e623ed90-392c-437c-ad69-7845110506de",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e623ed90-392c-437c-ad69-7845110506de",
+          "ios": "velomagg://app?vid=e623ed90-392c-437c-ad69-7845110506de"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 20800,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "b44ebf3d-6d8f-4c5a-8ac1-3395cb65c5fc",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=b44ebf3d-6d8f-4c5a-8ac1-3395cb65c5fc",
+          "ios": "velomagg://app?vid=b44ebf3d-6d8f-4c5a-8ac1-3395cb65c5fc"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21200,
+        "station_id": "001",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a8e9ce03-372a-49d3-949e-f02e39e1b0b1",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599088,
+        "lon": 3.894866,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a8e9ce03-372a-49d3-949e-f02e39e1b0b1",
+          "ios": "velomagg://app?vid=a8e9ce03-372a-49d3-949e-f02e39e1b0b1"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21200,
+        "station_id": "004",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "693ddd05-0b2c-455b-8a68-28b796ae7b19",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599088,
+        "lon": 3.894866,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=693ddd05-0b2c-455b-8a68-28b796ae7b19",
+          "ios": "velomagg://app?vid=693ddd05-0b2c-455b-8a68-28b796ae7b19"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21200,
+        "station_id": "004",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "97e15f56-be9a-487f-9733-e5f7644052b3",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616698,
+        "lon": 3.884981,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=97e15f56-be9a-487f-9733-e5f7644052b3",
+          "ios": "velomagg://app?vid=97e15f56-be9a-487f-9733-e5f7644052b3"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21200,
+        "station_id": "014",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "0a7a2b0d-17b4-4fd8-b368-ef1b22d5ad5e",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607942,
+        "lon": 3.890634,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=0a7a2b0d-17b4-4fd8-b368-ef1b22d5ad5e",
+          "ios": "velomagg://app?vid=0a7a2b0d-17b4-4fd8-b368-ef1b22d5ad5e"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21200,
+        "station_id": "016",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f830aad1-aca4-44dd-b736-60f5e6887a8e",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.612659,
+        "lon": 3.867734,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f830aad1-aca4-44dd-b736-60f5e6887a8e",
+          "ios": "velomagg://app?vid=f830aad1-aca4-44dd-b736-60f5e6887a8e"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21200,
+        "station_id": "023",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f97cb087-79ed-4138-9822-9cba62fe672f",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.612659,
+        "lon": 3.867734,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f97cb087-79ed-4138-9822-9cba62fe672f",
+          "ios": "velomagg://app?vid=f97cb087-79ed-4138-9822-9cba62fe672f"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21200,
+        "station_id": "023",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4dab4765-22d7-4b08-9fa8-043d43edbd28",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4dab4765-22d7-4b08-9fa8-043d43edbd28",
+          "ios": "velomagg://app?vid=4dab4765-22d7-4b08-9fa8-043d43edbd28"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "3a1a18ec-25a0-4c84-be8c-3ec458bf7fca",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.618692,
+        "lon": 3.893844,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=3a1a18ec-25a0-4c84-be8c-3ec458bf7fca",
+          "ios": "velomagg://app?vid=3a1a18ec-25a0-4c84-be8c-3ec458bf7fca"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21600,
+        "station_id": "015",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "65be6f15-d779-4a5d-8a01-c4dd581f169e",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607942,
+        "lon": 3.890634,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=65be6f15-d779-4a5d-8a01-c4dd581f169e",
+          "ios": "velomagg://app?vid=65be6f15-d779-4a5d-8a01-c4dd581f169e"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21600,
+        "station_id": "016",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "152013c4-8fbe-4a69-9456-f5bbe5030d5b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599817,
+        "lon": 3.875757,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=152013c4-8fbe-4a69-9456-f5bbe5030d5b",
+          "ios": "velomagg://app?vid=152013c4-8fbe-4a69-9456-f5bbe5030d5b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21600,
+        "station_id": "025",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f6c8ece9-4969-40d1-9d6b-132f74c90df6",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.635689,
+        "lon": 3.849597,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f6c8ece9-4969-40d1-9d6b-132f74c90df6",
+          "ios": "velomagg://app?vid=f6c8ece9-4969-40d1-9d6b-132f74c90df6"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21600,
+        "station_id": "036",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7144c4e8-83df-4fb5-a6fe-2177b300e6bc",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.639119,
+        "lon": 3.828199,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7144c4e8-83df-4fb5-a6fe-2177b300e6bc",
+          "ios": "velomagg://app?vid=7144c4e8-83df-4fb5-a6fe-2177b300e6bc"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21600,
+        "station_id": "041",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "54d5c861-aad7-4e25-bbcd-fecd81d9a547",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616812,
+        "lon": 3.855075,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=54d5c861-aad7-4e25-bbcd-fecd81d9a547",
+          "ios": "velomagg://app?vid=54d5c861-aad7-4e25-bbcd-fecd81d9a547"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21600,
+        "station_id": "047",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "aa9b1367-e452-4d21-8b4f-26bf5d7bb146",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.588239,
+        "lon": 3.853421,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=aa9b1367-e452-4d21-8b4f-26bf5d7bb146",
+          "ios": "velomagg://app?vid=aa9b1367-e452-4d21-8b4f-26bf5d7bb146"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21600,
+        "station_id": "054",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "cc15bb07-fb84-4742-b6fe-cda6f6d3787c",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.606036,
+        "lon": 3.882393,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=cc15bb07-fb84-4742-b6fe-cda6f6d3787c",
+          "ios": "velomagg://app?vid=cc15bb07-fb84-4742-b6fe-cda6f6d3787c"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21600,
+        "station_id": "051",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f6cf45ec-a0cf-49c9-a492-c147657831e1",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.59562,
+        "lon": 3.9235,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f6cf45ec-a0cf-49c9-a492-c147657831e1",
+          "ios": "velomagg://app?vid=f6cf45ec-a0cf-49c9-a492-c147657831e1"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 21600,
+        "station_id": "059",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "07bcc6f0-5b2c-44ae-b37b-2c64ac8c000b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=07bcc6f0-5b2c-44ae-b37b-2c64ac8c000b",
+          "ios": "velomagg://app?vid=07bcc6f0-5b2c-44ae-b37b-2c64ac8c000b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22000,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4eb20928-04ae-427b-baf0-756576c61833",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.613989,
+        "lon": 3.8816,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4eb20928-04ae-427b-baf0-756576c61833",
+          "ios": "velomagg://app?vid=4eb20928-04ae-427b-baf0-756576c61833"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22000,
+        "station_id": "005",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "0ae1e8d0-5dd8-48f2-aca9-0a1e7d19b49b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.606301,
+        "lon": 3.87724,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=0ae1e8d0-5dd8-48f2-aca9-0a1e7d19b49b",
+          "ios": "velomagg://app?vid=0ae1e8d0-5dd8-48f2-aca9-0a1e7d19b49b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22000,
+        "station_id": "009",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "140ca68b-0bbf-44d4-8c33-a1db9144501c",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.621983,
+        "lon": 3.855603,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=140ca68b-0bbf-44d4-8c33-a1db9144501c",
+          "ios": "velomagg://app?vid=140ca68b-0bbf-44d4-8c33-a1db9144501c"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22000,
+        "station_id": "046",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a30e6486-a932-4e4b-88ba-d9b8d5288542",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.606036,
+        "lon": 3.882393,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a30e6486-a932-4e4b-88ba-d9b8d5288542",
+          "ios": "velomagg://app?vid=a30e6486-a932-4e4b-88ba-d9b8d5288542"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22000,
+        "station_id": "051",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "abb0253e-dc71-45d6-9f86-c4314b6615fd",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.615155,
+        "lon": 3.839466,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=abb0253e-dc71-45d6-9f86-c4314b6615fd",
+          "ios": "velomagg://app?vid=abb0253e-dc71-45d6-9f86-c4314b6615fd"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22400,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a647472f-5b1b-4412-8139-056ff02fc4dc",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a647472f-5b1b-4412-8139-056ff02fc4dc",
+          "ios": "velomagg://app?vid=a647472f-5b1b-4412-8139-056ff02fc4dc"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22400,
+        "station_id": "001",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7dd94378-ad13-431b-bdcf-60e57de8b5cb",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7dd94378-ad13-431b-bdcf-60e57de8b5cb",
+          "ios": "velomagg://app?vid=7dd94378-ad13-431b-bdcf-60e57de8b5cb"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22400,
+        "station_id": "001",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "512e2026-b508-4b2c-8fe2-3ea6240f09aa",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=512e2026-b508-4b2c-8fe2-3ea6240f09aa",
+          "ios": "velomagg://app?vid=512e2026-b508-4b2c-8fe2-3ea6240f09aa"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22400,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "1d55799f-e2af-4e6a-bd21-71d5a904021b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.610989,
+        "lon": 3.873345,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=1d55799f-e2af-4e6a-bd21-71d5a904021b",
+          "ios": "velomagg://app?vid=1d55799f-e2af-4e6a-bd21-71d5a904021b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22400,
+        "station_id": "007",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7a506dad-6801-4ef6-8960-e6b675664e56",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.606301,
+        "lon": 3.87724,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7a506dad-6801-4ef6-8960-e6b675664e56",
+          "ios": "velomagg://app?vid=7a506dad-6801-4ef6-8960-e6b675664e56"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22400,
+        "station_id": "009",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "83295711-7177-4885-aa05-76843176a4e5",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.618692,
+        "lon": 3.893844,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=83295711-7177-4885-aa05-76843176a4e5",
+          "ios": "velomagg://app?vid=83295711-7177-4885-aa05-76843176a4e5"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22400,
+        "station_id": "015",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d2773937-110a-4061-a340-f90c151c8d25",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607106,
+        "lon": 3.870693,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d2773937-110a-4061-a340-f90c151c8d25",
+          "ios": "velomagg://app?vid=d2773937-110a-4061-a340-f90c151c8d25"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22400,
+        "station_id": "020",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4bf42bea-77de-40c0-8338-2d22367b1778",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.631318,
+        "lon": 3.861299,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4bf42bea-77de-40c0-8338-2d22367b1778",
+          "ios": "velomagg://app?vid=4bf42bea-77de-40c0-8338-2d22367b1778"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22400,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "1519b8e8-2433-4da3-b115-60ea376ddd2d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.606036,
+        "lon": 3.882393,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=1519b8e8-2433-4da3-b115-60ea376ddd2d",
+          "ios": "velomagg://app?vid=1519b8e8-2433-4da3-b115-60ea376ddd2d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22400,
+        "station_id": "051",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "c829410f-d7ba-430f-a4f0-4e86bc0bb200",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=c829410f-d7ba-430f-a4f0-4e86bc0bb200",
+          "ios": "velomagg://app?vid=c829410f-d7ba-430f-a4f0-4e86bc0bb200"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22800,
+        "station_id": "001",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "deeb4ebb-cc2e-4112-bc99-10c24dc3a4ca",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616698,
+        "lon": 3.884981,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=deeb4ebb-cc2e-4112-bc99-10c24dc3a4ca",
+          "ios": "velomagg://app?vid=deeb4ebb-cc2e-4112-bc99-10c24dc3a4ca"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22800,
+        "station_id": "014",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "241da946-203d-4c4f-b049-2b1155731107",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616698,
+        "lon": 3.884981,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=241da946-203d-4c4f-b049-2b1155731107",
+          "ios": "velomagg://app?vid=241da946-203d-4c4f-b049-2b1155731107"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22800,
+        "station_id": "014",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d5f04799-5732-49d2-9c9b-0cd7617090d5",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607942,
+        "lon": 3.890634,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d5f04799-5732-49d2-9c9b-0cd7617090d5",
+          "ios": "velomagg://app?vid=d5f04799-5732-49d2-9c9b-0cd7617090d5"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22800,
+        "station_id": "016",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "dc7499e1-9c6a-4467-8b01-adb4f1eb5b38",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=dc7499e1-9c6a-4467-8b01-adb4f1eb5b38",
+          "ios": "velomagg://app?vid=dc7499e1-9c6a-4467-8b01-adb4f1eb5b38"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22800,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "5c9170ca-f618-4273-8848-b1826d59c167",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603424,
+        "lon": 3.899263,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=5c9170ca-f618-4273-8848-b1826d59c167",
+          "ios": "velomagg://app?vid=5c9170ca-f618-4273-8848-b1826d59c167"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22800,
+        "station_id": "029",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e462d3e3-dfd7-40c9-8d0c-8723fa6b3579",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.621983,
+        "lon": 3.855603,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e462d3e3-dfd7-40c9-8d0c-8723fa6b3579",
+          "ios": "velomagg://app?vid=e462d3e3-dfd7-40c9-8d0c-8723fa6b3579"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22800,
+        "station_id": "046",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "abea0460-6e16-46ac-b407-16fbfaf0a536",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.615155,
+        "lon": 3.839466,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=abea0460-6e16-46ac-b407-16fbfaf0a536",
+          "ios": "velomagg://app?vid=abea0460-6e16-46ac-b407-16fbfaf0a536"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22800,
+        "station_id": "049",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a39ecf57-4d7d-4143-99f6-9b5f608d0552",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a39ecf57-4d7d-4143-99f6-9b5f608d0552",
+          "ios": "velomagg://app?vid=a39ecf57-4d7d-4143-99f6-9b5f608d0552"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22800,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "ef23c4ad-ece8-4ac2-a46c-d00aab33f871",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=ef23c4ad-ece8-4ac2-a46c-d00aab33f871",
+          "ios": "velomagg://app?vid=ef23c4ad-ece8-4ac2-a46c-d00aab33f871"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23200,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d37ee277-f4e0-4195-bee5-3d9743615ccf",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608491,
+        "lon": 3.868389,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d37ee277-f4e0-4195-bee5-3d9743615ccf",
+          "ios": "velomagg://app?vid=d37ee277-f4e0-4195-bee5-3d9743615ccf"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23200,
+        "station_id": "011",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "6bbea467-2732-44c3-9b90-89c3c10c5229",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608491,
+        "lon": 3.868389,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=6bbea467-2732-44c3-9b90-89c3c10c5229",
+          "ios": "velomagg://app?vid=6bbea467-2732-44c3-9b90-89c3c10c5229"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23200,
+        "station_id": "011",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e423ae11-41c9-4928-9b06-35507f1b16b9",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616742,
+        "lon": 3.87998,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e423ae11-41c9-4928-9b06-35507f1b16b9",
+          "ios": "velomagg://app?vid=e423ae11-41c9-4928-9b06-35507f1b16b9"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23200,
+        "station_id": "013",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "fe3162e6-3bdc-4f2e-a6db-aa5dca5669f1",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608218,
+        "lon": 3.89314,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=fe3162e6-3bdc-4f2e-a6db-aa5dca5669f1",
+          "ios": "velomagg://app?vid=fe3162e6-3bdc-4f2e-a6db-aa5dca5669f1"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23200,
+        "station_id": "030",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f5926481-05dd-45dd-a37b-346db2074596",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.59048,
+        "lon": 3.884611,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f5926481-05dd-45dd-a37b-346db2074596",
+          "ios": "velomagg://app?vid=f5926481-05dd-45dd-a37b-346db2074596"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23200,
+        "station_id": "032",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "46592fe2-1b83-4e4e-9412-f098a01b4160",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.606036,
+        "lon": 3.882393,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=46592fe2-1b83-4e4e-9412-f098a01b4160",
+          "ios": "velomagg://app?vid=46592fe2-1b83-4e4e-9412-f098a01b4160"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23200,
+        "station_id": "051",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7fd939a2-1360-405f-87b5-635d3be5e11d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.606036,
+        "lon": 3.882393,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7fd939a2-1360-405f-87b5-635d3be5e11d",
+          "ios": "velomagg://app?vid=7fd939a2-1360-405f-87b5-635d3be5e11d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23200,
+        "station_id": "051",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "444d59d7-374f-4e3f-84e4-8334e075a3f3",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=444d59d7-374f-4e3f-84e4-8334e075a3f3",
+          "ios": "velomagg://app?vid=444d59d7-374f-4e3f-84e4-8334e075a3f3"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "48c5cad4-3ac9-4e24-bf82-ef4720c4df7a",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=48c5cad4-3ac9-4e24-bf82-ef4720c4df7a",
+          "ios": "velomagg://app?vid=48c5cad4-3ac9-4e24-bf82-ef4720c4df7a"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "cf5ceede-b94b-4d1f-8f35-5734a14136f7",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616768,
+        "lon": 3.873375,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=cf5ceede-b94b-4d1f-8f35-5734a14136f7",
+          "ios": "velomagg://app?vid=cf5ceede-b94b-4d1f-8f35-5734a14136f7"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23600,
+        "station_id": "006",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "548fe1fa-d811-4158-8838-d9c4a19d6a00",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608491,
+        "lon": 3.868389,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=548fe1fa-d811-4158-8838-d9c4a19d6a00",
+          "ios": "velomagg://app?vid=548fe1fa-d811-4158-8838-d9c4a19d6a00"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23600,
+        "station_id": "011",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "955f4dc2-89ac-4b66-b6c5-fac0e639664a",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616742,
+        "lon": 3.87998,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=955f4dc2-89ac-4b66-b6c5-fac0e639664a",
+          "ios": "velomagg://app?vid=955f4dc2-89ac-4b66-b6c5-fac0e639664a"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23600,
+        "station_id": "013",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "505cdb6c-6001-40da-945a-d4d688440c98",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607859,
+        "lon": 3.886644,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=505cdb6c-6001-40da-945a-d4d688440c98",
+          "ios": "velomagg://app?vid=505cdb6c-6001-40da-945a-d4d688440c98"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23600,
+        "station_id": "018",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "3b57e967-b6a6-4f84-baef-3af4682536f8",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607106,
+        "lon": 3.870693,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=3b57e967-b6a6-4f84-baef-3af4682536f8",
+          "ios": "velomagg://app?vid=3b57e967-b6a6-4f84-baef-3af4682536f8"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23600,
+        "station_id": "020",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "de40f32e-ff02-484e-a09a-dec52c37a2db",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603424,
+        "lon": 3.899263,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=de40f32e-ff02-484e-a09a-dec52c37a2db",
+          "ios": "velomagg://app?vid=de40f32e-ff02-484e-a09a-dec52c37a2db"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23600,
+        "station_id": "029",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "3e2c993c-745e-4619-a0a8-fd847e53c780",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.59048,
+        "lon": 3.884611,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=3e2c993c-745e-4619-a0a8-fd847e53c780",
+          "ios": "velomagg://app?vid=3e2c993c-745e-4619-a0a8-fd847e53c780"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23600,
+        "station_id": "032",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "40c4e335-594f-49c8-8a2e-383c4ea3468f",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616812,
+        "lon": 3.855075,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=40c4e335-594f-49c8-8a2e-383c4ea3468f",
+          "ios": "velomagg://app?vid=40c4e335-594f-49c8-8a2e-383c4ea3468f"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23600,
+        "station_id": "047",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "dc7ac966-78ed-4949-b2a7-5c192793e8be",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.606036,
+        "lon": 3.882393,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=dc7ac966-78ed-4949-b2a7-5c192793e8be",
+          "ios": "velomagg://app?vid=dc7ac966-78ed-4949-b2a7-5c192793e8be"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23600,
+        "station_id": "051",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "9dc55461-afd2-4b5f-a2fb-f29cd86bfe43",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=9dc55461-afd2-4b5f-a2fb-f29cd86bfe43",
+          "ios": "velomagg://app?vid=9dc55461-afd2-4b5f-a2fb-f29cd86bfe43"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23600,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "3a018380-b111-4ad6-8d3f-44e69df3c0f5",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=3a018380-b111-4ad6-8d3f-44e69df3c0f5",
+          "ios": "velomagg://app?vid=3a018380-b111-4ad6-8d3f-44e69df3c0f5"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 23600,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "efdc41de-0163-4a79-a0b6-dc9703658e7d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=efdc41de-0163-4a79-a0b6-dc9703658e7d",
+          "ios": "velomagg://app?vid=efdc41de-0163-4a79-a0b6-dc9703658e7d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24000,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "bd821e7d-2b92-4368-8f69-0115c34182fe",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=bd821e7d-2b92-4368-8f69-0115c34182fe",
+          "ios": "velomagg://app?vid=bd821e7d-2b92-4368-8f69-0115c34182fe"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24000,
+        "station_id": "001",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e6b100dc-4afc-4d99-a384-2d6bb25604d6",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599088,
+        "lon": 3.894866,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e6b100dc-4afc-4d99-a384-2d6bb25604d6",
+          "ios": "velomagg://app?vid=e6b100dc-4afc-4d99-a384-2d6bb25604d6"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24000,
+        "station_id": "004",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "2a2eedfe-89bc-4f08-854b-272c21553e34",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608218,
+        "lon": 3.89314,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=2a2eedfe-89bc-4f08-854b-272c21553e34",
+          "ios": "velomagg://app?vid=2a2eedfe-89bc-4f08-854b-272c21553e34"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24000,
+        "station_id": "017",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "74d0b5af-feaa-4417-88b7-d39ddd40edcb",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608218,
+        "lon": 3.89314,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=74d0b5af-feaa-4417-88b7-d39ddd40edcb",
+          "ios": "velomagg://app?vid=74d0b5af-feaa-4417-88b7-d39ddd40edcb"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24000,
+        "station_id": "017",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "6871c7fb-44cc-43ff-ac25-ed1b28c4f5a8",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607106,
+        "lon": 3.870693,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=6871c7fb-44cc-43ff-ac25-ed1b28c4f5a8",
+          "ios": "velomagg://app?vid=6871c7fb-44cc-43ff-ac25-ed1b28c4f5a8"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24000,
+        "station_id": "020",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "0307640d-5f61-4f74-8eec-b37fe6b6b9e5",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.622038,
+        "lon": 3.86672,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=0307640d-5f61-4f74-8eec-b37fe6b6b9e5",
+          "ios": "velomagg://app?vid=0307640d-5f61-4f74-8eec-b37fe6b6b9e5"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24000,
+        "station_id": "030",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4e2f01fa-5eb6-4852-9bc9-71f541769dd7",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.631318,
+        "lon": 3.861299,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4e2f01fa-5eb6-4852-9bc9-71f541769dd7",
+          "ios": "velomagg://app?vid=4e2f01fa-5eb6-4852-9bc9-71f541769dd7"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24000,
+        "station_id": "037",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4aa45893-950f-4707-b6f0-9c812a2ffb89",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.621983,
+        "lon": 3.855603,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4aa45893-950f-4707-b6f0-9c812a2ffb89",
+          "ios": "velomagg://app?vid=4aa45893-950f-4707-b6f0-9c812a2ffb89"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24000,
+        "station_id": "046",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "55804c60-8711-4ccb-96d3-7789464da1cc",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=55804c60-8711-4ccb-96d3-7789464da1cc",
+          "ios": "velomagg://app?vid=55804c60-8711-4ccb-96d3-7789464da1cc"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24000,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7a7b35c7-8ea3-4051-9e53-dd95be8a5f7b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7a7b35c7-8ea3-4051-9e53-dd95be8a5f7b",
+          "ios": "velomagg://app?vid=7a7b35c7-8ea3-4051-9e53-dd95be8a5f7b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24000,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f44fe815-51ab-4dc8-b446-efa2f8c891fe",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f44fe815-51ab-4dc8-b446-efa2f8c891fe",
+          "ios": "velomagg://app?vid=f44fe815-51ab-4dc8-b446-efa2f8c891fe"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24400,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "acac1295-045d-4ccf-9494-6160e0f0d10c",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=acac1295-045d-4ccf-9494-6160e0f0d10c",
+          "ios": "velomagg://app?vid=acac1295-045d-4ccf-9494-6160e0f0d10c"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24400,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "2b34a8b7-4460-4d95-9c3a-f2d85ab1e94c",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=2b34a8b7-4460-4d95-9c3a-f2d85ab1e94c",
+          "ios": "velomagg://app?vid=2b34a8b7-4460-4d95-9c3a-f2d85ab1e94c"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24400,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d70109b5-1a74-4cab-b1d0-105b37468a3b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616698,
+        "lon": 3.884981,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d70109b5-1a74-4cab-b1d0-105b37468a3b",
+          "ios": "velomagg://app?vid=d70109b5-1a74-4cab-b1d0-105b37468a3b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24400,
+        "station_id": "014",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "aac780e7-5cc8-421b-8981-ca09f199495e",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=aac780e7-5cc8-421b-8981-ca09f199495e",
+          "ios": "velomagg://app?vid=aac780e7-5cc8-421b-8981-ca09f199495e"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24400,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "ecc5706e-7523-433f-acdf-8e9048706700",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.612659,
+        "lon": 3.867734,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=ecc5706e-7523-433f-acdf-8e9048706700",
+          "ios": "velomagg://app?vid=ecc5706e-7523-433f-acdf-8e9048706700"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24400,
+        "station_id": "023",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "86a5e1f5-ff80-4e3a-90d8-5107cdb8bf23",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603767,
+        "lon": 3.888659,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=86a5e1f5-ff80-4e3a-90d8-5107cdb8bf23",
+          "ios": "velomagg://app?vid=86a5e1f5-ff80-4e3a-90d8-5107cdb8bf23"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24400,
+        "station_id": "031",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "34d4fefd-11a6-452d-8b7b-a9da85d98b56",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.590757,
+        "lon": 3.890616,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=34d4fefd-11a6-452d-8b7b-a9da85d98b56",
+          "ios": "velomagg://app?vid=34d4fefd-11a6-452d-8b7b-a9da85d98b56"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24400,
+        "station_id": "033",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "ccdc40d7-245c-4f9c-b8b9-41bb8c83f7d1",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60585,
+        "lon": 3.911576,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=ccdc40d7-245c-4f9c-b8b9-41bb8c83f7d1",
+          "ios": "velomagg://app?vid=ccdc40d7-245c-4f9c-b8b9-41bb8c83f7d1"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24400,
+        "station_id": "045",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "da7a504d-fe70-4b01-bc7f-453f1230d4ad",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=da7a504d-fe70-4b01-bc7f-453f1230d4ad",
+          "ios": "velomagg://app?vid=da7a504d-fe70-4b01-bc7f-453f1230d4ad"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24400,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "eb4df63b-0202-4470-8a73-2c3c936d3a26",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=eb4df63b-0202-4470-8a73-2c3c936d3a26",
+          "ios": "velomagg://app?vid=eb4df63b-0202-4470-8a73-2c3c936d3a26"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24400,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "6c503da8-a75e-4f1f-a653-6b5599087ad0",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=6c503da8-a75e-4f1f-a653-6b5599087ad0",
+          "ios": "velomagg://app?vid=6c503da8-a75e-4f1f-a653-6b5599087ad0"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24400,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "bd5baa57-8c8e-43a4-b5c9-347912a10042",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=bd5baa57-8c8e-43a4-b5c9-347912a10042",
+          "ios": "velomagg://app?vid=bd5baa57-8c8e-43a4-b5c9-347912a10042"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24800,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "37648584-4ad2-4d2b-8c38-23796555f07b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.618692,
+        "lon": 3.893844,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=37648584-4ad2-4d2b-8c38-23796555f07b",
+          "ios": "velomagg://app?vid=37648584-4ad2-4d2b-8c38-23796555f07b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24800,
+        "station_id": "015",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "78c55dbc-f172-4487-8849-fe4755f88f96",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=78c55dbc-f172-4487-8849-fe4755f88f96",
+          "ios": "velomagg://app?vid=78c55dbc-f172-4487-8849-fe4755f88f96"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24800,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "5c51d19f-5db9-4072-ab77-ad0c7e3abaa4",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599817,
+        "lon": 3.875757,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=5c51d19f-5db9-4072-ab77-ad0c7e3abaa4",
+          "ios": "velomagg://app?vid=5c51d19f-5db9-4072-ab77-ad0c7e3abaa4"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24800,
+        "station_id": "025",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "0fbca93b-00a8-4a1a-ad05-e644a73d0036",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.626163,
+        "lon": 3.882492,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=0fbca93b-00a8-4a1a-ad05-e644a73d0036",
+          "ios": "velomagg://app?vid=0fbca93b-00a8-4a1a-ad05-e644a73d0036"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24800,
+        "station_id": "039",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d9813e67-87ad-42a7-9f9d-65c225c1fa12",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.619871,
+        "lon": 3.873812,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d9813e67-87ad-42a7-9f9d-65c225c1fa12",
+          "ios": "velomagg://app?vid=d9813e67-87ad-42a7-9f9d-65c225c1fa12"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24800,
+        "station_id": "042",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "22e46e95-749d-4d2b-b5c1-a5d823e8525a",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.621983,
+        "lon": 3.855603,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=22e46e95-749d-4d2b-b5c1-a5d823e8525a",
+          "ios": "velomagg://app?vid=22e46e95-749d-4d2b-b5c1-a5d823e8525a"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24800,
+        "station_id": "046",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "04afe99d-a472-4a9e-8163-38a763769dd9",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=04afe99d-a472-4a9e-8163-38a763769dd9",
+          "ios": "velomagg://app?vid=04afe99d-a472-4a9e-8163-38a763769dd9"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 24800,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e12a9716-e247-4e96-996e-d090b81588b6",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599652,
+        "lon": 3.881954,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e12a9716-e247-4e96-996e-d090b81588b6",
+          "ios": "velomagg://app?vid=e12a9716-e247-4e96-996e-d090b81588b6"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7d282717-adf4-4395-9599-0fff944d0a00",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.622629,
+        "lon": 3.868375,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7d282717-adf4-4395-9599-0fff944d0a00",
+          "ios": "velomagg://app?vid=7d282717-adf4-4395-9599-0fff944d0a00"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "012",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4e22e688-dd3e-44a6-ab07-9af38d072f0b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608218,
+        "lon": 3.89314,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4e22e688-dd3e-44a6-ab07-9af38d072f0b",
+          "ios": "velomagg://app?vid=4e22e688-dd3e-44a6-ab07-9af38d072f0b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "017",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "5118b338-f6dd-490d-a409-d2ce0c4c64cc",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.601143,
+        "lon": 3.884373,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=5118b338-f6dd-490d-a409-d2ce0c4c64cc",
+          "ios": "velomagg://app?vid=5118b338-f6dd-490d-a409-d2ce0c4c64cc"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "024",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4828cf29-5159-4d58-988d-bd0fe05912ce",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.635689,
+        "lon": 3.849597,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4828cf29-5159-4d58-988d-bd0fe05912ce",
+          "ios": "velomagg://app?vid=4828cf29-5159-4d58-988d-bd0fe05912ce"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "036",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "c437419c-6759-4253-8440-ea6ab9584247",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.630437,
+        "lon": 3.869539,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=c437419c-6759-4253-8440-ea6ab9584247",
+          "ios": "velomagg://app?vid=c437419c-6759-4253-8440-ea6ab9584247"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "038",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "0117446a-2c9c-47be-83c1-557ee8c38d3d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60585,
+        "lon": 3.911576,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=0117446a-2c9c-47be-83c1-557ee8c38d3d",
+          "ios": "velomagg://app?vid=0117446a-2c9c-47be-83c1-557ee8c38d3d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "045",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4f4af4d1-4ad2-4d51-95f1-7fa0b78329b9",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4f4af4d1-4ad2-4d51-95f1-7fa0b78329b9",
+          "ios": "velomagg://app?vid=4f4af4d1-4ad2-4d51-95f1-7fa0b78329b9"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "8da5ac4b-29cb-44a1-9be2-78412bf31956",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=8da5ac4b-29cb-44a1-9be2-78412bf31956",
+          "ios": "velomagg://app?vid=8da5ac4b-29cb-44a1-9be2-78412bf31956"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "6ca22a61-9ccf-456b-a1bb-9b652814bcbc",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=6ca22a61-9ccf-456b-a1bb-9b652814bcbc",
+          "ios": "velomagg://app?vid=6ca22a61-9ccf-456b-a1bb-9b652814bcbc"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "58fd4c55-1950-4823-b7e0-b02032b53ae9",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=58fd4c55-1950-4823-b7e0-b02032b53ae9",
+          "ios": "velomagg://app?vid=58fd4c55-1950-4823-b7e0-b02032b53ae9"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "373cf13b-5f6a-4cd2-b01e-99c25fdfab8c",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=373cf13b-5f6a-4cd2-b01e-99c25fdfab8c",
+          "ios": "velomagg://app?vid=373cf13b-5f6a-4cd2-b01e-99c25fdfab8c"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "ecb3a020-29bf-489d-8e19-41432bc253a3",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=ecb3a020-29bf-489d-8e19-41432bc253a3",
+          "ios": "velomagg://app?vid=ecb3a020-29bf-489d-8e19-41432bc253a3"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "19960fd8-a790-4f46-9b53-cbb4b0b91ad9",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.59562,
+        "lon": 3.9235,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=19960fd8-a790-4f46-9b53-cbb4b0b91ad9",
+          "ios": "velomagg://app?vid=19960fd8-a790-4f46-9b53-cbb4b0b91ad9"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25200,
+        "station_id": "059",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f76906a9-fb42-4cbc-b5ee-c1e4e6b1e464",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603553,
+        "lon": 3.867884,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f76906a9-fb42-4cbc-b5ee-c1e4e6b1e464",
+          "ios": "velomagg://app?vid=f76906a9-fb42-4cbc-b5ee-c1e4e6b1e464"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25600,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d03dbe62-4ed9-4346-bf7d-ac5fa9fc603a",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607942,
+        "lon": 3.890634,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d03dbe62-4ed9-4346-bf7d-ac5fa9fc603a",
+          "ios": "velomagg://app?vid=d03dbe62-4ed9-4346-bf7d-ac5fa9fc603a"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25600,
+        "station_id": "016",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7939747a-da40-4458-b0c2-9c3fc1b38a61",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603424,
+        "lon": 3.899263,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7939747a-da40-4458-b0c2-9c3fc1b38a61",
+          "ios": "velomagg://app?vid=7939747a-da40-4458-b0c2-9c3fc1b38a61"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25600,
+        "station_id": "029",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "15e5cb82-9f2b-4fae-be24-2052bde287e0",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.622038,
+        "lon": 3.86672,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=15e5cb82-9f2b-4fae-be24-2052bde287e0",
+          "ios": "velomagg://app?vid=15e5cb82-9f2b-4fae-be24-2052bde287e0"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25600,
+        "station_id": "030",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "40f25e9c-3e72-4d5a-aaaa-ea44269ac231",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=40f25e9c-3e72-4d5a-aaaa-ea44269ac231",
+          "ios": "velomagg://app?vid=40f25e9c-3e72-4d5a-aaaa-ea44269ac231"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 25600,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7406f9a8-a145-42bf-8662-e57a0c03dee5",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.584211,
+        "lon": 3.860031,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7406f9a8-a145-42bf-8662-e57a0c03dee5",
+          "ios": "velomagg://app?vid=7406f9a8-a145-42bf-8662-e57a0c03dee5"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26000,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a1c25cea-3a61-43b9-b5d7-ac0e23095060",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a1c25cea-3a61-43b9-b5d7-ac0e23095060",
+          "ios": "velomagg://app?vid=a1c25cea-3a61-43b9-b5d7-ac0e23095060"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26000,
+        "station_id": "001",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "c789f5ff-4422-48d9-82c5-fb515d6545de",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=c789f5ff-4422-48d9-82c5-fb515d6545de",
+          "ios": "velomagg://app?vid=c789f5ff-4422-48d9-82c5-fb515d6545de"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26000,
+        "station_id": "001",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "af25faa7-bc00-466f-bb0e-50333af41855",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=af25faa7-bc00-466f-bb0e-50333af41855",
+          "ios": "velomagg://app?vid=af25faa7-bc00-466f-bb0e-50333af41855"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26000,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4b36c488-a4be-4ecc-9ad5-f13104b3670f",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4b36c488-a4be-4ecc-9ad5-f13104b3670f",
+          "ios": "velomagg://app?vid=4b36c488-a4be-4ecc-9ad5-f13104b3670f"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26000,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "778fd42f-c6b0-4cc8-bf10-9f80e7784bae",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=778fd42f-c6b0-4cc8-bf10-9f80e7784bae",
+          "ios": "velomagg://app?vid=778fd42f-c6b0-4cc8-bf10-9f80e7784bae"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26000,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "462db2c0-8044-4916-bed3-d35e95d13f15",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.621682,
+        "lon": 3.83477,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=462db2c0-8044-4916-bed3-d35e95d13f15",
+          "ios": "velomagg://app?vid=462db2c0-8044-4916-bed3-d35e95d13f15"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26000,
+        "station_id": "037",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "ee015066-f693-4744-b535-1fd1b0ae0e24",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.619871,
+        "lon": 3.873812,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=ee015066-f693-4744-b535-1fd1b0ae0e24",
+          "ios": "velomagg://app?vid=ee015066-f693-4744-b535-1fd1b0ae0e24"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26000,
+        "station_id": "042",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "b02049c9-06ba-4130-83ac-2cb3ce7d1b7c",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60585,
+        "lon": 3.911576,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=b02049c9-06ba-4130-83ac-2cb3ce7d1b7c",
+          "ios": "velomagg://app?vid=b02049c9-06ba-4130-83ac-2cb3ce7d1b7c"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26000,
+        "station_id": "045",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "81e07cdd-5717-4602-98d9-b27d610355b4",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=81e07cdd-5717-4602-98d9-b27d610355b4",
+          "ios": "velomagg://app?vid=81e07cdd-5717-4602-98d9-b27d610355b4"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26000,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "fcb10d80-b118-4782-8987-890d3e0e76ba",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=fcb10d80-b118-4782-8987-890d3e0e76ba",
+          "ios": "velomagg://app?vid=fcb10d80-b118-4782-8987-890d3e0e76ba"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26000,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e8c471b9-7c5a-4bcc-b198-ec585f8bfb7c",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608491,
+        "lon": 3.868389,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e8c471b9-7c5a-4bcc-b198-ec585f8bfb7c",
+          "ios": "velomagg://app?vid=e8c471b9-7c5a-4bcc-b198-ec585f8bfb7c"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26400,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "45b45641-04a4-4b67-bd83-2a7457c6f425",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.630437,
+        "lon": 3.869539,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=45b45641-04a4-4b67-bd83-2a7457c6f425",
+          "ios": "velomagg://app?vid=45b45641-04a4-4b67-bd83-2a7457c6f425"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26400,
+        "station_id": "038",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "bfb539e2-3ff6-4841-b278-616249f95dbd",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603889,
+        "lon": 3.879362,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=bfb539e2-3ff6-4841-b278-616249f95dbd",
+          "ios": "velomagg://app?vid=bfb539e2-3ff6-4841-b278-616249f95dbd"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26400,
+        "station_id": "050",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d94d110b-58d9-40e1-977e-25f6de0adc12",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d94d110b-58d9-40e1-977e-25f6de0adc12",
+          "ios": "velomagg://app?vid=d94d110b-58d9-40e1-977e-25f6de0adc12"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26400,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "9e2e08e8-e50a-410f-aa05-17ad31aeeeff",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=9e2e08e8-e50a-410f-aa05-17ad31aeeeff",
+          "ios": "velomagg://app?vid=9e2e08e8-e50a-410f-aa05-17ad31aeeeff"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26800,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "10e87033-3546-4262-80e5-3e822469c6ce",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616768,
+        "lon": 3.873375,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=10e87033-3546-4262-80e5-3e822469c6ce",
+          "ios": "velomagg://app?vid=10e87033-3546-4262-80e5-3e822469c6ce"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26800,
+        "station_id": "006",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d922e020-3cec-4ea6-9588-c6bd0ba7b70d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d922e020-3cec-4ea6-9588-c6bd0ba7b70d",
+          "ios": "velomagg://app?vid=d922e020-3cec-4ea6-9588-c6bd0ba7b70d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26800,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f4fb5583-17a4-4a43-9939-6c4f1fbdda95",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f4fb5583-17a4-4a43-9939-6c4f1fbdda95",
+          "ios": "velomagg://app?vid=f4fb5583-17a4-4a43-9939-6c4f1fbdda95"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26800,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "1cfc66e7-a15c-4412-8aec-1dfd113b359a",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603889,
+        "lon": 3.879362,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=1cfc66e7-a15c-4412-8aec-1dfd113b359a",
+          "ios": "velomagg://app?vid=1cfc66e7-a15c-4412-8aec-1dfd113b359a"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26800,
+        "station_id": "050",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "ffaae077-5b1d-4960-a7f0-29f7986b09af",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=ffaae077-5b1d-4960-a7f0-29f7986b09af",
+          "ios": "velomagg://app?vid=ffaae077-5b1d-4960-a7f0-29f7986b09af"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26800,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "1332e74b-86b6-49e6-904e-1a7d42fa427f",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=1332e74b-86b6-49e6-904e-1a7d42fa427f",
+          "ios": "velomagg://app?vid=1332e74b-86b6-49e6-904e-1a7d42fa427f"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 26800,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a2839d75-f01d-4b02-9443-fdfe8db2d6c5",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607106,
+        "lon": 3.870693,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a2839d75-f01d-4b02-9443-fdfe8db2d6c5",
+          "ios": "velomagg://app?vid=a2839d75-f01d-4b02-9443-fdfe8db2d6c5"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 27200,
+        "station_id": "",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f6eb3c10-6b29-45a9-ba1a-cc4afe1f38c8",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608491,
+        "lon": 3.868389,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f6eb3c10-6b29-45a9-ba1a-cc4afe1f38c8",
+          "ios": "velomagg://app?vid=f6eb3c10-6b29-45a9-ba1a-cc4afe1f38c8"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 27200,
+        "station_id": "011",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "5ac5d67f-2d31-4042-835b-62d6b2680d3f",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.631318,
+        "lon": 3.861299,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=5ac5d67f-2d31-4042-835b-62d6b2680d3f",
+          "ios": "velomagg://app?vid=5ac5d67f-2d31-4042-835b-62d6b2680d3f"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 27200,
+        "station_id": "037",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a427f8e4-9db8-43a1-a7f1-6272236fb95b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.631318,
+        "lon": 3.861299,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a427f8e4-9db8-43a1-a7f1-6272236fb95b",
+          "ios": "velomagg://app?vid=a427f8e4-9db8-43a1-a7f1-6272236fb95b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 27200,
+        "station_id": "037",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "9d53ab3b-195f-4b67-85c9-848e085a5b20",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.619871,
+        "lon": 3.873812,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=9d53ab3b-195f-4b67-85c9-848e085a5b20",
+          "ios": "velomagg://app?vid=9d53ab3b-195f-4b67-85c9-848e085a5b20"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 27200,
+        "station_id": "042",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "39f386bc-9d16-4a60-8af9-19c332a0f2e0",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=39f386bc-9d16-4a60-8af9-19c332a0f2e0",
+          "ios": "velomagg://app?vid=39f386bc-9d16-4a60-8af9-19c332a0f2e0"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 27200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d16f2afd-df8f-4a08-9048-e7a36c54c4fa",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d16f2afd-df8f-4a08-9048-e7a36c54c4fa",
+          "ios": "velomagg://app?vid=d16f2afd-df8f-4a08-9048-e7a36c54c4fa"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 27200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "ab90a243-d977-4976-b922-bd20af4a220b",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=ab90a243-d977-4976-b922-bd20af4a220b",
+          "ios": "velomagg://app?vid=ab90a243-d977-4976-b922-bd20af4a220b"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 27600,
+        "station_id": "001",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "bb08d1c9-8920-4009-be17-552ef7f9b8a2",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=bb08d1c9-8920-4009-be17-552ef7f9b8a2",
+          "ios": "velomagg://app?vid=bb08d1c9-8920-4009-be17-552ef7f9b8a2"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 27600,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a9ba2bf7-89b2-49eb-89eb-9f063274bf4d",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.590757,
+        "lon": 3.890616,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a9ba2bf7-89b2-49eb-89eb-9f063274bf4d",
+          "ios": "velomagg://app?vid=a9ba2bf7-89b2-49eb-89eb-9f063274bf4d"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 27600,
+        "station_id": "033",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "11552ea8-c322-4deb-8074-adda6a1cfcbf",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.635689,
+        "lon": 3.849597,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=11552ea8-c322-4deb-8074-adda6a1cfcbf",
+          "ios": "velomagg://app?vid=11552ea8-c322-4deb-8074-adda6a1cfcbf"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 27600,
+        "station_id": "036",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "97752a58-c0ab-4831-a8ec-9aa6e6873827",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.631318,
+        "lon": 3.861299,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=97752a58-c0ab-4831-a8ec-9aa6e6873827",
+          "ios": "velomagg://app?vid=97752a58-c0ab-4831-a8ec-9aa6e6873827"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 27600,
+        "station_id": "037",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "c3441a7e-b415-4cf1-93ec-e1c4a7d8b9ec",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=c3441a7e-b415-4cf1-93ec-e1c4a7d8b9ec",
+          "ios": "velomagg://app?vid=c3441a7e-b415-4cf1-93ec-e1c4a7d8b9ec"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28000,
+        "station_id": "001",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "965e950c-8615-41af-9167-1c4c0c6b4d7f",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=965e950c-8615-41af-9167-1c4c0c6b4d7f",
+          "ios": "velomagg://app?vid=965e950c-8615-41af-9167-1c4c0c6b4d7f"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28000,
+        "station_id": "001",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "304f0599-b44d-43df-846d-20f7e6c34ee6",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.626163,
+        "lon": 3.882492,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=304f0599-b44d-43df-846d-20f7e6c34ee6",
+          "ios": "velomagg://app?vid=304f0599-b44d-43df-846d-20f7e6c34ee6"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28000,
+        "station_id": "039",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "78a46a66-13e5-4c19-98a1-68d6bc091719",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=78a46a66-13e5-4c19-98a1-68d6bc091719",
+          "ios": "velomagg://app?vid=78a46a66-13e5-4c19-98a1-68d6bc091719"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28000,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "efd3f82f-a956-4e1a-817f-dadefd7f6701",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=efd3f82f-a956-4e1a-817f-dadefd7f6701",
+          "ios": "velomagg://app?vid=efd3f82f-a956-4e1a-817f-dadefd7f6701"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28000,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7a5268ed-c15a-4829-900f-b0d3123c4476",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616768,
+        "lon": 3.873375,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7a5268ed-c15a-4829-900f-b0d3123c4476",
+          "ios": "velomagg://app?vid=7a5268ed-c15a-4829-900f-b0d3123c4476"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28400,
+        "station_id": "006",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "b0bb5444-49f3-4b66-95dc-db3b858d7902",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.607106,
+        "lon": 3.870693,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=b0bb5444-49f3-4b66-95dc-db3b858d7902",
+          "ios": "velomagg://app?vid=b0bb5444-49f3-4b66-95dc-db3b858d7902"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28400,
+        "station_id": "020",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "830ba312-32cd-487a-994c-855f53314804",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=830ba312-32cd-487a-994c-855f53314804",
+          "ios": "velomagg://app?vid=830ba312-32cd-487a-994c-855f53314804"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28400,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "2f93bea2-4526-4604-b6da-fa3d60f65774",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=2f93bea2-4526-4604-b6da-fa3d60f65774",
+          "ios": "velomagg://app?vid=2f93bea2-4526-4604-b6da-fa3d60f65774"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28400,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "923792cb-6e0c-4bfc-a69e-0da00ce28287",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=923792cb-6e0c-4bfc-a69e-0da00ce28287",
+          "ios": "velomagg://app?vid=923792cb-6e0c-4bfc-a69e-0da00ce28287"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28400,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "b28ecbba-a172-42ed-a7ba-a9a39400fe74",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=b28ecbba-a172-42ed-a7ba-a9a39400fe74",
+          "ios": "velomagg://app?vid=b28ecbba-a172-42ed-a7ba-a9a39400fe74"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28400,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "8255d12a-ce57-4395-b23c-41c39721d560",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.631318,
+        "lon": 3.861299,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=8255d12a-ce57-4395-b23c-41c39721d560",
+          "ios": "velomagg://app?vid=8255d12a-ce57-4395-b23c-41c39721d560"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28800,
+        "station_id": "037",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a8864d04-4976-4104-a63e-7b9acd418057",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a8864d04-4976-4104-a63e-7b9acd418057",
+          "ios": "velomagg://app?vid=a8864d04-4976-4104-a63e-7b9acd418057"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28800,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "ace86bdf-ec8f-488a-a89e-b5b1ee1fafd0",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=ace86bdf-ec8f-488a-a89e-b5b1ee1fafd0",
+          "ios": "velomagg://app?vid=ace86bdf-ec8f-488a-a89e-b5b1ee1fafd0"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 28800,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "8b614c62-5ad5-4682-80fd-6e41eea10517",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=8b614c62-5ad5-4682-80fd-6e41eea10517",
+          "ios": "velomagg://app?vid=8b614c62-5ad5-4682-80fd-6e41eea10517"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 29200,
+        "station_id": "002",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "24ac6954-0e2a-479a-884d-b0b2bfc9d725",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.590757,
+        "lon": 3.890616,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=24ac6954-0e2a-479a-884d-b0b2bfc9d725",
+          "ios": "velomagg://app?vid=24ac6954-0e2a-479a-884d-b0b2bfc9d725"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 29200,
+        "station_id": "033",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "bf2e4910-9c18-4d0f-afb5-a62ff3b13257",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=bf2e4910-9c18-4d0f-afb5-a62ff3b13257",
+          "ios": "velomagg://app?vid=bf2e4910-9c18-4d0f-afb5-a62ff3b13257"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 29200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "798f463b-ee46-4ea5-904b-49fd3017c36f",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=798f463b-ee46-4ea5-904b-49fd3017c36f",
+          "ios": "velomagg://app?vid=798f463b-ee46-4ea5-904b-49fd3017c36f"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 29200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "a7e031ef-a9f5-44e3-8534-896d6f012c8c",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=a7e031ef-a9f5-44e3-8534-896d6f012c8c",
+          "ios": "velomagg://app?vid=a7e031ef-a9f5-44e3-8534-896d6f012c8c"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 29200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "d34ac82e-c560-4651-9075-3501d19941bb",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=d34ac82e-c560-4651-9075-3501d19941bb",
+          "ios": "velomagg://app?vid=d34ac82e-c560-4651-9075-3501d19941bb"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 29200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "88eb2fa7-c86b-4c0f-8c0f-c2ed32572c28",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.616742,
+        "lon": 3.87998,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=88eb2fa7-c86b-4c0f-8c0f-c2ed32572c28",
+          "ios": "velomagg://app?vid=88eb2fa7-c86b-4c0f-8c0f-c2ed32572c28"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 29600,
+        "station_id": "013",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "4ed1ae59-b782-4199-b7e5-6064953c1b16",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.603767,
+        "lon": 3.888659,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=4ed1ae59-b782-4199-b7e5-6064953c1b16",
+          "ios": "velomagg://app?vid=4ed1ae59-b782-4199-b7e5-6064953c1b16"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 29600,
+        "station_id": "031",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "1b35fc59-653a-453f-88c3-6ab0afe75d50",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=1b35fc59-653a-453f-88c3-6ab0afe75d50",
+          "ios": "velomagg://app?vid=1b35fc59-653a-453f-88c3-6ab0afe75d50"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 29600,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "f11a700d-d73f-4f3c-860e-69779f3dcde1",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=f11a700d-d73f-4f3c-860e-69779f3dcde1",
+          "ios": "velomagg://app?vid=f11a700d-d73f-4f3c-860e-69779f3dcde1"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 30400,
+        "station_id": "021",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "b91cab54-74b5-470e-9f6d-1e81f92103ad",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=b91cab54-74b5-470e-9f6d-1e81f92103ad",
+          "ios": "velomagg://app?vid=b91cab54-74b5-470e-9f6d-1e81f92103ad"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 30400,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "61ccb598-1c39-402c-81be-f8ffe83ba9ed",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.619871,
+        "lon": 3.873812,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=61ccb598-1c39-402c-81be-f8ffe83ba9ed",
+          "ios": "velomagg://app?vid=61ccb598-1c39-402c-81be-f8ffe83ba9ed"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 30800,
+        "station_id": "042",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "74e52db4-ddca-48cd-84a2-dd841b7231fa",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=74e52db4-ddca-48cd-84a2-dd841b7231fa",
+          "ios": "velomagg://app?vid=74e52db4-ddca-48cd-84a2-dd841b7231fa"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 30800,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "41fca280-9039-4bcf-840a-0453bd9301c7",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=41fca280-9039-4bcf-840a-0453bd9301c7",
+          "ios": "velomagg://app?vid=41fca280-9039-4bcf-840a-0453bd9301c7"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 30800,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "7d488282-0ebd-4de4-9d73-20fe751af75c",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=7d488282-0ebd-4de4-9d73-20fe751af75c",
+          "ios": "velomagg://app?vid=7d488282-0ebd-4de4-9d73-20fe751af75c"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 30800,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "25dc7a89-363f-4cf2-b073-332c2de38a49",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.608996,
+        "lon": 3.872752,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=25dc7a89-363f-4cf2-b073-332c2de38a49",
+          "ios": "velomagg://app?vid=25dc7a89-363f-4cf2-b073-332c2de38a49"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 30800,
+        "station_id": "057",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e6c2d0fe-9c0a-4182-b56f-55d2937550f7",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.599088,
+        "lon": 3.894866,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e6c2d0fe-9c0a-4182-b56f-55d2937550f7",
+          "ios": "velomagg://app?vid=e6c2d0fe-9c0a-4182-b56f-55d2937550f7"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 31200,
+        "station_id": "004",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "e1ad44a2-2581-4a5a-aee7-10869636d329",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=e1ad44a2-2581-4a5a-aee7-10869636d329",
+          "ios": "velomagg://app?vid=e1ad44a2-2581-4a5a-aee7-10869636d329"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 31200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "38ad20dd-3a0a-4436-9bf3-f749a4ed1146",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=38ad20dd-3a0a-4436-9bf3-f749a4ed1146",
+          "ios": "velomagg://app?vid=38ad20dd-3a0a-4436-9bf3-f749a4ed1146"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 31200,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "df3b0601-ed93-473a-98b1-b1fa251f871f",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.606301,
+        "lon": 3.87724,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=df3b0601-ed93-473a-98b1-b1fa251f871f",
+          "ios": "velomagg://app?vid=df3b0601-ed93-473a-98b1-b1fa251f871f"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 31600,
+        "station_id": "009",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "1dc69e6c-ca5e-450a-8ff1-8727334fb5c1",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=1dc69e6c-ca5e-450a-8ff1-8727334fb5c1",
+          "ios": "velomagg://app?vid=1dc69e6c-ca5e-450a-8ff1-8727334fb5c1"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 31600,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "6e8cc567-b931-4d18-a5d8-b63754cb8aea",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=6e8cc567-b931-4d18-a5d8-b63754cb8aea",
+          "ios": "velomagg://app?vid=6e8cc567-b931-4d18-a5d8-b63754cb8aea"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 31600,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "766e28c1-241e-46f4-bf5c-d9dd7160ed9e",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_reserved": false,
+        "is_disabled": false,
+        "rental_uris": {
+          "android": "velomagg://app?vid=766e28c1-241e-46f4-bf5c-d9dd7160ed9e",
+          "ios": "velomagg://app?vid=766e28c1-241e-46f4-bf5c-d9dd7160ed9e"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 32000,
+        "station_id": "055",
+        "pricing_plan_id": null
+      },
+      {
+        "bike_id": "34b97b0d-a5b2-4bda-8573-8cea42969a84",
+        "system_id": "velomagg_montpellier",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_reserved": false,
+        "is_disabled": true,
+        "rental_uris": {
+          "android": "velomagg://app?vid=34b97b0d-a5b2-4bda-8573-8cea42969a84",
+          "ios": "velomagg://app?vid=34b97b0d-a5b2-4bda-8573-8cea42969a84"
+        },
+        "vehicle_type_id": "14",
+        "last_reported": 1778625712,
+        "current_range_meters": 22400,
+        "station_id": "001",
+        "pricing_plan_id": null
+      }
+    ]
+  }
+}

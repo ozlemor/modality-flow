@@ -1,0 +1,1309 @@
+{
+  "last_updated": 1778624178,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "stations": [
+      {
+        "station_id": "001",
+        "name": "Rue Jules Ferry - Gare Saint-Roch",
+        "lat": 43.605366,
+        "lon": 3.881346,
+        "is_virtual_station": false,
+        "capacity": 12,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 1,
+          "15": 1,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 1
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg89531g",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg89531g"
+        }
+      },
+      {
+        "station_id": "002",
+        "name": "Comédie",
+        "lat": 43.608148,
+        "lon": 3.878778,
+        "is_virtual_station": false,
+        "capacity": 20,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 7,
+          "15": 7,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg895320",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg895320"
+        }
+      },
+      {
+        "station_id": "004",
+        "name": "Hôtel de Ville",
+        "lat": 43.599088,
+        "lon": 3.894866,
+        "is_virtual_station": false,
+        "capacity": 16,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 11,
+          "15": 11,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 11
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg895330",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg895330"
+        }
+      },
+      {
+        "station_id": "005",
+        "name": "Corum",
+        "lat": 43.613989,
+        "lon": 3.8816,
+        "is_virtual_station": false,
+        "capacity": 12,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 8,
+          "15": 8,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg89533g",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg89533g"
+        }
+      },
+      {
+        "station_id": "006",
+        "name": "Place Albert 1er - St Charles",
+        "lat": 43.616768,
+        "lon": 3.873375,
+        "is_virtual_station": false,
+        "capacity": 27,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 23,
+          "15": 23,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 23
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg895340",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg895340"
+        }
+      },
+      {
+        "station_id": "007",
+        "name": "Foch",
+        "lat": 43.610989,
+        "lon": 3.873345,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 6,
+          "15": 6,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg89534g",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg89534g"
+        }
+      },
+      {
+        "station_id": "009",
+        "name": "Observatoire",
+        "lat": 43.606301,
+        "lon": 3.87724,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 3,
+          "15": 3,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg89535g",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg89535g"
+        }
+      },
+      {
+        "station_id": "010",
+        "name": "Rondelet",
+        "lat": 43.603038,
+        "lon": 3.875796,
+        "is_virtual_station": false,
+        "capacity": 16,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 15,
+          "15": 15,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg895360",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg895360"
+        }
+      },
+      {
+        "station_id": "011",
+        "name": "Plan Cabanes",
+        "lat": 43.608491,
+        "lon": 3.868389,
+        "is_virtual_station": false,
+        "capacity": 12,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 6,
+          "15": 6,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg89536g",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg89536g"
+        }
+      },
+      {
+        "station_id": "012",
+        "name": "Boutonnet",
+        "lat": 43.622629,
+        "lon": 3.868375,
+        "is_virtual_station": false,
+        "capacity": 12,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 8,
+          "15": 8,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg895370",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg895370"
+        }
+      },
+      {
+        "station_id": "013",
+        "name": "Emile Combes",
+        "lat": 43.616742,
+        "lon": 3.87998,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 4,
+          "15": 4,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg89537g",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg89537g"
+        }
+      },
+      {
+        "station_id": "014",
+        "name": "Beaux-Arts",
+        "lat": 43.616698,
+        "lon": 3.884981,
+        "is_virtual_station": false,
+        "capacity": 16,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 10,
+          "15": 10,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg895380",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg895380"
+        }
+      },
+      {
+        "station_id": "015",
+        "name": "Les Aubes",
+        "lat": 43.618692,
+        "lon": 3.893844,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 1,
+          "15": 1,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 1
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg89538g",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg89538g"
+        }
+      },
+      {
+        "station_id": "016",
+        "name": "Antigone centre",
+        "lat": 43.607942,
+        "lon": 3.890634,
+        "is_virtual_station": false,
+        "capacity": 12,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 7,
+          "15": 7,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg895390",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg895390"
+        }
+      },
+      {
+        "station_id": "017",
+        "name": "Médiathèque Emile Zola",
+        "lat": 43.608218,
+        "lon": 3.89314,
+        "is_virtual_station": false,
+        "capacity": 16,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 13,
+          "15": 13,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg89539g",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg89539g"
+        }
+      },
+      {
+        "station_id": "018",
+        "name": "Nombre d'Or",
+        "lat": 43.607859,
+        "lon": 3.886644,
+        "is_virtual_station": false,
+        "capacity": 16,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 13,
+          "15": 13,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 13
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953a0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953a0"
+        }
+      },
+      {
+        "station_id": "019",
+        "name": "Louis Blanc",
+        "lat": 43.614642,
+        "lon": 3.877648,
+        "is_virtual_station": false,
+        "capacity": 16,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 15,
+          "15": 15,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 15
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953ag",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953ag"
+        }
+      },
+      {
+        "station_id": "020",
+        "name": "Gambetta",
+        "lat": 43.607106,
+        "lon": 3.870693,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 2,
+          "15": 2,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 2
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953b0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953b0"
+        }
+      },
+      {
+        "station_id": "021",
+        "name": "Port Marianne",
+        "lat": 43.60032,
+        "lon": 3.89851,
+        "is_virtual_station": false,
+        "capacity": 16,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 3,
+          "15": 3,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953bg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953bg"
+        }
+      },
+      {
+        "station_id": "023",
+        "name": "Les Arceaux",
+        "lat": 43.612659,
+        "lon": 3.867734,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 4,
+          "15": 4,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953cg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953cg"
+        }
+      },
+      {
+        "station_id": "024",
+        "name": "Cité Mion",
+        "lat": 43.601143,
+        "lon": 3.884373,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 4,
+          "15": 4,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953d0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953d0"
+        }
+      },
+      {
+        "station_id": "025",
+        "name": "Nouveau Saint-Roch",
+        "lat": 43.599817,
+        "lon": 3.875757,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 5,
+          "15": 5,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953dg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953dg"
+        }
+      },
+      {
+        "station_id": "026",
+        "name": "Renouvier",
+        "lat": 43.603553,
+        "lon": 3.867884,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 8,
+          "15": 8,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953e0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953e0"
+        }
+      },
+      {
+        "station_id": "029",
+        "name": "Richter",
+        "lat": 43.603424,
+        "lon": 3.899263,
+        "is_virtual_station": false,
+        "capacity": 16,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 12,
+          "15": 12,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 12
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953fg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953fg"
+        }
+      },
+      {
+        "station_id": "030",
+        "name": "Charles Flahault",
+        "lat": 43.622038,
+        "lon": 3.86672,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 5,
+          "15": 5,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953g0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953g0"
+        }
+      },
+      {
+        "station_id": "031",
+        "name": "Voltaire",
+        "lat": 43.603767,
+        "lon": 3.888659,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 5,
+          "15": 5,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953gg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953gg"
+        }
+      },
+      {
+        "station_id": "032",
+        "name": "Prés d'Arènes",
+        "lat": 43.59048,
+        "lon": 3.884611,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 5,
+          "15": 5,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953h0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953h0"
+        }
+      },
+      {
+        "station_id": "033",
+        "name": "Garcia Lorca",
+        "lat": 43.590757,
+        "lon": 3.890616,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 4,
+          "15": 4,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953hg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953hg"
+        }
+      },
+      {
+        "station_id": "034",
+        "name": "Vert Bois",
+        "lat": 43.63543,
+        "lon": 3.871179,
+        "is_virtual_station": false,
+        "capacity": 16,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 12,
+          "15": 12,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 12
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953i0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953i0"
+        }
+      },
+      {
+        "station_id": "035",
+        "name": "Malbosc",
+        "lat": 43.633679,
+        "lon": 3.832861,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 7,
+          "15": 7,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953ig",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953ig"
+        }
+      },
+      {
+        "station_id": "036",
+        "name": "Occitanie",
+        "lat": 43.635689,
+        "lon": 3.849597,
+        "is_virtual_station": false,
+        "capacity": 32,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 26,
+          "15": 26,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 26
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953j0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953j0"
+        }
+      },
+      {
+        "station_id": "037",
+        "name": "Fac des Sciences",
+        "lat": 43.631318,
+        "lon": 3.861299,
+        "is_virtual_station": false,
+        "capacity": 24,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 17,
+          "15": 17,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953jg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953jg"
+        }
+      },
+      {
+        "station_id": "038",
+        "name": "Fac de Lettres",
+        "lat": 43.630437,
+        "lon": 3.869539,
+        "is_virtual_station": false,
+        "capacity": 12,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 10,
+          "15": 10,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 10
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953k0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953k0"
+        }
+      },
+      {
+        "station_id": "039",
+        "name": "Aiguelongue",
+        "lat": 43.626163,
+        "lon": 3.882492,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 3,
+          "15": 3,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953kg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953kg"
+        }
+      },
+      {
+        "station_id": "040",
+        "name": "Jeu de Mail des Abbés",
+        "lat": 43.619701,
+        "lon": 3.883831,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 6,
+          "15": 6,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953l0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953l0"
+        }
+      },
+      {
+        "station_id": "041",
+        "name": "Euromédecine",
+        "lat": 43.639119,
+        "lon": 3.828199,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 8,
+          "15": 8,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 8
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953lg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953lg"
+        }
+      },
+      {
+        "station_id": "042",
+        "name": "Marie Caizergues",
+        "lat": 43.619871,
+        "lon": 3.873812,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 4,
+          "15": 4,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953m0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953m0"
+        }
+      },
+      {
+        "station_id": "044",
+        "name": "Celleneuve",
+        "lat": 43.61467,
+        "lon": 3.832624,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 7,
+          "15": 7,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953mg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953mg"
+        }
+      },
+      {
+        "station_id": "045",
+        "name": "Jardin de la Lironde",
+        "lat": 43.60585,
+        "lon": 3.911576,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 3,
+          "15": 3,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953n0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953n0"
+        }
+      },
+      {
+        "station_id": "046",
+        "name": "Père Soulas",
+        "lat": 43.621983,
+        "lon": 3.855603,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 3,
+          "15": 3,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 3
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953ng",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953ng"
+        }
+      },
+      {
+        "station_id": "047",
+        "name": "Place Viala",
+        "lat": 43.616812,
+        "lon": 3.855075,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 2,
+          "15": 2,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 2
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953o0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953o0"
+        }
+      },
+      {
+        "station_id": "048",
+        "name": "Hôtel du Département",
+        "lat": 43.621682,
+        "lon": 3.83477,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 7,
+          "15": 7,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953og",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953og"
+        }
+      },
+      {
+        "station_id": "049",
+        "name": "Tonnelles",
+        "lat": 43.615155,
+        "lon": 3.839466,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 7,
+          "15": 7,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 7
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953p0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953p0"
+        }
+      },
+      {
+        "station_id": "050",
+        "name": "Parvis Jules Ferry - Gare Saint-Roch",
+        "lat": 43.603889,
+        "lon": 3.879362,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 4,
+          "15": 4,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 4
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953q0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953q0"
+        }
+      },
+      {
+        "station_id": "043",
+        "name": "Sabines",
+        "lat": 43.584211,
+        "lon": 3.860031,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 6,
+          "15": 6,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953qg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953qg"
+        }
+      },
+      {
+        "station_id": "054",
+        "name": "Providence - Ovalie",
+        "lat": 43.588239,
+        "lon": 3.853421,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 6,
+          "15": 6,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953r0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953r0"
+        }
+      },
+      {
+        "station_id": "051",
+        "name": "Pont de Lattes - Gare Saint-Roch",
+        "lat": 43.606036,
+        "lon": 3.882393,
+        "is_virtual_station": false,
+        "capacity": 12,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 5,
+          "15": 5,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953s0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953s0"
+        }
+      },
+      {
+        "station_id": "055",
+        "name": "Pérols Etang de l'Or",
+        "lat": 43.558351,
+        "lon": 3.963412,
+        "is_virtual_station": false,
+        "capacity": 68,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 17,
+          "15": 17,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 17
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953sg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953sg"
+        }
+      },
+      {
+        "station_id": "057",
+        "name": "Saint-Guilhem - Courreau",
+        "lat": 43.608996,
+        "lon": 3.872752,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 5,
+          "15": 5,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 5
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953t0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953t0"
+        }
+      },
+      {
+        "station_id": "056",
+        "name": "Albert 1er - Cathédrale",
+        "lat": 43.614005,
+        "lon": 3.873218,
+        "is_virtual_station": false,
+        "capacity": 12,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 9,
+          "15": 9,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 9
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953tg",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953tg"
+        }
+      },
+      {
+        "station_id": "059",
+        "name": "Sud De France",
+        "lat": 43.59562,
+        "lon": 3.9235,
+        "is_virtual_station": false,
+        "capacity": 8,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 6,
+          "15": 6,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 6
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg8953v0",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg8953v0"
+        }
+      },
+      {
+        "station_id": "061",
+        "name": "Jean de Beins",
+        "lat": 43.609857,
+        "lon": 3.883884,
+        "is_virtual_station": false,
+        "capacity": 16,
+        "vehicle_type_capacity": {
+          "1": 0,
+          "10": 0,
+          "14": 14,
+          "15": 14,
+          "2": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 14
+        },
+        "is_valet_station": false,
+        "is_charging_station": false,
+        "rental_uris": {
+          "android": "velomagg://app?sid=st_d3970lrqbce4eg895410",
+          "ios": "velomagg://app?sid=st_d3970lrqbce4eg895410"
+        }
+      }
+    ]
+  }
+}

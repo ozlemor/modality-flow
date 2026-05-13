@@ -1,0 +1,72 @@
+{
+  "last_updated": 1778626652,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "vehicle_types": [
+      {
+        "vehicle_type_id": "15",
+        "form_factor": "bicycle",
+        "propulsion_type": "electric_assist",
+        "max_range_meters": 45000,
+        "name": "electric_smoovebox"
+      },
+      {
+        "vehicle_type_id": "1",
+        "form_factor": "bicycle",
+        "propulsion_type": "electric_assist",
+        "max_range_meters": 45000,
+        "name": "zoov01"
+      },
+      {
+        "vehicle_type_id": "4",
+        "form_factor": "bicycle",
+        "propulsion_type": "electric_assist",
+        "max_range_meters": 45000,
+        "name": "zoov03"
+      },
+      {
+        "vehicle_type_id": "7",
+        "form_factor": "bicycle",
+        "propulsion_type": "electric_assist",
+        "max_range_meters": 45000,
+        "name": "fusion2"
+      },
+      {
+        "vehicle_type_id": "2",
+        "form_factor": "bicycle",
+        "propulsion_type": "electric_assist",
+        "max_range_meters": 45000,
+        "name": "zoov02"
+      },
+      {
+        "vehicle_type_id": "10",
+        "form_factor": "bicycle",
+        "propulsion_type": "human",
+        "max_range_meters": 45000,
+        "name": "btwin2"
+      },
+      {
+        "vehicle_type_id": "14",
+        "form_factor": "bicycle",
+        "propulsion_type": "human",
+        "max_range_meters": 45000,
+        "name": "smoovebox"
+      },
+      {
+        "vehicle_type_id": "5",
+        "form_factor": "bicycle",
+        "propulsion_type": "electric_assist",
+        "max_range_meters": 45000,
+        "name": "flex"
+      },
+      {
+        "vehicle_type_id": "6",
+        "form_factor": "bicycle",
+        "propulsion_type": "electric_assist",
+        "max_range_meters": 45000,
+        "name": "prototype"
+      }
+    ]
+  }
+}

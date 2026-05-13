@@ -1,0 +1,4 @@
+plan_id,name,currency,price,is_taxable,description
+velomagg_30min,Vélomagg 30 min,EUR,0.50,0,Trajet jusqu'à 30 minutes
+velomagg_1h,Vélomagg 1 heure,EUR,1.00,0,Trajet jusqu'à 1 heure
+velomagg_abonnement,Abonnement annuel,EUR,25.00,0,Abonnement annuel Vélomagg

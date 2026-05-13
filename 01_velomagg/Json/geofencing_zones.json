@@ -1,0 +1,99 @@
+{
+  "last_updated": 1778596087,
+  "ttl": 60,
+  "version": "2.2",
+  "data": {
+    "geofencing_zones": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": []
+          },
+          "properties": {
+            "name": "Restricted zones within operational area",
+            "rules": [
+              {
+                "ride_allowed": false,
+                "ride_through_allowed": true
+              }
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+              [
+                [
+                  [
+                    4.53962,
+                    43.16447
+                  ],
+                  [
+                    4.53962,
+                    44.12005
+                  ],
+                  [
+                    3.23929,
+                    44.12005
+                  ],
+                  [
+                    3.23929,
+                    43.16447
+                  ],
+                  [
+                    4.53962,
+                    43.16447
+                  ]
+                ],
+                [
+                  [
+                    3.81403,
+                    43.46447
+                  ],
+                  [
+                    4.02312,
+                    43.55762
+                  ],
+                  [
+                    4.13962,
+                    43.5338
+                  ],
+                  [
+                    4.10228,
+                    43.60955
+                  ],
+                  [
+                    4.07988,
+                    43.82005
+                  ],
+                  [
+                    3.63929,
+                    43.62361
+                  ],
+                  [
+                    3.81403,
+                    43.46447
+                  ]
+                ]
+              ]
+            ]
+          },
+          "properties": {
+            "name": "Restricted zones - outer rim",
+            "rules": [
+              {
+                "ride_allowed": false,
+                "ride_through_allowed": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
