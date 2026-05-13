@@ -1,6 +1,7 @@
 """
 ╔══════════════════════════════════════════════════════════════════╗
-║         MODALITY-FLOW — FastAPI REST API                        ║
+║         MODALITY-FLOW — FastAPI REST API v2                     ║
+║         100% PostgreSQL — Railway compatible                    ║
 ╠══════════════════════════════════════════════════════════════════╣
 ║  Endpoints:                                                     ║
 ║  GET  /                          → API status                   ║
@@ -20,14 +21,14 @@
 ╠══════════════════════════════════════════════════════════════════╣
 ║  DOCS: http://localhost:8000/docs                               ║
 ║                                                                 ║
-║  RUN:                                                           ║
-║  /usr/local/bin/python3.14 -m uvicorn api:app --reload          ║
+║  RUN (local):                                                   ║
+║  /usr/local/bin/python3.14 api.py                               ║
 ╚══════════════════════════════════════════════════════════════════╝
 """
 
+import os
 import pickle
 import numpy as np
-import duckdb
 import psycopg2
 import psycopg2.extras
 from pathlib import Path
@@ -41,27 +42,25 @@ from pydantic import BaseModel
 # CONFIGURATION
 # ══════════════════════════════════════════════════════════════════
 
-import os
+# ML model path — works locally and on Railway
+BASE_DIR   = Path(os.environ.get("VELO_DIR", str(Path.home() / "Desktop" / "Velo")))
+MODEL_PATH = BASE_DIR / "ML" / "models" / "availability_model.pkl"
 
-# Works both locally and on Railway
-BASE_DIR = Path(os.environ.get("VELO_DIR", "/app"))
-DUCKDB_PATH = BASE_DIR / "ETL" / "gold" / "modality_flow.duckdb"
-MODEL_PATH  = BASE_DIR / "ML" / "models" / "availability_model.pkl"
-
-# PostgreSQL connection config — real-time data
+# PostgreSQL — Railway or local
 DATABASE_URL = os.environ.get(
     "DATABASE_PUBLIC_URL",
     "postgresql://postgres:postgres@localhost:5432/modality_flow"
 )
-# Parse DATABASE_URL for psycopg2
+
 import urllib.parse
-url = urllib.parse.urlparse(DATABASE_URL)
+_url = urllib.parse.urlparse(DATABASE_URL)
 PG_CONFIG = {
-    "host":     url.hostname,
-    "port":     url.port or 5432,
-    "database": url.path[1:],
-    "user":     url.username,
-    "password": url.password
+    "host":     _url.hostname,
+    "port":     _url.port or 5432,
+    "database": _url.path[1:],
+    "user":     _url.username,
+    "password": _url.password,
+    "sslmode":  "require" if "railway" in DATABASE_URL else "prefer"
 }
 
 # CO₂ emission factors in g/km — source: ADEME 2024
@@ -94,13 +93,13 @@ REST API for the Modality-Flow application — Éco-Mobilité 2026 Montpellier.
 
 ## Data sources
 - **Real-time** (PostgreSQL): Vélomagg stations, parkings, free bikes — updated every minute
-- **Historical** (DuckDB): Vélomagg history, AQI, weather, TAM stops
+- **Historical** (PostgreSQL): Vélomagg history 2024-2026, AQI, weather, TAM stops
 - **ML** (RandomForest): Bike availability prediction — R²=0.992, MAE=0.30
 
 ## CO₂ factors (ADEME 2024)
 - Vélo: 0 g/km | Tram: 4 g/km | Bus: 68 g/km | Voiture: 120 g/km
     """,
-    version="1.0.0",
+    version="2.0.0",
     contact={"name": "Montpellier Méditerranée Métropole — Éco-Mobilité 2026"}
 )
 
@@ -137,16 +136,12 @@ load_ml_model()
 
 
 # ══════════════════════════════════════════════════════════════════
-# DATABASE HELPERS
+# DATABASE HELPER
 # ══════════════════════════════════════════════════════════════════
 
 def get_pg():
-    """Open a PostgreSQL connection (real-time data)."""
+    """Open a PostgreSQL connection."""
     return psycopg2.connect(**PG_CONFIG)
-
-def get_duck():
-    """Open a DuckDB connection (historical/analytical data)."""
-    return duckdb.connect(str(DUCKDB_PATH))
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -180,23 +175,24 @@ class PredictRequest(BaseModel):
 
 @app.get("/", tags=["Status"])
 def root():
-    """API health check — returns status and version info."""
+    """API health check."""
     return {
         "status":      "✅ Modality-Flow API is running",
-        "version":     "1.0.0",
+        "version":     "2.0.0",
         "timestamp":   datetime.now().isoformat(),
         "docs":        "/docs",
+        "database":    "Railway PostgreSQL",
         "description": "Éco-Mobilité 2026 — Montpellier Méditerranée Métropole"
     }
 
 
-# ── VÉLOMAGG STATIONS (Real-time — PostgreSQL) ────────────────────
+# ── VÉLOMAGG STATIONS (Real-time) ────────────────────────────────
 
 @app.get("/stations", tags=["Vélomagg"])
 def get_stations():
     """
     Returns all Vélomagg stations with real-time bike availability.
-    Source: PostgreSQL — updated every minute via cron job.
+    Source: PostgreSQL — updated every minute via Railway cron job.
     """
     try:
         con = get_pg()
@@ -220,13 +216,14 @@ def get_stations():
                     WHEN f.bikes_available * 100.0 / NULLIF(d.capacite, 0) >= 20 THEN 'average'
                     ELSE 'low'
                 END AS availability_level
-            FROM modality.dim_stations d
-            LEFT JOIN modality.fact_station_status f
+            FROM dim_stations d
+            LEFT JOIN modality_fact_station_status f
                 ON d.station_id = f.station_id
                 AND f.timestamp = (
-                    SELECT MAX(timestamp) FROM modality.fact_station_status
+                    SELECT MAX(timestamp) FROM modality_fact_station_status
                     WHERE station_id = d.station_id
                 )
+            WHERE d.type = 'velomagg'
             ORDER BY d.nom
         """)
         stations = cur.fetchall()
@@ -246,7 +243,6 @@ def get_stations():
 def get_station(station_id: str):
     """
     Returns a single Vélomagg station with real-time bike availability.
-    Source: PostgreSQL — updated every minute.
     """
     try:
         con = get_pg()
@@ -264,11 +260,11 @@ def get_station(station_id: str):
                 f.is_renting,
                 f.timestamp,
                 ROUND(f.bikes_available * 100.0 / NULLIF(d.capacite, 0), 1) AS taux_disponibilite
-            FROM modality.dim_stations d
-            LEFT JOIN modality.fact_station_status f
+            FROM dim_stations d
+            LEFT JOIN modality_fact_station_status f
                 ON d.station_id = f.station_id
                 AND f.timestamp = (
-                    SELECT MAX(timestamp) FROM modality.fact_station_status
+                    SELECT MAX(timestamp) FROM modality_fact_station_status
                     WHERE station_id = d.station_id
                 )
             WHERE d.station_id = %s
@@ -290,14 +286,12 @@ def get_station(station_id: str):
 @app.post("/stations/{station_id}/predict", tags=["ML"])
 def predict_availability(station_id: str, req: PredictRequest = None):
     """
-    Predicts bike availability for a given station using RandomForest ML model.
-    Model performance: R²=0.992, MAE=0.30 bikes.
-    Features: hour, day of week, month, weather, AQI, peak hours.
+    Predicts bike availability using RandomForest ML model.
+    R²=0.992, MAE=0.30 bikes.
     """
     if ml_model is None:
         raise HTTPException(status_code=503, detail="ML model not loaded")
 
-    # Use current time if not provided
     now          = datetime.now()
     heure        = req.heure         if req and req.heure         is not None else now.hour
     jour_semaine = req.jour_semaine  if req and req.jour_semaine  is not None else now.weekday()
@@ -308,7 +302,6 @@ def predict_availability(station_id: str, req: PredictRequest = None):
     wind_speed   = req.wind_speed_max  if req else 10.0
     aqi          = req.indice_qualite  if req else 3
 
-    # Encode station ID for the model
     try:
         station_enc = ml_encoder.transform([station_id])[0]
     except Exception:
@@ -342,10 +335,10 @@ def predict_availability(station_id: str, req: PredictRequest = None):
             "confidence":      "high (R²=0.992)"
         },
         "conditions": {
-            "hour":         heure,
-            "day_of_week":  jour_semaine,
-            "is_peak_hour": bool(7 <= heure <= 9 or 17 <= heure <= 19),
-            "is_weekend":   bool(jour_semaine >= 5),
+            "hour":          heure,
+            "day_of_week":   jour_semaine,
+            "is_peak_hour":  bool(7 <= heure <= 9 or 17 <= heure <= 19),
+            "is_weekend":    bool(jour_semaine >= 5),
             "precipitation": precipitation
         },
         "model":     "RandomForest — MAE=0.30 bikes",
@@ -358,11 +351,9 @@ def predict_availability(station_id: str, req: PredictRequest = None):
 @app.post("/route/co2", tags=["CO₂"])
 def compute_route(req: RouteRequest):
     """
-    Computes the lowest-carbon route from point A to point B.
-    Uses Haversine distance + ADEME 2024 CO₂ emission factors.
-    Returns all transport modes ranked by carbon footprint.
+    Computes the lowest-carbon route from A to B.
+    Haversine distance + ADEME 2024 CO₂ factors.
     """
-    # Haversine distance (km)
     R    = 6371
     dlat = np.radians(req.lat_b - req.lat_a)
     dlon = np.radians(req.lon_b - req.lon_a)
@@ -382,18 +373,11 @@ def compute_route(req: RouteRequest):
         co2_total_g  = round(distance_km * co2_per_km, 1)
         co2_saved    = round(distance_km * CO2_FACTORS["voiture"] - co2_total_g, 1)
 
-        # Scoring — lower is better
         score = co2_total_g
-
-        # Penalty: cycling not recommended in rain
         if mode == "velo" and req.precipitation > 5:
             score += 50
-
-        # Penalty: no bikes available at station
         if mode == "velo" and req.bikes_available == 0:
             score += 100
-
-        # Penalty: walking not practical over 2 km
         if mode == "marche" and distance_km > 2:
             score += 200
 
@@ -407,7 +391,6 @@ def compute_route(req: RouteRequest):
             "recommended":      False
         })
 
-    # Sort by score and mark best option
     routes.sort(key=lambda x: x["score"])
     routes[0]["recommended"] = True
     best = routes[0]
@@ -427,13 +410,13 @@ def compute_route(req: RouteRequest):
     }
 
 
-# ── PARKINGS (Real-time — PostgreSQL) ────────────────────────────
+# ── PARKINGS (Real-time) ──────────────────────────────────────────
 
 @app.get("/parkings", tags=["Parkings"])
 def get_parkings():
     """
-    Returns all parking facilities with real-time occupancy.
-    Source: PostgreSQL — updated every 5 minutes via cron job.
+    Returns all parkings with real-time occupancy.
+    Source: PostgreSQL — updated every 5 minutes.
     """
     try:
         con = get_pg()
@@ -454,8 +437,8 @@ def get_parkings():
                     WHEN taux_occupation >= 40 THEN 'moderate'
                     ELSE 'available'
                 END AS occupancy_level
-            FROM modality.fact_parkings_status
-            WHERE timestamp = (SELECT MAX(timestamp) FROM modality.fact_parkings_status)
+            FROM modality_fact_parkings_status
+            WHERE timestamp = (SELECT MAX(timestamp) FROM modality_fact_parkings_status)
             ORDER BY taux_occupation DESC
         """)
         parkings = cur.fetchall()
@@ -471,27 +454,23 @@ def get_parkings():
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── FREE BIKES (Real-time — PostgreSQL) ──────────────────────────
+# ── FREE BIKES (Real-time) ────────────────────────────────────────
 
 @app.get("/free-bikes", tags=["Vélomagg"])
 def get_free_bikes():
     """
     Returns all free-floating bikes with current GPS location.
-    Source: PostgreSQL — updated every minute via cron job.
+    Source: PostgreSQL — updated every minute.
     """
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         cur.execute("""
             SELECT
-                bike_id,
-                lat,
-                lon,
-                is_reserved,
-                is_disabled,
-                vehicle_type_id,
-                timestamp
-            FROM modality.fact_free_bikes
+                bike_id, lat, lon,
+                is_reserved, is_disabled,
+                vehicle_type_id, timestamp
+            FROM modality_fact_free_bikes
             WHERE is_disabled = false
             ORDER BY timestamp DESC
         """)
@@ -508,35 +487,31 @@ def get_free_bikes():
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── AIR QUALITY INDEX (DuckDB — Atmo Occitanie) ──────────────────
+# ── AIR QUALITY (Static — Atmo Occitanie) ────────────────────────
 
 @app.get("/aqi", tags=["Environment"])
 def get_aqi(date: Optional[str] = None):
     """
-    Returns air quality index (AQI) data for Montpellier.
-    Source: DuckDB — Atmo Occitanie (498 days of data).
-    Optional: filter by date (YYYY-MM-DD).
+    Returns air quality index (AQI) data.
+    Source: PostgreSQL — Atmo Occitanie (498 days).
     """
     try:
-        con = get_duck()
+        con = get_pg()
+        cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         if date:
-            df = con.execute(
-                "SELECT * FROM dim_qualite_air WHERE date = ?", [date]
-            ).fetchdf()
+            cur.execute("SELECT * FROM dim_qualite_air WHERE date = %s", (date,))
         else:
-            df = con.execute(
-                "SELECT * FROM dim_qualite_air ORDER BY date DESC LIMIT 7"
-            ).fetchdf()
+            cur.execute("SELECT * FROM dim_qualite_air ORDER BY date DESC LIMIT 7")
+        records = cur.fetchall()
+        cur.close()
         con.close()
-
-        records = df.to_dict("records")
-        for r in records:
-            if "date" in r and hasattr(r["date"], "isoformat"):
-                r["date"] = r["date"].isoformat()
-
+        data = [dict(r) for r in records]
+        for r in data:
+            if "date" in r and r["date"]:
+                r["date"] = str(r["date"])
         return {
-            "today":     records[0] if records else {},
-            "history":   records,
+            "today":     data[0] if data else {},
+            "history":   data,
             "source":    "atmo_occitanie",
             "timestamp": datetime.now().isoformat()
         }
@@ -544,35 +519,31 @@ def get_aqi(date: Optional[str] = None):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── WEATHER (DuckDB — Open-Meteo) ────────────────────────────────
+# ── WEATHER (Static — Open-Meteo) ────────────────────────────────
 
 @app.get("/meteo", tags=["Environment"])
 def get_meteo(date: Optional[str] = None):
     """
     Returns weather data for Montpellier.
-    Source: DuckDB — Open-Meteo API (366 days of data).
-    Optional: filter by date (YYYY-MM-DD).
+    Source: PostgreSQL — Open-Meteo (366 days).
     """
     try:
-        con = get_duck()
+        con = get_pg()
+        cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         if date:
-            df = con.execute(
-                "SELECT * FROM dim_meteo WHERE date = ?", [date]
-            ).fetchdf()
+            cur.execute("SELECT * FROM dim_meteo WHERE date = %s", (date,))
         else:
-            df = con.execute(
-                "SELECT * FROM dim_meteo ORDER BY date DESC LIMIT 7"
-            ).fetchdf()
+            cur.execute("SELECT * FROM dim_meteo ORDER BY date DESC LIMIT 7")
+        records = cur.fetchall()
+        cur.close()
         con.close()
-
-        records = df.to_dict("records")
-        for r in records:
-            if "date" in r and hasattr(r["date"], "isoformat"):
-                r["date"] = r["date"].isoformat()
-
+        data = [dict(r) for r in records]
+        for r in data:
+            if "date" in r and r["date"]:
+                r["date"] = str(r["date"])
         return {
-            "today":     records[0] if records else {},
-            "history":   records,
+            "today":     data[0] if data else {},
+            "history":   data,
             "source":    "open_meteo",
             "timestamp": datetime.now().isoformat()
         }
@@ -580,22 +551,23 @@ def get_meteo(date: Optional[str] = None):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── CO₂ FACTORS (DuckDB) ─────────────────────────────────────────
+# ── CO₂ FACTORS (Static) ─────────────────────────────────────────
 
 @app.get("/co2/factors", tags=["CO₂"])
 def get_co2_factors():
     """
     Returns CO₂ emission factors per transport mode.
-    Source: DuckDB — ADEME 2024 reference data.
+    Source: PostgreSQL — ADEME 2024.
     """
     try:
-        con = get_duck()
-        df  = con.execute(
-            "SELECT * FROM ref_co2_factors ORDER BY co2_g_per_km"
-        ).fetchdf()
+        con = get_pg()
+        cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("SELECT * FROM ref_co2_factors ORDER BY co2_g_per_km")
+        records = cur.fetchall()
+        cur.close()
         con.close()
         return {
-            "factors":   df.to_dict("records"),
+            "factors":   [dict(r) for r in records],
             "source":    "ADEME 2024",
             "timestamp": datetime.now().isoformat()
         }
@@ -603,17 +575,18 @@ def get_co2_factors():
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── HISTORICAL DATA (DuckDB) ─────────────────────────────────────
+# ── HISTORICAL DATA ───────────────────────────────────────────────
 
 @app.get("/historique/{station_id}", tags=["Historical"])
 def get_historique(station_id: str, limit: int = 100):
     """
     Returns historical bike availability for a given station.
-    Source: DuckDB — fact_velomagg_historique (644,880 rows, 2024-2026).
+    Source: PostgreSQL — 644,880 rows (2024-2026).
     """
     try:
-        con = get_duck()
-        df  = con.execute("""
+        con = get_pg()
+        cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
             SELECT
                 station_id,
                 timestamp,
@@ -622,83 +595,105 @@ def get_historique(station_id: str, limit: int = 100):
                 EXTRACT(DOW   FROM timestamp) AS day_of_week,
                 EXTRACT(MONTH FROM timestamp) AS month
             FROM fact_velomagg_historique
-            WHERE station_id = ?
+            WHERE station_id = %s
             ORDER BY timestamp DESC
-            LIMIT ?
-        """, [station_id, limit]).fetchdf()
+            LIMIT %s
+        """, (station_id, limit))
+        records = cur.fetchall()
+        cur.close()
         con.close()
-
-        records = df.to_dict("records")
-        for r in records:
-            if "timestamp" in r and hasattr(r["timestamp"], "isoformat"):
-                r["timestamp"] = r["timestamp"].isoformat()
-
+        data = [dict(r) for r in records]
+        for r in data:
+            if "timestamp" in r and r["timestamp"]:
+                r["timestamp"] = str(r["timestamp"])
         return {
             "station_id": station_id,
-            "count":      len(records),
-            "source":     "duckdb_historique",
-            "data":       records
+            "count":      len(data),
+            "source":     "postgresql_historique",
+            "data":       data
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── ML FEATURES (DuckDB) ─────────────────────────────────────────
+# ── ML FEATURES ───────────────────────────────────────────────────
 
 @app.get("/ml/features", tags=["ML"])
 def get_ml_features(station_id: Optional[str] = None, limit: int = 100):
     """
-    Returns ML feature view combining bike history, weather and AQI.
-    Includes derived features: peak_hour flag, weekend flag.
-    Source: DuckDB — v_ml_features view.
+    Returns ML features combining bike history, weather and AQI.
+    Source: PostgreSQL JOIN.
     """
     try:
-        con = get_duck()
+        con = get_pg()
+        cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+
+        query = """
+            SELECT
+                h.station_id,
+                h.timestamp,
+                h.bisiklet_sayisi AS bikes_available,
+                EXTRACT(HOUR  FROM h.timestamp) AS hour,
+                EXTRACT(DOW   FROM h.timestamp) AS day_of_week,
+                EXTRACT(MONTH FROM h.timestamp) AS month,
+                CASE WHEN EXTRACT(HOUR FROM h.timestamp) BETWEEN 7 AND 9
+                          OR EXTRACT(HOUR FROM h.timestamp) BETWEEN 17 AND 19
+                     THEN 1 ELSE 0 END AS is_peak_hour,
+                CASE WHEN EXTRACT(DOW FROM h.timestamp) IN (0,6) THEN 1 ELSE 0 END AS is_weekend,
+                m.temperature_max,
+                m.precipitation_sum,
+                m.wind_speed_max,
+                q.indice_qualite AS aqi,
+                q.no2,
+                q.o3,
+                q.pm10
+            FROM fact_velomagg_historique h
+            LEFT JOIN dim_meteo m ON CAST(h.timestamp AS DATE) = m.date
+            LEFT JOIN dim_qualite_air q ON CAST(h.timestamp AS DATE) = q.date
+            WHERE h.bisiklet_sayisi IS NOT NULL
+        """
         if station_id:
-            df = con.execute("""
-                SELECT * FROM v_ml_features
-                WHERE station_id = ?
-                ORDER BY timestamp DESC
-                LIMIT ?
-            """, [station_id, limit]).fetchdf()
+            query += " AND h.station_id = %s ORDER BY h.timestamp DESC LIMIT %s"
+            cur.execute(query, (station_id, limit))
         else:
-            df = con.execute("""
-                SELECT * FROM v_ml_features
-                ORDER BY timestamp DESC
-                LIMIT ?
-            """, [limit]).fetchdf()
+            query += " ORDER BY h.timestamp DESC LIMIT %s"
+            cur.execute(query, (limit,))
+
+        records = cur.fetchall()
+        cur.close()
         con.close()
-
-        records = df.to_dict("records")
-        for r in records:
-            if "timestamp" in r and hasattr(r["timestamp"], "isoformat"):
-                r["timestamp"] = r["timestamp"].isoformat()
-
+        data = [dict(r) for r in records]
+        for r in data:
+            if "timestamp" in r and r["timestamp"]:
+                r["timestamp"] = str(r["timestamp"])
         return {
-            "count":  len(records),
-            "source": "duckdb_ml_features",
-            "data":   records
+            "count":  len(data),
+            "source": "postgresql_ml_features",
+            "data":   data
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── TAM STOPS & ROUTES (DuckDB — GTFS) ──────────────────────────
+# ── TAM STOPS & ROUTES (Static) ──────────────────────────────────
 
 @app.get("/tam/stops", tags=["TAM"])
 def get_tam_stops():
     """
     Returns all TAM public transport stops (2,112 stops).
-    Source: DuckDB — GTFS TAM static data.
+    Source: PostgreSQL — GTFS TAM.
     """
     try:
-        con = get_duck()
-        df  = con.execute("SELECT * FROM dim_tam_stops").fetchdf()
+        con = get_pg()
+        cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("SELECT * FROM dim_tam_stops")
+        records = cur.fetchall()
+        cur.close()
         con.close()
         return {
-            "count":  len(df),
+            "count":  len(records),
             "source": "gtfs_tam",
-            "stops":  df.to_dict("records")
+            "stops":  [dict(r) for r in records]
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -708,16 +703,19 @@ def get_tam_stops():
 def get_tam_routes():
     """
     Returns all TAM bus and tram lines (43 lines).
-    Source: DuckDB — GTFS TAM static data.
+    Source: PostgreSQL — GTFS TAM.
     """
     try:
-        con = get_duck()
-        df  = con.execute("SELECT * FROM dim_tam_routes").fetchdf()
+        con = get_pg()
+        cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("SELECT * FROM dim_tam_routes")
+        records = cur.fetchall()
+        cur.close()
         con.close()
         return {
-            "count":  len(df),
+            "count":  len(records),
             "source": "gtfs_tam",
-            "routes": df.to_dict("records")
+            "routes": [dict(r) for r in records]
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -729,6 +727,4 @@ def get_tam_routes():
 
 if __name__ == "__main__":
     import uvicorn
-    import sys
-    sys.path.insert(0, "/Users/ozlemdechamps/Desktop/Velo")
     uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=False)
