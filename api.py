@@ -41,13 +41,14 @@ from pydantic import BaseModel
 # CONFIGURATION
 # ══════════════════════════════════════════════════════════════════
 
-VELO_DIR    = Path.home() / "Desktop" / "Velo"
-DUCKDB_PATH = VELO_DIR / "ETL" / "gold" / "modality_flow.duckdb"
-MODEL_PATH  = VELO_DIR / "ML" / "models" / "availability_model.pkl"
-
-# PostgreSQL connection config — real-time data
 import os
 
+# Works both locally and on Railway
+BASE_DIR = Path(os.environ.get("VELO_DIR", str(Path.home() / "Desktop" / "Velo")))
+DUCKDB_PATH = BASE_DIR / "ETL" / "gold" / "modality_flow.duckdb"
+MODEL_PATH  = BASE_DIR / "ML" / "models" / "availability_model.pkl"
+
+# PostgreSQL connection config — real-time data
 DATABASE_URL = os.environ.get("postgresql://postgres:PfbeGtHyxglIyRBZppgxBxPtYMQUmoyy@gondola.proxy.rlwy.net:46226/railway", "postgresql://postgres:postgres@localhost:5432/modality_flow")
 
 # Parse DATABASE_URL for psycopg2
