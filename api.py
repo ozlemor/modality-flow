@@ -46,12 +46,19 @@ DUCKDB_PATH = VELO_DIR / "ETL" / "gold" / "modality_flow.duckdb"
 MODEL_PATH  = VELO_DIR / "ML" / "models" / "availability_model.pkl"
 
 # PostgreSQL connection config — real-time data
+import os
+
+DATABASE_URL = os.environ.get("postgresql://postgres:PfbeGtHyxglIyRBZppgxBxPtYMQUmoyy@gondola.proxy.rlwy.net:46226/railway", "postgresql://postgres:postgres@localhost:5432/modality_flow")
+
+# Parse DATABASE_URL for psycopg2
+import urllib.parse
+url = urllib.parse.urlparse(DATABASE_URL)
 PG_CONFIG = {
-    "host":     "localhost",
-    "port":     5432,
-    "database": "modality_flow",
-    "user":     "postgres",
-    "password": "postgres"
+    "host":     url.hostname,
+    "port":     url.port or 5432,
+    "database": url.path[1:],
+    "user":     url.username,
+    "password": url.password
 }
 
 # CO₂ emission factors in g/km — source: ADEME 2024
