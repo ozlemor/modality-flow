@@ -261,7 +261,7 @@ def get_station(station_id: str):
                 f.timestamp,
                 ROUND(f.bikes_available * 100.0 / NULLIF(d.capacite, 0), 1) AS taux_disponibilite
             FROM dim_stations d
-            LEFT JOIN modality_fact_station_status f
+            LEFT JOIN modality.fact_station_status f
                 ON d.station_id = f.station_id
                 AND f.timestamp = (
                     SELECT MAX(timestamp) FROM modality_fact_station_status
@@ -437,7 +437,7 @@ def get_parkings():
                     WHEN taux_occupation >= 40 THEN 'moderate'
                     ELSE 'available'
                 END AS occupancy_level
-            FROM modality_fact_parkings_status
+            FROM modality.fact_parkings_status
             WHERE timestamp = (SELECT MAX(timestamp) FROM modality_fact_parkings_status)
             ORDER BY taux_occupation DESC
         """)
@@ -470,7 +470,7 @@ def get_free_bikes():
                 bike_id, lat, lon,
                 is_reserved, is_disabled,
                 vehicle_type_id, timestamp
-            FROM modality_fact_free_bikes
+            FROM modality.fact_free_bikes
             WHERE is_disabled = false
             ORDER BY timestamp DESC
         """)
