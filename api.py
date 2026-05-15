@@ -216,11 +216,11 @@ def get_stations():
                     WHEN f.bikes_available * 100.0 / NULLIF(d.capacite, 0) >= 20 THEN 'average'
                     ELSE 'low'
                 END AS availability_level
-            FROM dim_stations d
-            LEFT JOIN modality_fact_station_status f
+            FROM public.dim_stations d
+            LEFT JOIN modality.fact_station_status f
                 ON d.station_id = f.station_id
                 AND f.timestamp = (
-                    SELECT MAX(timestamp) FROM modality_fact_station_status
+                    SELECT MAX(timestamp) FROM modality.fact_station_status
                     WHERE station_id = d.station_id
                 )
             WHERE d.type = 'velomagg'
@@ -260,11 +260,11 @@ def get_station(station_id: str):
                 f.is_renting,
                 f.timestamp,
                 ROUND(f.bikes_available * 100.0 / NULLIF(d.capacite, 0), 1) AS taux_disponibilite
-            FROM dim_stations d
+            FROM public.dim_stations d
             LEFT JOIN modality.fact_station_status f
                 ON d.station_id = f.station_id
                 AND f.timestamp = (
-                    SELECT MAX(timestamp) FROM modality_fact_station_status
+                    SELECT MAX(timestamp) FROM modality.fact_station_status
                     WHERE station_id = d.station_id
                 )
             WHERE d.station_id = %s
@@ -438,7 +438,7 @@ def get_parkings():
                     ELSE 'available'
                 END AS occupancy_level
             FROM modality.fact_parkings_status
-            WHERE timestamp = (SELECT MAX(timestamp) FROM modality_fact_parkings_status)
+            WHERE timestamp = (SELECT MAX(timestamp) FROM modality.fact_parkings_status)
             ORDER BY taux_occupation DESC
         """)
         parkings = cur.fetchall()
@@ -499,9 +499,9 @@ def get_aqi(date: Optional[str] = None):
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         if date:
-            cur.execute("SELECT * FROM dim_qualite_air WHERE date = %s", (date,))
+            cur.execute("SELECT * FROM public.dim_qualite_air WHERE date = %s", (date,))
         else:
-            cur.execute("SELECT * FROM dim_qualite_air ORDER BY date DESC LIMIT 7")
+            cur.execute("SELECT * FROM public.dim_qualite_air ORDER BY date DESC LIMIT 7")
         records = cur.fetchall()
         cur.close()
         con.close()
@@ -531,9 +531,9 @@ def get_meteo(date: Optional[str] = None):
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         if date:
-            cur.execute("SELECT * FROM dim_meteo WHERE date = %s", (date,))
+            cur.execute("SELECT * FROM public.dim_meteo WHERE date = %s", (date,))
         else:
-            cur.execute("SELECT * FROM dim_meteo ORDER BY date DESC LIMIT 7")
+            cur.execute("SELECT * FROM public.dim_meteo ORDER BY date DESC LIMIT 7")
         records = cur.fetchall()
         cur.close()
         con.close()
@@ -562,7 +562,7 @@ def get_co2_factors():
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
-        cur.execute("SELECT * FROM ref_co2_factors ORDER BY co2_g_per_km")
+        cur.execute("SELECT * FROM public.ref_co2_factors ORDER BY co2_g_per_km")
         records = cur.fetchall()
         cur.close()
         con.close()
@@ -594,7 +594,7 @@ def get_historique(station_id: str, limit: int = 100):
                 EXTRACT(HOUR  FROM timestamp) AS hour,
                 EXTRACT(DOW   FROM timestamp) AS day_of_week,
                 EXTRACT(MONTH FROM timestamp) AS month
-            FROM fact_velomagg_historique
+            FROM public.fact_velomagg_historique
             WHERE station_id = %s
             ORDER BY timestamp DESC
             LIMIT %s
@@ -647,9 +647,9 @@ def get_ml_features(station_id: Optional[str] = None, limit: int = 100):
                 q.no2,
                 q.o3,
                 q.pm10
-            FROM fact_velomagg_historique h
-            LEFT JOIN dim_meteo m ON CAST(h.timestamp AS DATE) = m.date
-            LEFT JOIN dim_qualite_air q ON CAST(h.timestamp AS DATE) = q.date
+            FROM public.fact_velomagg_historique h
+            LEFT JOIN public.dim_meteo m ON CAST(h.timestamp AS DATE) = m.date
+            LEFT JOIN public.dim_qualite_air q ON CAST(h.timestamp AS DATE) = q.date
             WHERE h.bisiklet_sayisi IS NOT NULL
         """
         if station_id:
@@ -686,7 +686,7 @@ def get_tam_stops():
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
-        cur.execute("SELECT * FROM dim_tam_stops")
+        cur.execute("SELECT * FROM public.dim_tam_stops")
         records = cur.fetchall()
         cur.close()
         con.close()
@@ -708,7 +708,7 @@ def get_tam_routes():
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
-        cur.execute("SELECT * FROM dim_tam_routes")
+        cur.execute("SELECT * FROM public.dim_tam_routes")
         records = cur.fetchall()
         cur.close()
         con.close()
