@@ -1,29 +1,29 @@
 """
-╔══════════════════════════════════════════════════════════════════╗
-║         MODALITY-FLOW — FastAPI REST API v2                     ║
-║         100% PostgreSQL — Railway compatible                    ║
-╠══════════════════════════════════════════════════════════════════╣
-║  Endpoints:                                                     ║
-║  GET  /                          → API status                   ║
-║  GET  /stations                  → All stations (real-time)     ║
-║  GET  /stations/{id}             → Single station               ║
-║  POST /stations/{id}/predict     → ML prediction                ║
-║  POST /route/co2                 → Lowest carbon route          ║
-║  GET  /parkings                  → Parking availability         ║
-║  GET  /free-bikes                → Free-floating bikes          ║
-║  GET  /aqi                       → Air quality index            ║
-║  GET  /meteo                     → Weather data                 ║
-║  GET  /co2/factors               → CO₂ emission factors        ║
-║  GET  /historique/{station_id}   → Historical data              ║
-║  GET  /ml/features               → ML feature view              ║
-║  GET  /tam/stops                 → TAM bus/tram stops           ║
-║  GET  /tam/routes                → TAM lines                    ║
-╠══════════════════════════════════════════════════════════════════╣
-║  DOCS: http://localhost:8000/docs                               ║
-║                                                                 ║
-║  RUN (local):                                                   ║
-║  /usr/local/bin/python3.14 api.py                               ║
-╚══════════════════════════════════════════════════════════════════╝
+MODALITY-FLOW — FastAPI REST API v2
+100% PostgreSQL — Railway compatible
+
+Endpoints:
+  GET  /                          -> API status
+  GET  /stations                  -> All stations (real-time)
+  GET  /stations/{id}             -> Single station
+  POST /stations/{id}/predict     -> ML prediction (v2)
+  POST /route/co2                 -> Lowest carbon route
+  GET  /parkings                  -> Parking availability
+  GET  /free-bikes                -> Free-floating bikes
+  GET  /aqi                       -> Air quality index
+  GET  /meteo                     -> Weather data
+  GET  /co2/factors               -> CO2 emission factors
+  GET  /historique/{station_id}   -> Historical data
+  GET  /ml/features               -> ML feature view
+  GET  /tam/stops                 -> TAM bus/tram stops
+  GET  /tam/routes                -> TAM lines
+  GET  /demographics              -> INSEE commune demographics
+  GET  /fairness                  -> Spatial fairness analysis
+
+Docs: http://localhost:8000/docs
+
+Run (local):
+  uvicorn api:app --host 0.0.0.0 --port 8000
 """
 
 import os
@@ -31,6 +31,7 @@ import pickle
 import numpy as np
 import psycopg2
 import psycopg2.extras
+import pandas as pd
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
@@ -38,15 +39,11 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-# ══════════════════════════════════════════════════════════════════
-# CONFIGURATION
-# ══════════════════════════════════════════════════════════════════
+# --- CONFIG -------------------------------------------------------------------
 
-# ML model path — works locally and on Railway
-BASE_DIR   = BASE_DIR = Path(os.environ.get("VELO_DIR", "/app"))
+BASE_DIR   = Path(os.environ.get("VELO_DIR", "/app"))
 MODEL_PATH = BASE_DIR / "ML" / "models" / "availability_model.pkl"
 
-# PostgreSQL — Railway or local
 DATABASE_URL = os.environ.get(
     "DATABASE_PUBLIC_URL",
     "postgresql://postgres:postgres@localhost:5432/modality_flow"
@@ -63,7 +60,7 @@ PG_CONFIG = {
     "sslmode":  "require" if "railway" in DATABASE_URL else "prefer"
 }
 
-# CO₂ emission factors in g/km — source: ADEME 2024
+# CO2 emission factors in g/km — source: ADEME 2024
 CO2_FACTORS = {
     "velo":    0,
     "tram":    4,
@@ -72,7 +69,6 @@ CO2_FACTORS = {
     "marche":  0,
 }
 
-# Average speeds in km/h per transport mode
 SPEEDS = {
     "velo":    15,
     "tram":    25,
@@ -81,29 +77,38 @@ SPEEDS = {
     "marche":  5,
 }
 
+# Montpellier demographic values — INSEE RP 2020 (commune 34172)
+# Static for all Velomagg stations (all located in Montpellier)
+MONTPELLIER_DEMO = {
+    "pct_young_adult": 31.20,
+    "pct_active":      38.05,
+    "pct_65plus":      18.85,
+    "pct_high_income": 12.79,
+    "pct_low_income":  22.46,
+    "population":      299096,
+}
 
-# ══════════════════════════════════════════════════════════════════
-# FASTAPI APP
-# ══════════════════════════════════════════════════════════════════
+
+# --- APP ----------------------------------------------------------------------
 
 app = FastAPI(
     title="Modality-Flow API",
     description="""
-REST API for the Modality-Flow application — Éco-Mobilité 2026 Montpellier.
+REST API for the Modality-Flow application — Eco-Mobilite 2026 Montpellier.
 
 ## Data sources
-- **Real-time** (PostgreSQL): Vélomagg stations, parkings, free bikes — updated every minute
-- **Historical** (PostgreSQL): Vélomagg history 2024-2026, AQI, weather, TAM stops
-- **ML** (RandomForest): Bike availability prediction — R²=0.992, MAE=0.30
+- **Real-time** (PostgreSQL): Velomagg stations, parkings, free bikes
+- **Historical** (PostgreSQL): Velomagg history 2024-2026, AQI, weather, TAM
+- **ML** (RandomForest v2): Bike availability prediction — R2=0.9977, MAE=0.14
+- **Demographics** (INSEE RP 2020): Commune-level socio-demographic features
 
-## CO₂ factors (ADEME 2024)
-- Vélo: 0 g/km | Tram: 4 g/km | Bus: 68 g/km | Voiture: 120 g/km
+## CO2 factors (ADEME 2024)
+Velo: 0 g/km | Tram: 4 g/km | Bus: 68 g/km | Voiture: 120 g/km
     """,
-    version="2.0.0",
-    contact={"name": "Montpellier Méditerranée Métropole — Éco-Mobilité 2026"}
+    version="2.1.0",
+    contact={"name": "Montpellier Mediterranee Metropole — Eco-Mobilite 2026"}
 )
 
-# Allow cross-origin requests — required for Flutter mobile app
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -112,9 +117,7 @@ app.add_middleware(
 )
 
 
-# ══════════════════════════════════════════════════════════════════
-# LOAD ML MODEL AT STARTUP
-# ══════════════════════════════════════════════════════════════════
+# --- ML MODEL -----------------------------------------------------------------
 
 ml_model    = None
 ml_encoder  = None
@@ -128,25 +131,21 @@ def load_ml_model():
         ml_model    = data["model"]
         ml_encoder  = data["encoder"]
         ml_features = data["features"]
-        print(f"✅ ML model loaded: {MODEL_PATH}")
+        print(f"ML model loaded: {MODEL_PATH}")
+        print(f"  Features ({len(ml_features)}): {ml_features}")
     else:
-        print(f"⚠️  ML model not found: {MODEL_PATH}")
+        print(f"ML model not found: {MODEL_PATH}")
 
 load_ml_model()
 
 
-# ══════════════════════════════════════════════════════════════════
-# DATABASE HELPER
-# ══════════════════════════════════════════════════════════════════
+# --- DATABASE -----------------------------------------------------------------
 
 def get_pg():
-    """Open a PostgreSQL connection."""
     return psycopg2.connect(**PG_CONFIG)
 
 
-# ══════════════════════════════════════════════════════════════════
-# REQUEST / RESPONSE SCHEMAS
-# ══════════════════════════════════════════════════════════════════
+# --- SCHEMAS ------------------------------------------------------------------
 
 class RouteRequest(BaseModel):
     lat_a: float
@@ -158,7 +157,6 @@ class RouteRequest(BaseModel):
     bikes_available: Optional[int] = 5
 
 class PredictRequest(BaseModel):
-    station_id: str
     heure: Optional[int] = None
     jour_semaine: Optional[int] = None
     mois: Optional[int] = None
@@ -169,31 +167,26 @@ class PredictRequest(BaseModel):
     indice_qualite: Optional[int] = 3
 
 
-# ══════════════════════════════════════════════════════════════════
-# ENDPOINTS
-# ══════════════════════════════════════════════════════════════════
+# --- ENDPOINTS ----------------------------------------------------------------
 
 @app.get("/", tags=["Status"])
 def root():
-    """API health check."""
     return {
-        "status":      "✅ Modality-Flow API is running",
-        "version":     "2.0.0",
+        "status":      "Modality-Flow API is running",
+        "version":     "2.1.0",
         "timestamp":   datetime.now().isoformat(),
         "docs":        "/docs",
         "database":    "Railway PostgreSQL",
-        "description": "Éco-Mobilité 2026 — Montpellier Méditerranée Métropole"
+        "ml_model":    "RandomForest v2 — R2=0.9977, MAE=0.14",
+        "description": "Eco-Mobilite 2026 — Montpellier Mediterranee Metropole"
     }
 
 
-# ── VÉLOMAGG STATIONS (Real-time) ────────────────────────────────
+# -- STATIONS (real-time) ------------------------------------------------------
 
-@app.get("/stations", tags=["Vélomagg"])
+@app.get("/stations", tags=["Velomagg"])
 def get_stations():
-    """
-    Returns all Vélomagg stations with real-time bike availability.
-    Source: PostgreSQL — updated every minute via Railway cron job.
-    """
+    """All Velomagg stations with real-time bike availability."""
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
@@ -227,8 +220,7 @@ def get_stations():
             ORDER BY d.nom
         """)
         stations = cur.fetchall()
-        cur.close()
-        con.close()
+        cur.close(); con.close()
         return {
             "count":     len(stations),
             "timestamp": datetime.now().isoformat(),
@@ -239,26 +231,16 @@ def get_stations():
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.get("/stations/{station_id}", tags=["Vélomagg"])
+@app.get("/stations/{station_id}", tags=["Velomagg"])
 def get_station(station_id: str):
-    """
-    Returns a single Vélomagg station with real-time bike availability.
-    """
+    """Single Velomagg station with real-time bike availability."""
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         cur.execute("""
             SELECT
-                d.station_id,
-                d.nom,
-                d.adresse,
-                d.lat,
-                d.lon,
-                d.capacite,
-                f.bikes_available,
-                f.docks_available,
-                f.is_renting,
-                f.timestamp,
+                d.station_id, d.nom, d.adresse, d.lat, d.lon, d.capacite,
+                f.bikes_available, f.docks_available, f.is_renting, f.timestamp,
                 ROUND(f.bikes_available * 100.0 / NULLIF(d.capacite, 0), 1) AS taux_disponibilite
             FROM public.dim_stations d
             LEFT JOIN modality.fact_station_status f
@@ -270,8 +252,7 @@ def get_station(station_id: str):
             WHERE d.station_id = %s
         """, (station_id,))
         station = cur.fetchone()
-        cur.close()
-        con.close()
+        cur.close(); con.close()
         if not station:
             raise HTTPException(status_code=404, detail=f"Station {station_id} not found")
         return dict(station)
@@ -281,40 +262,73 @@ def get_station(station_id: str):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── ML PREDICTION ─────────────────────────────────────────────────
+# -- ML PREDICTION -------------------------------------------------------------
 
 @app.post("/stations/{station_id}/predict", tags=["ML"])
 def predict_availability(station_id: str, req: PredictRequest = None):
     """
-    Predicts bike availability using RandomForest ML model.
-    R²=0.992, MAE=0.30 bikes.
+    Predicts bike availability using RandomForest ML model v2.
+
+    Model features: time + geographic (lat, lon, capacite, dist_centre_km)
+    + weather + air quality + demographics (INSEE 2020).
+
+    Station geographic data is fetched automatically from the database.
+    R2=0.9977, MAE=0.14 bikes.
     """
     if ml_model is None:
         raise HTTPException(status_code=503, detail="ML model not loaded")
 
+    # Fetch station geographic data from DB
+    try:
+        con = get_pg()
+        cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT lat, lon, capacite,
+                SQRT(
+                    POWER((lat - 43.6109) * 111, 2) +
+                    POWER((lon - 3.8763)  * 85,  2)
+                ) AS dist_centre_km
+            FROM public.dim_stations
+            WHERE station_id = %s
+        """, (station_id,))
+        station = cur.fetchone()
+        cur.close(); con.close()
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"DB error: {str(e)}")
+
+    if not station:
+        raise HTTPException(status_code=404, detail=f"Station {station_id} not found")
+
+    # Time defaults
     now          = datetime.now()
-    heure        = req.heure         if req and req.heure         is not None else now.hour
-    jour_semaine = req.jour_semaine  if req and req.jour_semaine  is not None else now.weekday()
-    mois         = req.mois          if req and req.mois          is not None else now.month
-    jour_mois    = req.jour_mois     if req and req.jour_mois     is not None else now.day
+    heure        = req.heure        if req and req.heure        is not None else now.hour
+    jour_semaine = req.jour_semaine if req and req.jour_semaine is not None else now.weekday()
+    mois         = req.mois         if req and req.mois         is not None else now.month
+    jour_mois    = req.jour_mois    if req and req.jour_mois    is not None else now.day
     precipitation= req.precipitation  if req else 0.0
     temperature  = req.temperature_max if req else 20.0
     wind_speed   = req.wind_speed_max  if req else 10.0
     aqi          = req.indice_qualite  if req else 3
 
+    # Encode station_id
     try:
         station_enc = ml_encoder.transform([station_id])[0]
     except Exception:
         station_enc = 0
 
-    import pandas as pd
-    X = pd.DataFrame([{
+    # Build feature row — must match ml_features order exactly
+    row = {
         "heure":             heure,
         "jour_semaine":      jour_semaine,
         "mois":              mois,
         "jour_mois":         jour_mois,
         "heure_pointe":      1 if (7 <= heure <= 9 or 17 <= heure <= 19) else 0,
         "weekend":           1 if jour_semaine >= 5 else 0,
+        "lat":               float(station["lat"]),
+        "lon":               float(station["lon"]),
+        "capacite":          float(station["capacite"]),
+        "dist_centre_km":    float(station["dist_centre_km"]),
+        "station_encoded":   station_enc,
         "temperature_max":   temperature,
         "precipitation_sum": precipitation,
         "wind_speed_max":    wind_speed,
@@ -322,37 +336,45 @@ def predict_availability(station_id: str, req: PredictRequest = None):
         "no2":               10,
         "o3":                50,
         "pm10":              15,
-        "station_encoded":   station_enc,
-    }])
+        **MONTPELLIER_DEMO,
+    }
 
+    X          = pd.DataFrame([row])[ml_features].fillna(0)
     prediction = max(0, round(float(ml_model.predict(X)[0]), 1))
 
     return {
         "station_id": station_id,
         "prediction": {
-            "bikes_predicted": prediction,
-            "availability":    "good" if prediction >= 5 else "average" if prediction >= 2 else "low",
-            "confidence":      "high (R²=0.992)"
+            "bikes_predicted":  prediction,
+            "availability":     "good" if prediction >= 5 else "average" if prediction >= 2 else "low",
+            "confidence":       "high (R2=0.9977, MAE=0.14)"
         },
         "conditions": {
             "hour":          heure,
             "day_of_week":   jour_semaine,
             "is_peak_hour":  bool(7 <= heure <= 9 or 17 <= heure <= 19),
             "is_weekend":    bool(jour_semaine >= 5),
-            "precipitation": precipitation
+            "precipitation": precipitation,
+            "temperature":   temperature,
         },
-        "model":     "RandomForest — MAE=0.30 bikes",
+        "station": {
+            "lat":           float(station["lat"]),
+            "lon":           float(station["lon"]),
+            "capacite":      float(station["capacite"]),
+            "dist_centre_km": round(float(station["dist_centre_km"]), 2),
+        },
+        "model":     "RandomForest v2 — geo + demographics + weather",
         "timestamp": datetime.now().isoformat()
     }
 
 
-# ── CO₂ ROUTE OPTIMIZATION ────────────────────────────────────────
+# -- CO2 ROUTE OPTIMIZATION ----------------------------------------------------
 
-@app.post("/route/co2", tags=["CO₂"])
+@app.post("/route/co2", tags=["CO2"])
 def compute_route(req: RouteRequest):
     """
     Computes the lowest-carbon route from A to B.
-    Haversine distance + ADEME 2024 CO₂ factors.
+    Haversine distance + ADEME 2024 CO2 factors.
     """
     R    = 6371
     dlat = np.radians(req.lat_b - req.lat_a)
@@ -368,18 +390,14 @@ def compute_route(req: RouteRequest):
 
     routes = []
     for mode, co2_per_km in CO2_FACTORS.items():
-        speed        = SPEEDS.get(mode, 20)
-        duration_min = round(distance_km / speed * 60, 1)
+        duration_min = round(distance_km / SPEEDS[mode] * 60, 1)
         co2_total_g  = round(distance_km * co2_per_km, 1)
         co2_saved    = round(distance_km * CO2_FACTORS["voiture"] - co2_total_g, 1)
 
         score = co2_total_g
-        if mode == "velo" and req.precipitation > 5:
-            score += 50
-        if mode == "velo" and req.bikes_available == 0:
-            score += 100
-        if mode == "marche" and distance_km > 2:
-            score += 200
+        if mode == "velo"   and req.precipitation > 5:    score += 50
+        if mode == "velo"   and req.bikes_available == 0: score += 100
+        if mode == "marche" and distance_km > 2:          score += 200
 
         routes.append({
             "mode":             mode,
@@ -393,12 +411,11 @@ def compute_route(req: RouteRequest):
 
     routes.sort(key=lambda x: x["score"])
     routes[0]["recommended"] = True
-    best = routes[0]
 
     return {
         "distance_km": distance_km,
-        "best_mode":   best["mode"],
-        "co2_saved_g": best["co2_saved_vs_car"],
+        "best_mode":   routes[0]["mode"],
+        "co2_saved_g": routes[0]["co2_saved_vs_car"],
         "routes":      routes,
         "conditions": {
             "hour":            heure,
@@ -410,27 +427,18 @@ def compute_route(req: RouteRequest):
     }
 
 
-# ── PARKINGS (Real-time) ──────────────────────────────────────────
+# -- PARKINGS (real-time) ------------------------------------------------------
 
 @app.get("/parkings", tags=["Parkings"])
 def get_parkings():
-    """
-    Returns all parkings with real-time occupancy.
-    Source: PostgreSQL — updated every 5 minutes.
-    """
+    """All parkings with real-time occupancy."""
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         cur.execute("""
             SELECT
-                parking_id,
-                free_spots,
-                total_spots,
-                taux_occupation,
-                status,
-                lat,
-                lon,
-                timestamp,
+                parking_id, free_spots, total_spots, taux_occupation,
+                status, lat, lon, timestamp,
                 CASE
                     WHEN taux_occupation >= 80 THEN 'full'
                     WHEN taux_occupation >= 60 THEN 'busy'
@@ -442,8 +450,7 @@ def get_parkings():
             ORDER BY taux_occupation DESC
         """)
         parkings = cur.fetchall()
-        cur.close()
-        con.close()
+        cur.close(); con.close()
         return {
             "count":     len(parkings),
             "timestamp": datetime.now().isoformat(),
@@ -454,29 +461,23 @@ def get_parkings():
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── FREE BIKES (Real-time) ────────────────────────────────────────
+# -- FREE BIKES (real-time) ----------------------------------------------------
 
-@app.get("/free-bikes", tags=["Vélomagg"])
+@app.get("/free-bikes", tags=["Velomagg"])
 def get_free_bikes():
-    """
-    Returns all free-floating bikes with current GPS location.
-    Source: PostgreSQL — updated every minute.
-    """
+    """All free-floating bikes with current GPS location."""
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         cur.execute("""
-            SELECT
-                bike_id, lat, lon,
-                is_reserved, is_disabled,
-                vehicle_type_id, timestamp
+            SELECT bike_id, lat, lon, is_reserved, is_disabled,
+                   vehicle_type_id, timestamp
             FROM modality.fact_free_bikes
             WHERE is_disabled = false
             ORDER BY timestamp DESC
         """)
         bikes = cur.fetchall()
-        cur.close()
-        con.close()
+        cur.close(); con.close()
         return {
             "count":     len(bikes),
             "timestamp": datetime.now().isoformat(),
@@ -487,14 +488,11 @@ def get_free_bikes():
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── AIR QUALITY (Static — Atmo Occitanie) ────────────────────────
+# -- AIR QUALITY ---------------------------------------------------------------
 
 @app.get("/aqi", tags=["Environment"])
 def get_aqi(date: Optional[str] = None):
-    """
-    Returns air quality index (AQI) data.
-    Source: PostgreSQL — Atmo Occitanie (498 days).
-    """
+    """Air quality index — Atmo Occitanie (498 days)."""
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
@@ -503,30 +501,22 @@ def get_aqi(date: Optional[str] = None):
         else:
             cur.execute("SELECT * FROM public.dim_qualite_air ORDER BY date DESC LIMIT 7")
         records = cur.fetchall()
-        cur.close()
-        con.close()
+        cur.close(); con.close()
         data = [dict(r) for r in records]
         for r in data:
-            if "date" in r and r["date"]:
+            if r.get("date"):
                 r["date"] = str(r["date"])
-        return {
-            "today":     data[0] if data else {},
-            "history":   data,
-            "source":    "atmo_occitanie",
-            "timestamp": datetime.now().isoformat()
-        }
+        return {"today": data[0] if data else {}, "history": data,
+                "source": "atmo_occitanie", "timestamp": datetime.now().isoformat()}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── WEATHER (Static — Open-Meteo) ────────────────────────────────
+# -- WEATHER -------------------------------------------------------------------
 
 @app.get("/meteo", tags=["Environment"])
 def get_meteo(date: Optional[str] = None):
-    """
-    Returns weather data for Montpellier.
-    Source: PostgreSQL — Open-Meteo (366 days).
-    """
+    """Weather data for Montpellier — Open-Meteo (366 days)."""
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
@@ -535,61 +525,45 @@ def get_meteo(date: Optional[str] = None):
         else:
             cur.execute("SELECT * FROM public.dim_meteo ORDER BY date DESC LIMIT 7")
         records = cur.fetchall()
-        cur.close()
-        con.close()
+        cur.close(); con.close()
         data = [dict(r) for r in records]
         for r in data:
-            if "date" in r and r["date"]:
+            if r.get("date"):
                 r["date"] = str(r["date"])
-        return {
-            "today":     data[0] if data else {},
-            "history":   data,
-            "source":    "open_meteo",
-            "timestamp": datetime.now().isoformat()
-        }
+        return {"today": data[0] if data else {}, "history": data,
+                "source": "open_meteo", "timestamp": datetime.now().isoformat()}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── CO₂ FACTORS (Static) ─────────────────────────────────────────
+# -- CO2 FACTORS ---------------------------------------------------------------
 
-@app.get("/co2/factors", tags=["CO₂"])
+@app.get("/co2/factors", tags=["CO2"])
 def get_co2_factors():
-    """
-    Returns CO₂ emission factors per transport mode.
-    Source: PostgreSQL — ADEME 2024.
-    """
+    """CO2 emission factors per transport mode — ADEME 2024."""
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         cur.execute("SELECT * FROM public.ref_co2_factors ORDER BY co2_g_per_km")
         records = cur.fetchall()
-        cur.close()
-        con.close()
-        return {
-            "factors":   [dict(r) for r in records],
-            "source":    "ADEME 2024",
-            "timestamp": datetime.now().isoformat()
-        }
+        cur.close(); con.close()
+        return {"factors": [dict(r) for r in records],
+                "source": "ADEME 2024", "timestamp": datetime.now().isoformat()}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── HISTORICAL DATA ───────────────────────────────────────────────
+# -- HISTORICAL DATA -----------------------------------------------------------
 
 @app.get("/historique/{station_id}", tags=["Historical"])
 def get_historique(station_id: str, limit: int = 100):
-    """
-    Returns historical bike availability for a given station.
-    Source: PostgreSQL — 644,880 rows (2024-2026).
-    """
+    """Historical bike availability for a given station."""
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         cur.execute("""
             SELECT
-                station_id,
-                timestamp,
+                station_id, timestamp,
                 bisiklet_sayisi        AS bikes_available,
                 EXTRACT(HOUR  FROM timestamp) AS hour,
                 EXTRACT(DOW   FROM timestamp) AS day_of_week,
@@ -600,38 +574,28 @@ def get_historique(station_id: str, limit: int = 100):
             LIMIT %s
         """, (station_id, limit))
         records = cur.fetchall()
-        cur.close()
-        con.close()
+        cur.close(); con.close()
         data = [dict(r) for r in records]
         for r in data:
-            if "timestamp" in r and r["timestamp"]:
+            if r.get("timestamp"):
                 r["timestamp"] = str(r["timestamp"])
-        return {
-            "station_id": station_id,
-            "count":      len(data),
-            "source":     "postgresql_historique",
-            "data":       data
-        }
+        return {"station_id": station_id, "count": len(data),
+                "source": "postgresql_historique", "data": data}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── ML FEATURES ───────────────────────────────────────────────────
+# -- ML FEATURES ---------------------------------------------------------------
 
 @app.get("/ml/features", tags=["ML"])
 def get_ml_features(station_id: Optional[str] = None, limit: int = 100):
-    """
-    Returns ML features combining bike history, weather and AQI.
-    Source: PostgreSQL JOIN.
-    """
+    """ML feature view — history + weather + AQI joined."""
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
-
         query = """
             SELECT
-                h.station_id,
-                h.timestamp,
+                h.station_id, h.timestamp,
                 h.bisiklet_sayisi AS bikes_available,
                 EXTRACT(HOUR  FROM h.timestamp) AS hour,
                 EXTRACT(DOW   FROM h.timestamp) AS day_of_week,
@@ -640,13 +604,8 @@ def get_ml_features(station_id: Optional[str] = None, limit: int = 100):
                           OR EXTRACT(HOUR FROM h.timestamp) BETWEEN 17 AND 19
                      THEN 1 ELSE 0 END AS is_peak_hour,
                 CASE WHEN EXTRACT(DOW FROM h.timestamp) IN (0,6) THEN 1 ELSE 0 END AS is_weekend,
-                m.temperature_max,
-                m.precipitation_sum,
-                m.wind_speed_max,
-                q.indice_qualite AS aqi,
-                q.no2,
-                q.o3,
-                q.pm10
+                m.temperature_max, m.precipitation_sum, m.wind_speed_max,
+                q.indice_qualite AS aqi, q.no2, q.o3, q.pm10
             FROM public.fact_velomagg_historique h
             LEFT JOIN public.dim_meteo m ON CAST(h.timestamp AS DATE) = m.date
             LEFT JOIN public.dim_qualite_air q ON CAST(h.timestamp AS DATE) = q.date
@@ -658,72 +617,132 @@ def get_ml_features(station_id: Optional[str] = None, limit: int = 100):
         else:
             query += " ORDER BY h.timestamp DESC LIMIT %s"
             cur.execute(query, (limit,))
-
         records = cur.fetchall()
-        cur.close()
-        con.close()
+        cur.close(); con.close()
         data = [dict(r) for r in records]
         for r in data:
-            if "timestamp" in r and r["timestamp"]:
+            if r.get("timestamp"):
                 r["timestamp"] = str(r["timestamp"])
-        return {
-            "count":  len(data),
-            "source": "postgresql_ml_features",
-            "data":   data
-        }
+        return {"count": len(data), "source": "postgresql_ml_features", "data": data}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ── TAM STOPS & ROUTES (Static) ──────────────────────────────────
+# -- TAM -----------------------------------------------------------------------
 
 @app.get("/tam/stops", tags=["TAM"])
 def get_tam_stops():
-    """
-    Returns all TAM public transport stops (2,112 stops).
-    Source: PostgreSQL — GTFS TAM.
-    """
+    """All TAM public transport stops (2,112 stops)."""
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         cur.execute("SELECT * FROM public.dim_tam_stops")
         records = cur.fetchall()
-        cur.close()
-        con.close()
-        return {
-            "count":  len(records),
-            "source": "gtfs_tam",
-            "stops":  [dict(r) for r in records]
-        }
+        cur.close(); con.close()
+        return {"count": len(records), "source": "gtfs_tam",
+                "stops": [dict(r) for r in records]}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.get("/tam/routes", tags=["TAM"])
 def get_tam_routes():
-    """
-    Returns all TAM bus and tram lines (43 lines).
-    Source: PostgreSQL — GTFS TAM.
-    """
+    """All TAM bus and tram lines (43 lines)."""
     try:
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         cur.execute("SELECT * FROM public.dim_tam_routes")
         records = cur.fetchall()
-        cur.close()
-        con.close()
+        cur.close(); con.close()
+        return {"count": len(records), "source": "gtfs_tam",
+                "routes": [dict(r) for r in records]}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# -- DEMOGRAPHICS --------------------------------------------------------------
+
+@app.get("/demographics", tags=["Demographics"])
+def get_demographics():
+    """
+    INSEE RP 2020 commune-level demographic data for
+    Montpellier Mediterranee Metropole (31 communes).
+    """
+    try:
+        con = get_pg()
+        cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT codgeo, population,
+                   pct_high_income, pct_low_income,
+                   pct_65plus, pct_young_adult, pct_youth,
+                   pct_cadres, pct_employes, pct_ouvriers, pct_retraites,
+                   updated_at
+            FROM public.dim_communes_demographics
+            ORDER BY population DESC
+        """)
+        records = cur.fetchall()
+        cur.close(); con.close()
+        data = [dict(r) for r in records]
+        for r in data:
+            if r.get("updated_at"):
+                r["updated_at"] = str(r["updated_at"])
+        return {"count": len(data), "source": "insee_rp_2020", "data": data}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# -- FAIRNESS ------------------------------------------------------------------
+
+@app.get("/fairness", tags=["Fairness"])
+def get_fairness():
+    """
+    Spatial fairness analysis — station distribution by zone
+    (centre / intermediaire / peripherique) with demographic context.
+
+    Uses v_station_fairness view built from dim_stations + dim_communes_demographics.
+    No personal data — aggregate station-level analysis only (RGPD compliant).
+    """
+    try:
+        con = get_pg()
+        cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+
+        # Zone-level summary
+        cur.execute("""
+            SELECT
+                zone,
+                COUNT(*)                     AS n_stations,
+                ROUND(AVG(dist_centre_km)::numeric, 2) AS avg_dist_km,
+                ROUND(AVG(pct_high_income)::numeric, 1) AS avg_pct_high_income,
+                ROUND(AVG(pct_65plus)::numeric, 1)      AS avg_pct_65plus,
+                ROUND(AVG(pct_young_adult)::numeric, 1) AS avg_pct_young_adult
+            FROM public.v_station_fairness
+            GROUP BY zone
+            ORDER BY avg_dist_km
+        """)
+        zones = [dict(r) for r in cur.fetchall()]
+
+        # Station-level detail
+        cur.execute("""
+            SELECT station_id, nom, lat, lon, zone,
+                   dist_centre_km, pct_high_income, pct_65plus, pct_young_adult
+            FROM public.v_station_fairness
+            ORDER BY dist_centre_km
+        """)
+        stations = [dict(r) for r in cur.fetchall()]
+
+        cur.close(); con.close()
+
         return {
-            "count":  len(records),
-            "source": "gtfs_tam",
-            "routes": [dict(r) for r in records]
+            "zone_summary": zones,
+            "stations":     stations,
+            "note":         "Aggregate station-level analysis only — no personal data (RGPD compliant)",
+            "timestamp":    datetime.now().isoformat()
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ══════════════════════════════════════════════════════════════════
-# MAIN
-# ══════════════════════════════════════════════════════════════════
+# --- MAIN ---------------------------------------------------------------------
 
 if __name__ == "__main__":
     import uvicorn
