@@ -19,6 +19,7 @@ Endpoints:
   GET  /tam/routes                -> TAM lines
   GET  /demographics              -> INSEE commune demographics
   GET  /fairness                  -> Spatial fairness analysis
+  POST /journey                   -> Multimodal journey planner (ML + TAM + CO2)
 
 Docs: http://localhost:8000/docs
 
@@ -27,6 +28,7 @@ Run (local):
 """
 
 import os
+import math
 import pickle
 import numpy as np
 import psycopg2
@@ -159,6 +161,20 @@ class RouteRequest(BaseModel):
     heure: Optional[int] = None
     precipitation: Optional[float] = 0.0
     bikes_available: Optional[int] = 5
+
+class JourneyRequest(BaseModel):
+    lat_a: float
+    lon_a: float
+    lat_b: float
+    lon_b: float
+    heure: Optional[int]           = None
+    jour_semaine: Optional[int]    = None
+    mois: Optional[int]            = None
+    jour_mois: Optional[int]       = None
+    precipitation: Optional[float] = 0.0
+    temperature: Optional[float]   = 20.0
+    wind_speed: Optional[float]    = 10.0
+    indice_qualite: Optional[int]  = 3
 
 class PredictRequest(BaseModel):
     heure: Optional[int] = None
@@ -744,6 +760,221 @@ def get_fairness():
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+# -- JOURNEY PLANNER ----------------------------------------------------------
+
+@app.post("/journey", tags=["Journey"])
+def compute_journey(req: JourneyRequest):
+    """
+    Multimodal journey planner — A to B.
+
+    Returns options for velo, tram, bus, marche, voiture ranked by CO2.
+    Includes ML bike availability prediction, time until next available bike,
+    nearest TAM stop with next departure, and weather/AQI impact.
+    """
+    now          = datetime.now()
+    heure        = req.heure        if req.heure        is not None else now.hour
+    jour_semaine = req.jour_semaine if req.jour_semaine is not None else now.weekday()
+    mois         = req.mois         if req.mois         is not None else now.month
+    jour_mois    = req.jour_mois    if req.jour_mois    is not None else now.day
+    precipitation = req.precipitation or 0.0
+    temperature   = req.temperature  or 20.0
+    aqi           = req.indice_qualite or 3
+
+    # 1. Haversine distance A -> B
+    dlat = math.radians(req.lat_b - req.lat_a)
+    dlon = math.radians(req.lon_b - req.lon_a)
+    a = (math.sin(dlat/2)**2 +
+         math.cos(math.radians(req.lat_a)) *
+         math.cos(math.radians(req.lat_b)) *
+         math.sin(dlon/2)**2)
+    distance_km = round(6371 * 2 * math.asin(math.sqrt(a)), 2)
+
+    # 2. Base route options
+    co2_factors = {"velo": 0, "tram": 4, "bus": 68, "voiture": 120, "marche": 0}
+    speeds      = {"velo": 15, "tram": 25, "bus": 20, "voiture": 30, "marche": 5}
+
+    routes = {}
+    for mode, co2_per_km in co2_factors.items():
+        duration_min     = round(distance_km / speeds[mode] * 60, 1)
+        co2_total_g      = round(distance_km * co2_per_km, 1)
+        co2_saved_vs_car = round(distance_km * co2_factors["voiture"] - co2_total_g, 1)
+        routes[mode] = {
+            "mode":             mode,
+            "distance_km":      distance_km,
+            "duration_min":     duration_min,
+            "co2_g":            co2_total_g,
+            "co2_saved_vs_car": co2_saved_vs_car,
+            "recommended":      False,
+            "score":            co2_total_g,
+            "warnings":         [],
+            "details":          {}
+        }
+
+    # 3. ML bike availability + nearest station
+    bike_info = {
+        "available": False, "station_id": None, "predicted_bikes": 0,
+        "minutes_until_available": None, "station_nom": None,
+        "dist_to_station_km": None
+    }
+
+    if ml_model is not None:
+        try:
+            con = get_pg()
+            cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+            cur.execute("""
+                SELECT station_id, nom, lat, lon, capacite,
+                    SQRT(POWER((lat - %s)*111,2) + POWER((lon - %s)*85,2)) AS dist_km,
+                    SQRT(POWER((lat - 43.6109)*111,2) + POWER((lon - 3.8763)*85,2)) AS dist_centre_km
+                FROM public.dim_stations
+                WHERE type = 'velomagg'
+                ORDER BY dist_km LIMIT 1
+            """, (req.lat_a, req.lon_a))
+            station = cur.fetchone()
+            cur.close(); con.close()
+
+            if station:
+                try:
+                    station_enc = ml_encoder.transform([station["station_id"]])[0]
+                except Exception:
+                    station_enc = 0
+
+                def predict_bikes(h):
+                    row = {
+                        "heure": h, "jour_semaine": jour_semaine,
+                        "mois": mois, "jour_mois": jour_mois,
+                        "heure_pointe": 1 if (7<=h<=9 or 17<=h<=19) else 0,
+                        "weekend": 1 if jour_semaine >= 5 else 0,
+                        "lat": float(station["lat"]), "lon": float(station["lon"]),
+                        "capacite": float(station["capacite"]),
+                        "dist_centre_km": float(station["dist_centre_km"]),
+                        "station_encoded": station_enc,
+                        "temperature_max": temperature,
+                        "precipitation_sum": precipitation,
+                        "wind_speed_max": req.wind_speed or 10.0,
+                        "indice_qualite": aqi,
+                        "no2": 10, "o3": 50, "pm10": 15,
+                        "pct_young_adult": 31.20, "pct_active": 38.05,
+                        "pct_65plus": 18.85, "pct_high_income": 12.79,
+                        "pct_low_income": 22.46, "population": 299096,
+                    }
+                    X = pd.DataFrame([row])[ml_features].fillna(0)
+                    return max(0, round(float(ml_model.predict(X)[0]), 1))
+
+                predicted_now = predict_bikes(heure)
+                bike_info["station_id"]        = station["station_id"]
+                bike_info["station_nom"]        = station["nom"]
+                bike_info["predicted_bikes"]    = predicted_now
+                bike_info["dist_to_station_km"] = round(float(station["dist_km"]), 2)
+                bike_info["available"]          = predicted_now >= 1
+
+                # Time until next bike available
+                if predicted_now < 1:
+                    for delta_min in [30, 60, 90, 120]:
+                        future_h    = (heure + delta_min // 60) % 24
+                        future_pred = predict_bikes(future_h)
+                        if future_pred >= 1:
+                            bike_info["minutes_until_available"] = delta_min
+                            break
+
+        except Exception as e:
+            bike_info["error"] = str(e)
+
+    routes["velo"]["details"]["bike_prediction"] = bike_info
+
+    # 4. AQI and weather scoring adjustments
+    if precipitation > 5:
+        routes["velo"]["score"]   += 50
+        routes["marche"]["score"] += 30
+        routes["velo"]["warnings"].append("Rain expected — cycling may be uncomfortable")
+        routes["marche"]["warnings"].append("Rain expected")
+
+    if aqi >= 4:
+        routes["velo"]["score"]   += 40
+        routes["marche"]["score"] += 40
+        routes["velo"]["warnings"].append(f"Poor air quality (AQI={aqi}) — not recommended for sensitive groups")
+        routes["marche"]["warnings"].append(f"Poor air quality (AQI={aqi})")
+
+    if distance_km > 5:
+        routes["marche"]["score"] += 200
+        routes["marche"]["warnings"].append("Distance too long for walking (>5km)")
+
+    if not bike_info["available"]:
+        routes["velo"]["score"] += 100
+        if bike_info.get("minutes_until_available"):
+            routes["velo"]["warnings"].append(
+                f"No bikes available now — next bike in ~{bike_info['minutes_until_available']} min"
+            )
+        else:
+            routes["velo"]["warnings"].append("No bikes predicted at nearest station")
+
+    # 5. Nearest TAM stop + next departures
+    tam_info = {"stop_name": None, "dist_km": None, "next_departures": []}
+    try:
+        con = get_pg()
+        cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT stop_id, stop_name, stop_lat, stop_lon,
+                SQRT(POWER((stop_lat - %s)*111,2) + POWER((stop_lon - %s)*85,2)) AS dist_km
+            FROM public.dim_tam_stops
+            WHERE stop_lat IS NOT NULL
+            ORDER BY dist_km LIMIT 1
+        """, (req.lat_a, req.lon_a))
+        nearest_stop = cur.fetchone()
+
+        if nearest_stop:
+            tam_info["stop_name"] = nearest_stop["stop_name"]
+            tam_info["dist_km"]   = round(float(nearest_stop["dist_km"]), 2)
+            tam_info["stop_id"]   = str(nearest_stop["stop_id"])
+
+            current_time = f"{heure:02d}:{now.minute:02d}:00"
+            cur.execute("""
+                SELECT st.departure_time, r.route_name, r.route_color, t.trip_headsign
+                FROM public.dim_tam_stop_times st
+                JOIN public.dim_tam_trips  t ON st.trip_id = t.trip_id
+                JOIN public.dim_tam_routes r ON t.route_id = r.route_id
+                WHERE st.stop_id = %s
+                  AND st.departure_time >= %s
+                ORDER BY st.departure_time
+                LIMIT 5
+            """, (str(nearest_stop["stop_id"]), current_time))
+            tam_info["next_departures"] = [dict(d) for d in cur.fetchall()]
+
+        cur.close(); con.close()
+    except Exception as e:
+        tam_info["error"] = str(e)
+
+    routes["tram"]["details"]["tam"] = tam_info
+    routes["bus"]["details"]["tam"]  = tam_info
+
+    # 6. Final ranking + recommendation
+    sorted_routes = sorted(routes.values(), key=lambda x: x["score"])
+    sorted_routes[0]["recommended"] = True
+    best_mode = sorted_routes[0]["mode"]
+
+    co2_saved = routes[best_mode]["co2_saved_vs_car"]
+
+    return {
+        "distance_km": distance_km,
+        "best_mode":   best_mode,
+        "routes":      sorted_routes,
+        "conditions": {
+            "hour":         heure,
+            "day_of_week":  jour_semaine,
+            "is_peak_hour": bool(7 <= heure <= 9 or 17 <= heure <= 19),
+            "is_weekend":   bool(jour_semaine >= 5),
+            "precipitation": precipitation,
+            "temperature":  temperature,
+            "aqi":          aqi,
+        },
+        "carbon_passport": {
+            "co2_saved_vs_car_g": co2_saved,
+            "trees_equivalent":   round(co2_saved / 22000, 4) if co2_saved > 0 else 0,
+            "best_mode_co2_g":    routes[best_mode]["co2_g"],
+        },
+        "timestamp": datetime.now().isoformat()
+    }
 
 
 # --- MAIN ---------------------------------------------------------------------
