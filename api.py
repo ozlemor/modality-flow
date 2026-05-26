@@ -30,6 +30,7 @@ Run (local):
 import os
 import math
 import pickle
+import joblib
 import numpy as np
 import psycopg2
 import psycopg2.extras
@@ -40,6 +41,7 @@ from typing import Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+
 
 # --- CONFIG -------------------------------------------------------------------
 
@@ -131,8 +133,12 @@ def load_ml_model():
         print(f"ML model not found: {MODEL_PATH}")
         return
     try:
-        with open(MODEL_PATH, "rb") as f:
-            data = pickle.load(f)
+        try: 
+            with open(MODEL_PATH, "rb") as f:
+                data = pickle.load(f)
+        except Exception:
+            data = joblib.load(MODEL_PATH)
+        
         ml_model    = data["model"]
         ml_encoder  = data["encoder"]
         ml_features = data["features"]
