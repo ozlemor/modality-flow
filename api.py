@@ -42,7 +42,6 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-
 # --- CONFIG -------------------------------------------------------------------
 
 BASE_DIR   = Path(os.environ.get("VELO_DIR", "/app"))
@@ -133,12 +132,11 @@ def load_ml_model():
         print(f"ML model not found: {MODEL_PATH}")
         return
     try:
-        try: 
+        try:
             with open(MODEL_PATH, "rb") as f:
                 data = pickle.load(f)
         except Exception:
             data = joblib.load(MODEL_PATH)
-        
         ml_model    = data["model"]
         ml_encoder  = data["encoder"]
         ml_features = data["features"]
@@ -462,7 +460,7 @@ def get_parkings():
         con = get_pg()
         cur = con.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         cur.execute("""
-            SELECT
+            SELECT DISTINCT ON (parking_id)
                 parking_id, free_spots, total_spots, taux_occupation,
                 status, lat, lon, timestamp,
                 CASE
@@ -472,8 +470,7 @@ def get_parkings():
                     ELSE 'available'
                 END AS occupancy_level
             FROM modality.fact_parkings_status
-            WHERE timestamp = (SELECT MAX(timestamp) FROM modality.fact_parkings_status)
-            ORDER BY taux_occupation DESC
+            ORDER BY parking_id, timestamp DESC
         """)
         parkings = cur.fetchall()
         cur.close(); con.close()
