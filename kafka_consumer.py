@@ -121,17 +121,37 @@ def handle_meteo(msg, cur):
 
 def handle_aqi(msg, cur):
     today = datetime.now().date().isoformat()
+    pm10 = msg.get("pm10") or 0
+    o3   = msg.get("o3")   or 0
+    no2  = msg.get("no2")  or 0
+
+    # Compute indice_qualite from pollutants (simplified ATMO scale 1-6)
+    if pm10 <= 10 and o3 <= 50 and no2 <= 25:
+        indice = 1
+    elif pm10 <= 20 and o3 <= 80 and no2 <= 50:
+        indice = 2
+    elif pm10 <= 30 and o3 <= 120 and no2 <= 100:
+        indice = 3
+    elif pm10 <= 50 and o3 <= 160 and no2 <= 150:
+        indice = 4
+    elif pm10 <= 80 and o3 <= 200 and no2 <= 200:
+        indice = 5
+    else:
+        indice = 6
+
     cur.execute("""
         INSERT INTO public.dim_qualite_air
-            (date, pm10, pm25, no2, o3)
-        VALUES (%s, %s, %s, %s, %s)
+            (date, indice_qualite, pm10, pm25, no2, o3)
+        VALUES (%s, %s, %s, %s, %s, %s)
         ON CONFLICT (date) DO UPDATE SET
+            indice_qualite = EXCLUDED.indice_qualite,
             pm10 = EXCLUDED.pm10,
             pm25 = EXCLUDED.pm25,
             no2  = EXCLUDED.no2,
             o3   = EXCLUDED.o3
     """, (
         today,
+        indice,
         msg.get("pm10"),
         msg.get("pm25"),
         msg.get("no2"),
@@ -161,8 +181,8 @@ def run():
 
     consumer = Consumer({
         "bootstrap.servers": KAFKA_BOOTSTRAP_SERVER,
-        "group.id": "modality-flow-solo",
-        "auto.offset.reset": "earliest",
+        "group.id":          CONSUMER_GROUP,
+        "auto.offset.reset": "latest",
     })
     consumer.subscribe(TOPICS)
     log.info(f"  Subscribed to {TOPICS}")
