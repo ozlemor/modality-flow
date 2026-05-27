@@ -985,3 +985,336 @@ def compute_journey(req: JourneyRequest):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=False)
+
+# =============================================================================
+# LILLE ENDPOINTS
+# =============================================================================
+
+@app.get("/lille/stations")
+def get_lille_stations():
+    """V'Lille stations — temps réel"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT station_id, nom, adresse, commune, code_insee,
+                   etat, type, nb_velos_dispo, nb_places_dispo,
+                   etat_connexion, lon, lat
+            FROM lille.dim_vlille_stations
+            ORDER BY nom
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "stations": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/lille/parkings")
+def get_lille_parkings():
+    """Parkings MEL — temps réel"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT parking_id, nom, adresse, ville, etat,
+                   nb_total, nb_libre, taux_occupation, lon, lat
+            FROM lille.dim_parkings
+            ORDER BY nom
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "parkings": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/lille/arrets")
+def get_lille_arrets():
+    """ilévia — arrêts bus/métro/tram"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT stop_id, stop_name, commune, lon, lat
+            FROM lille.dim_arrets
+            ORDER BY stop_name
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "arrets": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/lille/aqi")
+def get_lille_aqi():
+    """Qualité de l'air — Atmo Hauts-de-France"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT lib_zone, date_ech, code_qual, lib_qual,
+                   code_no2, code_o3, code_pm10, lon, lat
+            FROM lille.dim_qualite_air
+            WHERE date_ech = (SELECT MAX(date_ech) FROM lille.dim_qualite_air)
+              AND lib_zone ILIKE '%lille%'
+            ORDER BY lib_zone
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "aqi": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/lille/meteo")
+def get_lille_meteo():
+    """Météo 7 jours — Lille"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT date, temperature_max, temperature_min,
+                   precipitation_sum, wind_speed_max, weather_code
+            FROM lille.dim_meteo
+            ORDER BY date
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "meteo": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/lille/demographics")
+def get_lille_demographics():
+    """Démographie MEL — INSEE RP 2020"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT codgeo, population, pct_young_adult, pct_active,
+                   pct_65plus, pct_high_income, pct_low_income
+            FROM lille.dim_demographics
+            ORDER BY population DESC
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "demographics": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/imd")
+def get_imd():
+    """Indice de Mobilité Durable — Montpellier & Lille"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT ville, imd_score, score_marche, score_velo, score_transport,
+                   score_mix_usage, score_densite, score_compacite,
+                   score_connectivite, score_environnement, computed_at
+            FROM public.dim_imd_scores
+            ORDER BY imd_score DESC
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "imd": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+# =============================================================================
+# LILLE ENDPOINTS
+# =============================================================================
+
+@app.get("/lille/stations")
+def get_lille_stations():
+    """V'Lille stations — temps réel"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT station_id, nom, adresse, commune, code_insee,
+                   etat, type, nb_velos_dispo, nb_places_dispo,
+                   etat_connexion, lon, lat, date_modification
+            FROM lille.dim_vlille_stations
+            ORDER BY nom
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "stations": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/lille/parkings")
+def get_lille_parkings():
+    """Parkings MEL — temps réel"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT parking_id, nom, adresse, ville, code_insee,
+                   etat, nb_total, nb_libre, taux_occupation, lon, lat, timestamp
+            FROM lille.dim_parkings
+            ORDER BY nom
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "parkings": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/lille/arrets")
+def get_lille_arrets():
+    """ilévia — arrêts bus/métro/tram"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT stop_id, stop_name, stop_desc, commune, lon, lat
+            FROM lille.dim_arrets
+            ORDER BY stop_name
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "arrets": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/lille/aqi")
+def get_lille_aqi():
+    """Qualité de l'air — Atmo Hauts-de-France"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT lib_zone, date_ech, code_qual, lib_qual,
+                   code_no2, code_o3, code_pm10, lon, lat
+            FROM lille.dim_qualite_air
+            WHERE date_ech = (SELECT MAX(date_ech) FROM lille.dim_qualite_air)
+            ORDER BY lib_zone
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "aqi": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/lille/meteo")
+def get_lille_meteo():
+    """Météo 7 jours — Lille (Open-Meteo)"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT date, temperature_max, temperature_min,
+                   precipitation_sum, wind_speed_max, weather_code
+            FROM lille.dim_meteo
+            ORDER BY date
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "meteo": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/lille/demographics")
+def get_lille_demographics():
+    """Démographie MEL — INSEE RP 2020"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT codgeo, population, pct_young_adult, pct_active,
+                   pct_65plus, pct_high_income, pct_low_income
+            FROM lille.dim_demographics
+            ORDER BY population DESC
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "demographics": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/lille/bike-histo")
+def get_lille_bike_histo():
+    """Comptages vélos historiques — Lille (2013+)"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT compteur_id, nom, ville, code_insee,
+                   annee, semaine, mjo, lon, lat
+            FROM lille.dim_bike_histo
+            ORDER BY annee DESC, semaine DESC
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "bike_histo": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/lille/emprunts/stats")
+def get_lille_emprunts_stats():
+    """Emprunts V'Lille — statistiques agrégées par station"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT id_station_depart as station_id,
+                   nom_station_depart as nom,
+                   commune_depart as commune,
+                   COUNT(*) as nb_emprunts,
+                   COUNT(DISTINCT DATE(date_debut)) as nb_jours_actifs
+            FROM lille.dim_emprunt_vlille
+            GROUP BY id_station_depart, nom_station_depart, commune_depart
+            ORDER BY nb_emprunts DESC
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "emprunts_stats": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/lille/emprunts/communes")
+def get_lille_emprunts_communes():
+    """Emprunts V'Lille — agrégés par commune"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT commune_depart as commune,
+                   COUNT(*) as nb_emprunts,
+                   COUNT(DISTINCT id_station_depart) as nb_stations
+            FROM lille.dim_emprunt_vlille
+            GROUP BY commune_depart
+            ORDER BY nb_emprunts DESC
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "emprunts_communes": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/imd")
+def get_imd():
+    """Indice de Mobilité Durable — Montpellier & Lille"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT ville, imd_score,
+                   score_marche, score_velo, score_transport,
+                   score_mix_usage, score_densite, score_compacite,
+                   score_connectivite, score_environnement,
+                   computed_at
+            FROM public.dim_imd_scores
+            ORDER BY imd_score DESC
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+        return {"total": len(rows), "imd": rows}
+    except Exception as e:
+        return {"error": str(e)}
