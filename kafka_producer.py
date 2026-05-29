@@ -16,16 +16,21 @@ Usage:
     python3 kafka_producer.py
 """
 
+import os
 import json
 import time
 import logging
 import requests
 from datetime import datetime, timezone
-from kafka import KafkaProducer
-from kafka.errors import KafkaError
+from confluent_kafka import Producer, KafkaError
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # --- CONFIG -------------------------------------------------------------------
-KAFKA_BOOTSTRAP_SERVER = "localhost:9092"
+KAFKA_BOOTSTRAP_SERVER = os.environ.get("KAFKA_BOOTSTRAP_SERVER", "localhost:9092")
+KAFKA_API_KEY          = os.environ.get("KAFKA_API_KEY", "")
+KAFKA_API_SECRET       = os.environ.get("KAFKA_API_SECRET", "")
 
 GBFS_BASE    = "https://gbfs.theta.fifteen.eu/gbfs/2.2/montpellier/en"
 API_PARKINGS = "https://portail-api-data.montpellier3m.fr/offstreetparking?limit=1000"
@@ -54,18 +59,25 @@ log = logging.getLogger("kafka_producer")
 
 # --- KAFKA PRODUCER -----------------------------------------------------------
 def create_producer():
-    return KafkaProducer(
-        bootstrap_servers=KAFKA_BOOTSTRAP_SERVER,
-        value_serializer=lambda v: json.dumps(v, ensure_ascii=False, default=str).encode("utf-8"),
-        key_serializer=lambda k: k.encode("utf-8") if k else None,
-        acks="all",
-        retries=3,
-    )
+    conf = {"bootstrap.servers": KAFKA_BOOTSTRAP_SERVER, "acks": "all"}
+    # Confluent Cloud SASL/SSL auth (gerekli ise)
+    if KAFKA_API_KEY and KAFKA_API_SECRET:
+        conf.update({
+            "security.protocol":       "SASL_SSL",
+            "sasl.mechanism":          "PLAIN",
+            "sasl.username":           KAFKA_API_KEY,
+            "sasl.password":           KAFKA_API_SECRET,
+        })
+    return Producer(conf)
 
 
 def send(producer, topic, key, value):
     try:
-        future = producer.send(topic, key=key, value=value)
+        producer.produce(
+            topic,
+            key=key.encode("utf-8") if key else None,
+            value=json.dumps(value, ensure_ascii=False, default=str).encode("utf-8"),
+        )
         producer.flush()
         log.info(f"  Sent → {topic} | key={key}")
         return True

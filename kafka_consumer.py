@@ -7,17 +7,23 @@ Usage:
     python3 kafka_consumer.py
 """
 
+import os
 import json
 import logging
 import psycopg2
 from datetime import datetime
 from confluent_kafka import Consumer, KafkaError
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # --- CONFIG -------------------------------------------------------------------
-KAFKA_BOOTSTRAP_SERVER = "localhost:9092"
+KAFKA_BOOTSTRAP_SERVER = os.environ.get("KAFKA_BOOTSTRAP_SERVER", "localhost:9092")
+KAFKA_API_KEY          = os.environ.get("KAFKA_API_KEY", "")
+KAFKA_API_SECRET       = os.environ.get("KAFKA_API_SECRET", "")
 CONSUMER_GROUP         = "modality-flow-consumer"
 
-DB_URL = "postgresql://postgres:PfbeGtHyxglIyRBZppgxBxPtYMQUmoyy@gondola.proxy.rlwy.net:46226/railway"
+DB_URL = os.environ.get("DATABASE_PUBLIC_URL", "")
 
 TOPICS = [
     "velomagg.station_status",
@@ -179,11 +185,19 @@ HANDLERS = {
 def run():
     log.info("MODALITY-FLOW Kafka Consumer starting...")
 
-    consumer = Consumer({
+    conf = {
         "bootstrap.servers": KAFKA_BOOTSTRAP_SERVER,
         "group.id":          CONSUMER_GROUP,
         "auto.offset.reset": "latest",
-    })
+    }
+    if KAFKA_API_KEY and KAFKA_API_SECRET:
+        conf.update({
+            "security.protocol": "SASL_SSL",
+            "sasl.mechanism":    "PLAIN",
+            "sasl.username":     KAFKA_API_KEY,
+            "sasl.password":     KAFKA_API_SECRET,
+        })
+    consumer = Consumer(conf)
     consumer.subscribe(TOPICS)
     log.info(f"  Subscribed to {TOPICS}")
 

@@ -31,6 +31,8 @@ import os
 import math
 import pickle
 import joblib
+import threading
+import time
 import numpy as np
 import psycopg2
 import psycopg2.extras
@@ -147,6 +149,26 @@ def load_ml_model():
         print("  Predict endpoint will return 503 until model is available.")
 
 load_ml_model()
+
+
+# --- BACKGROUND REAL-TIME ETL -------------------------------------------------
+# Railway sadece api.py başlatır; etl_realtime burada 60sn döngüyle çalışır.
+
+def _realtime_loop():
+    import importlib
+    etl = importlib.import_module("etl_realtime")
+    while True:
+        try:
+            etl.run()
+        except Exception as e:
+            print(f"[realtime] ETL error: {e}")
+        time.sleep(60)
+
+@app.on_event("startup")
+def start_realtime_etl():
+    t = threading.Thread(target=_realtime_loop, daemon=True)
+    t.start()
+    print("Background real-time ETL started (every 60s)")
 
 
 # --- DATABASE -----------------------------------------------------------------

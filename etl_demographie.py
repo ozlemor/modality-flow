@@ -6,16 +6,21 @@ Requirements:
     pip install psycopg2-binary pandas numpy
 """
 
+import os
 import pandas as pd
 import numpy as np
 import psycopg2
 from psycopg2.extras import execute_values
+from pathlib import Path
+from dotenv import load_dotenv
 import warnings
 warnings.filterwarnings('ignore')
 
+load_dotenv()
+
 # --- CONFIG -------------------------------------------------------------------
-DB_URL   = "postgresql://postgres:PfbeGtHyxglIyRBZppgxBxPtYMQUmoyy@gondola.proxy.rlwy.net:46226/railway"
-CSV_PATH = "/Users/ozlemdechamps/Desktop/Velo/base-cc-evol-struct-pop-2020_csv/base-cc-evol-struct-pop-2020.CSV"
+DB_URL   = os.environ.get("DATABASE_PUBLIC_URL", "")
+CSV_PATH = Path(__file__).parent / "base-cc-evol-struct-pop-2020_csv" / "base-cc-evol-struct-pop-2020.CSV"
 
 # INSEE commune codes for Montpellier Mediterranee Metropole (31 communes)
 METROPOLE_CODES = [

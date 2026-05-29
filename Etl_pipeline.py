@@ -43,11 +43,28 @@ QUALITY_DIR= ETL_DIR / "quality_reports"
 LOGS_DIR   = ETL_DIR / "logs"
 DUCKDB_PATH= GOLD_DIR / "modality_flow.duckdb"
 
+from dotenv import load_dotenv
+load_dotenv()
+
+import os, urllib.parse
+
+load_dotenv()
+
+DATABASE_URL = os.environ.get(
+    "DATABASE_PUBLIC_URL",
+    "postgresql://postgres:postgres@localhost:5432/modality_flow"
+)
+_url = urllib.parse.urlparse(DATABASE_URL)
 PG_CONFIG = {
-    "host": "localhost", "port": 5432,
-    "database": "modality_flow",
-    "user": "postgres", "password": "postgres"
+    "host":     _url.hostname,
+    "port":     _url.port or 5432,
+    "database": _url.path[1:],
+    "user":     _url.username,
+    "password": _url.password,
+    "sslmode":  "require" if "railway" in DATABASE_URL else "prefer"
 }
+
+print(f"Bağlanıyor: {_url.hostname}:{_url.port}")
 
 API_VELOMAGG       = "https://portail-api-data.montpellier3m.fr/bikestation?limit=1000"
 API_PARKINGS       = "https://portail-api-data.montpellier3m.fr/offstreetparking?limit=1000"
@@ -880,9 +897,9 @@ def gold_duckdb(silver: dict):
     log.info("Vues analytiques (jointures)...")
 
     # Vue 1: Mobilité complète
-    # JOIN ①: stations ↔ status sur station_id
-    # JOIN ②: status ↔ AQI sur DATE(timestamp)
-    # JOIN ③: status ↔ meteo sur DATE(timestamp)
+    # JOIN ①: stations ↔ dernière valeur bisiklet sur station_id
+    # JOIN ②: status ↔ AQI sur DATE du jour
+    # JOIN ③: status ↔ meteo sur DATE du jour
     con.execute("DROP VIEW IF EXISTS v_mobilite_complete")
     con.execute("""
         CREATE VIEW v_mobilite_complete AS
@@ -894,6 +911,14 @@ def gold_duckdb(silver: dict):
             s.lon,
             s.capacite,
             s.type,
+            h.bisiklet_sayisi,
+            h.timestamp AS derniere_maj,
+            ROUND(h.bisiklet_sayisi * 100.0 / NULLIF(s.capacite, 0), 1) AS taux_disponibilite,
+            CASE
+                WHEN h.bisiklet_sayisi * 100.0 / NULLIF(s.capacite, 0) >= 50 THEN 'good'
+                WHEN h.bisiklet_sayisi * 100.0 / NULLIF(s.capacite, 0) >= 20 THEN 'average'
+                ELSE 'low'
+            END AS availability_level,
             q.indice_qualite,
             q.libelle_qualite,
             q.no2,
@@ -902,13 +927,19 @@ def gold_duckdb(silver: dict):
             m.temperature_max,
             m.temperature_min,
             m.precipitation_sum,
-            m.wind_speed_max
+            m.wind_speed_max,
+            m.weather_code
         FROM dim_stations s
+        LEFT JOIN (
+            SELECT station_id, bisiklet_sayisi, timestamp,
+                   ROW_NUMBER() OVER (PARTITION BY station_id ORDER BY timestamp DESC) AS rn
+            FROM fact_velomagg_historique
+        ) h ON s.station_id = h.station_id AND h.rn = 1
         LEFT JOIN dim_qualite_air q ON CURRENT_DATE = q.date
         LEFT JOIN dim_meteo m       ON CURRENT_DATE = m.date
         WHERE s.type = 'velomagg'
     """)
-    log.info("v_mobilite_complete (stations + AQI + météo)")
+    log.info("v_mobilite_complete (stations + bisiklet + AQI + météo)")
 
     # Vue 2: Stations + arrêts TAM proches (< 500m)
     # JOIN ④: géospatial Vélomagg ↔ TAM
@@ -994,7 +1025,12 @@ def gold_postgres(silver: dict):
         log.info("🐘 GOLD — PostgreSQL (real-time)")
         log.info("=" * 65)
 
-        cur.execute("CREATE SCHEMA IF NOT EXISTS modality;")
+        DATABASE_URL = os.environ.get("DATABASE_PUBLIC_URL", "")
+        if "railway" in DATABASE_URL:
+            SCHEMA = "public"
+        else:
+            SCHEMA = "modality"
+            cur.execute("CREATE SCHEMA IF NOT EXISTS modality;")
 
         # dim_stations
         cur.execute("""

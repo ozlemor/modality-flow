@@ -6,6 +6,7 @@ Requirements:
     pip install scikit-learn psycopg2-binary duckdb pandas numpy joblib
 """
 
+import os
 import sys
 import logging
 import warnings
@@ -18,17 +19,19 @@ import numpy as np
 import joblib
 from pathlib import Path
 from datetime import datetime
+from dotenv import load_dotenv
 
 warnings.filterwarnings("ignore")
+load_dotenv()
 
 # --- CONFIG -------------------------------------------------------------------
-VELO_DIR    = Path.home() / "Desktop" / "Velo"
+VELO_DIR    = Path(__file__).parent.parent
 DUCKDB_PATH = VELO_DIR / "ETL" / "gold" / "modality_flow.duckdb"
-ML_DIR      = VELO_DIR / "ML"
+ML_DIR      = Path(__file__).parent
 MODELS_DIR  = ML_DIR / "models"
 REPORTS_DIR = ML_DIR / "reports"
 
-DB_URL = "postgresql://postgres:PfbeGtHyxglIyRBZppgxBxPtYMQUmoyy@gondola.proxy.rlwy.net:46226/railway"
+DB_URL = os.environ.get("DATABASE_PUBLIC_URL", "")
 
 CO2_FACTORS = {"velo": 0, "tram": 4, "bus": 68, "voiture": 120, "marche": 0}
 

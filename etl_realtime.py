@@ -81,6 +81,10 @@ def run():
               b.get("vehicle_type_id",""), NOW])
     log.info(f"fact_free_bikes: {len(bikes)} vélos")
 
+    # Tablolar sonsuza büyümesin — 48 saatten eski satırları sil
+    cur.execute("DELETE FROM modality.fact_station_status  WHERE timestamp < NOW() - INTERVAL '48 hours'")
+    cur.execute("DELETE FROM modality.fact_parkings_status WHERE timestamp < NOW() - INTERVAL '48 hours'")
+
     con.commit()
     cur.close()
     con.close()

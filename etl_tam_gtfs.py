@@ -14,16 +14,21 @@ Usage:
     python3 etl_tam_gtfs.py
 """
 
+import os
 import pandas as pd
 import numpy as np
 import psycopg2
 from psycopg2.extras import execute_values
+from pathlib import Path
+from dotenv import load_dotenv
 import warnings
 warnings.filterwarnings("ignore")
 
+load_dotenv()
+
 # --- CONFIG -------------------------------------------------------------------
-DB_URL   = "postgresql://postgres:PfbeGtHyxglIyRBZppgxBxPtYMQUmoyy@gondola.proxy.rlwy.net:46226/railway"
-GTFS_DIR = "/Users/ozlemdechamps/Desktop/Velo/03_transport_TAM/TAM_GTFS/CSV"
+DB_URL   = os.environ.get("DATABASE_PUBLIC_URL", "")
+GTFS_DIR = Path(__file__).parent / "03_transport_TAM" / "TAM_GTFS" / "CSV"
 
 
 # --- HELPERS ------------------------------------------------------------------

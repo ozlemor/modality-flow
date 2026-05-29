@@ -8,3 +8,7 @@ pydantic
 scikit-learn
 pyarrow
 requests
+python-dotenv
+confluent-kafka
+protobuf
+joblib
