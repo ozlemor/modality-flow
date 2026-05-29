@@ -1,0 +1,53 @@
+﻿station_id,nom,lat,lon,capacite,velos_dispo,docks_available,taux_dispo,ville,usage_score,cluster
+001,Rue Jules Ferry - Gare Saint-Roch,43.605366,3.881346,12,6,6,50.0,Montpellier,0.5,0
+002,Comédie,43.608148,3.878778,20,12,7,60.0,Montpellier,0.6,0
+004,Hôtel de Ville,43.599088,3.894866,16,10,6,62.5,Montpellier,0.625,0
+005,Corum,43.613989,3.8816,12,5,7,41.66666666666667,Montpellier,0.4166666666666667,2
+006,Place Albert 1er - St Charles,43.616768,3.873375,27,2,24,7.4074074074074066,Montpellier,0.07407407407407407,2
+007,Foch,43.610989,3.873345,8,1,7,12.5,Montpellier,0.125,2
+009,Observatoire,43.606301,3.87724,8,7,0,87.5,Montpellier,0.875,0
+010,Rondelet,43.603038,3.875796,16,1,15,6.25,Montpellier,0.0625,2
+011,Plan Cabanes,43.608491,3.868389,12,3,9,25.0,Montpellier,0.25,2
+012,Boutonnet,43.622629,3.868375,12,9,3,75.0,Montpellier,0.75,0
+013,Emile Combes,43.616742,3.87998,8,7,1,87.5,Montpellier,0.875,0
+014,Beaux-Arts,43.616698,3.884981,16,0,16,0.0,Montpellier,0.0,2
+015,Les Aubes,43.618692,3.893844,8,6,2,75.0,Montpellier,0.75,0
+016,Antigone centre,43.607942,3.890634,12,8,4,66.66666666666666,Montpellier,0.6666666666666666,0
+017,Médiathèque Emile Zola,43.608218,3.89314,16,17,0,106.25,Montpellier,1.0625,0
+018,Nombre d'Or,43.607859,3.886644,16,8,8,50.0,Montpellier,0.5,0
+019,Louis Blanc,43.614642,3.877648,16,5,11,31.25,Montpellier,0.3125,2
+020,Gambetta,43.607106,3.870693,8,1,7,12.5,Montpellier,0.125,2
+021,Port Marianne,43.60032,3.89851,16,13,3,81.25,Montpellier,0.8125,0
+023,Les Arceaux,43.612659,3.867734,8,3,5,37.5,Montpellier,0.375,2
+024,Cité Mion,43.601143,3.884373,8,7,1,87.5,Montpellier,0.875,0
+025,Nouveau Saint-Roch,43.599817,3.875757,8,8,0,100.0,Montpellier,1.0,0
+026,Renouvier,43.603553,3.867884,8,2,6,25.0,Montpellier,0.25,2
+029,Richter,43.603424,3.899263,16,10,6,62.5,Montpellier,0.625,0
+030,Charles Flahault,43.622038,3.86672,8,1,7,12.5,Montpellier,0.125,2
+031,Voltaire,43.603767,3.888659,8,6,2,75.0,Montpellier,0.75,0
+032,Prés d'Arènes,43.59048,3.884611,8,4,4,50.0,Montpellier,0.5,1
+033,Garcia Lorca,43.590757,3.890616,8,5,3,62.5,Montpellier,0.625,1
+034,Vert Bois,43.63543,3.871179,16,4,12,25.0,Montpellier,0.25,2
+035,Malbosc,43.633679,3.832861,8,5,3,62.5,Montpellier,0.625,2
+036,Occitanie,43.635689,3.849597,32,5,27,15.625,Montpellier,0.15625,2
+037,Fac des Sciences,43.631318,3.861299,24,12,12,50.0,Montpellier,0.5,0
+038,Fac de Lettres,43.630437,3.869539,12,2,10,16.666666666666664,Montpellier,0.16666666666666666,2
+039,Aiguelongue,43.626163,3.882492,8,7,0,87.5,Montpellier,0.875,0
+040,Jeu de Mail des Abbés,43.619701,3.883831,8,9,0,112.5,Montpellier,1.125,0
+041,Euromédecine,43.639119,3.828199,8,5,3,62.5,Montpellier,0.625,2
+042,Marie Caizergues,43.619871,3.873812,8,4,4,50.0,Montpellier,0.5,2
+043,Sabines,43.584211,3.860031,8,7,1,87.5,Montpellier,0.875,0
+044,Celleneuve,43.61467,3.832624,8,3,5,37.5,Montpellier,0.375,2
+045,Jardin de la Lironde,43.60585,3.911576,8,7,1,87.5,Montpellier,0.875,0
+046,Père Soulas,43.621983,3.855603,8,4,4,50.0,Montpellier,0.5,2
+047,Place Viala,43.616812,3.855075,8,4,3,50.0,Montpellier,0.5,2
+048,Hôtel du Département,43.621682,3.83477,8,4,4,50.0,Montpellier,0.5,2
+049,Tonnelles,43.615155,3.839466,8,3,4,37.5,Montpellier,0.375,2
+050,Parvis Jules Ferry - Gare Saint-Roch,43.603889,3.879362,8,7,1,87.5,Montpellier,0.875,0
+051,Pont de Lattes - Gare Saint-Roch,43.606036,3.882393,12,2,10,16.666666666666664,Montpellier,0.16666666666666666,2
+054,Providence - Ovalie,43.588239,3.853421,8,4,4,50.0,Montpellier,0.5,2
+055,Pérols Etang de l'Or,43.558351,3.963412,68,6,62,8.823529411764707,Montpellier,0.08823529411764706,1
+056,Albert 1er - Cathédrale,43.614005,3.873218,12,8,4,66.66666666666666,Montpellier,0.6666666666666666,0
+057,Saint-Guilhem - Courreau,43.608996,3.872752,8,2,5,25.0,Montpellier,0.25,2
+059,Sud De France,43.59562,3.9235,8,3,5,37.5,Montpellier,0.375,1
+061,Jean de Beins,43.609857,3.883884,16,2,14,12.5,Montpellier,0.125,2

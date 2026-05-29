@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_231d16289c3fa093d30406ed2b180ea1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_231d16289c3fa093d30406ed2b180ea1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_231d16289c3fa093d30406ed2b180ea1 = L.map(
+                "map_231d16289c3fa093d30406ed2b180ea1",
+                {
+                    center: [43.6108, 3.8767],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_91fc64ed787796bd6669be0b77ba467f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_91fc64ed787796bd6669be0b77ba467f.addTo(map_231d16289c3fa093d30406ed2b180ea1);
+        
+    
+            var marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_e05609f938637c26ba01ea073624abed = L.circleMarker(
+                [43.605366, 3.881346],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_2125868e07d906971c3ce3dee1a4e036 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fb3836f0b6047acf92c6eeed4069297f = $(`<div id="html_fb3836f0b6047acf92c6eeed4069297f" style="width: 100.0%; height: 100.0%;"><b>Rue Jules Ferry - Gare Saint-Roch</b><br>     Vélos dispo: 6<br>     Capacité: 12<br>     Cluster: 0<br>     Usage: 0.50</div>`)[0];
+                popup_2125868e07d906971c3ce3dee1a4e036.setContent(html_fb3836f0b6047acf92c6eeed4069297f);
+            
+        
+
+        circle_marker_e05609f938637c26ba01ea073624abed.bindPopup(popup_2125868e07d906971c3ce3dee1a4e036)
+        ;
+
+        
+    
+    
+            var circle_marker_2f5a198dec928de9af0c212d7336528f = L.circleMarker(
+                [43.608148, 3.878778],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_7701d283798cd0fbb0949eb7be7d85c4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c04635b3984e42a63477dc72f76850e3 = $(`<div id="html_c04635b3984e42a63477dc72f76850e3" style="width: 100.0%; height: 100.0%;"><b>Comédie</b><br>     Vélos dispo: 12<br>     Capacité: 20<br>     Cluster: 0<br>     Usage: 0.60</div>`)[0];
+                popup_7701d283798cd0fbb0949eb7be7d85c4.setContent(html_c04635b3984e42a63477dc72f76850e3);
+            
+        
+
+        circle_marker_2f5a198dec928de9af0c212d7336528f.bindPopup(popup_7701d283798cd0fbb0949eb7be7d85c4)
+        ;
+
+        
+    
+    
+            var circle_marker_123391179b1d9ce4cd8bbb2302ba7879 = L.circleMarker(
+                [43.599088, 3.894866],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_d11bad568a0cdafbff5c39dd592d1b1b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_79404476510873278238c8b642e28cfc = $(`<div id="html_79404476510873278238c8b642e28cfc" style="width: 100.0%; height: 100.0%;"><b>Hôtel de Ville</b><br>     Vélos dispo: 10<br>     Capacité: 16<br>     Cluster: 0<br>     Usage: 0.62</div>`)[0];
+                popup_d11bad568a0cdafbff5c39dd592d1b1b.setContent(html_79404476510873278238c8b642e28cfc);
+            
+        
+
+        circle_marker_123391179b1d9ce4cd8bbb2302ba7879.bindPopup(popup_d11bad568a0cdafbff5c39dd592d1b1b)
+        ;
+
+        
+    
+    
+            var circle_marker_466de5e5869b0e8ad37bb590292fe50d = L.circleMarker(
+                [43.613989, 3.8816],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_97222c734c29835f05ac0d5d90f2b6ed = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_94c035190442a92ef31bcd1875dc27f8 = $(`<div id="html_94c035190442a92ef31bcd1875dc27f8" style="width: 100.0%; height: 100.0%;"><b>Corum</b><br>     Vélos dispo: 5<br>     Capacité: 12<br>     Cluster: 2<br>     Usage: 0.42</div>`)[0];
+                popup_97222c734c29835f05ac0d5d90f2b6ed.setContent(html_94c035190442a92ef31bcd1875dc27f8);
+            
+        
+
+        circle_marker_466de5e5869b0e8ad37bb590292fe50d.bindPopup(popup_97222c734c29835f05ac0d5d90f2b6ed)
+        ;
+
+        
+    
+    
+            var circle_marker_3fcb6f547d4999ba19189658118179a8 = L.circleMarker(
+                [43.616768, 3.873375],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_9a3e2c304f50bd23aa5c45044068d222 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e588bf16c319826206d6ba2e179bd528 = $(`<div id="html_e588bf16c319826206d6ba2e179bd528" style="width: 100.0%; height: 100.0%;"><b>Place Albert 1er - St Charles</b><br>     Vélos dispo: 2<br>     Capacité: 27<br>     Cluster: 2<br>     Usage: 0.07</div>`)[0];
+                popup_9a3e2c304f50bd23aa5c45044068d222.setContent(html_e588bf16c319826206d6ba2e179bd528);
+            
+        
+
+        circle_marker_3fcb6f547d4999ba19189658118179a8.bindPopup(popup_9a3e2c304f50bd23aa5c45044068d222)
+        ;
+
+        
+    
+    
+            var circle_marker_a18e697e2a5a68ada92ee0f6990f2324 = L.circleMarker(
+                [43.610989, 3.873345],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_3006de2cc0255fdef49425778435b552 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ed84ae9ce4b5ab6625e98967048bec7b = $(`<div id="html_ed84ae9ce4b5ab6625e98967048bec7b" style="width: 100.0%; height: 100.0%;"><b>Foch</b><br>     Vélos dispo: 1<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.12</div>`)[0];
+                popup_3006de2cc0255fdef49425778435b552.setContent(html_ed84ae9ce4b5ab6625e98967048bec7b);
+            
+        
+
+        circle_marker_a18e697e2a5a68ada92ee0f6990f2324.bindPopup(popup_3006de2cc0255fdef49425778435b552)
+        ;
+
+        
+    
+    
+            var circle_marker_c4ffdeae044a45077afcdd2af1dee1bf = L.circleMarker(
+                [43.606301, 3.87724],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_8667d77624c9e87d52ac18c2e9dd4be8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7924162d3375830cbbac05c8a1792654 = $(`<div id="html_7924162d3375830cbbac05c8a1792654" style="width: 100.0%; height: 100.0%;"><b>Observatoire</b><br>     Vélos dispo: 7<br>     Capacité: 8<br>     Cluster: 0<br>     Usage: 0.88</div>`)[0];
+                popup_8667d77624c9e87d52ac18c2e9dd4be8.setContent(html_7924162d3375830cbbac05c8a1792654);
+            
+        
+
+        circle_marker_c4ffdeae044a45077afcdd2af1dee1bf.bindPopup(popup_8667d77624c9e87d52ac18c2e9dd4be8)
+        ;
+
+        
+    
+    
+            var circle_marker_5b6e19f8d46b872bc6ee7262988cc234 = L.circleMarker(
+                [43.603038, 3.875796],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_34e038153a65b16eaa6afdc6c8029ded = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f3857ab64f66eee4e891ffd917001273 = $(`<div id="html_f3857ab64f66eee4e891ffd917001273" style="width: 100.0%; height: 100.0%;"><b>Rondelet</b><br>     Vélos dispo: 1<br>     Capacité: 16<br>     Cluster: 2<br>     Usage: 0.06</div>`)[0];
+                popup_34e038153a65b16eaa6afdc6c8029ded.setContent(html_f3857ab64f66eee4e891ffd917001273);
+            
+        
+
+        circle_marker_5b6e19f8d46b872bc6ee7262988cc234.bindPopup(popup_34e038153a65b16eaa6afdc6c8029ded)
+        ;
+
+        
+    
+    
+            var circle_marker_d170c36a5df0511bcc43f1edbbabd286 = L.circleMarker(
+                [43.608491, 3.868389],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_3ab876283d1b7db94e9cd5e3099bc8ea = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_81e594a6a523af6e35e06a19284588c7 = $(`<div id="html_81e594a6a523af6e35e06a19284588c7" style="width: 100.0%; height: 100.0%;"><b>Plan Cabanes</b><br>     Vélos dispo: 3<br>     Capacité: 12<br>     Cluster: 2<br>     Usage: 0.25</div>`)[0];
+                popup_3ab876283d1b7db94e9cd5e3099bc8ea.setContent(html_81e594a6a523af6e35e06a19284588c7);
+            
+        
+
+        circle_marker_d170c36a5df0511bcc43f1edbbabd286.bindPopup(popup_3ab876283d1b7db94e9cd5e3099bc8ea)
+        ;
+
+        
+    
+    
+            var circle_marker_39607557ed04516eebd37569fe8d48aa = L.circleMarker(
+                [43.622629, 3.868375],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_5c429377995d38df830d2c4e4cbf3cf1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3b635cfc4150667563a5ba5926f04c7a = $(`<div id="html_3b635cfc4150667563a5ba5926f04c7a" style="width: 100.0%; height: 100.0%;"><b>Boutonnet</b><br>     Vélos dispo: 9<br>     Capacité: 12<br>     Cluster: 0<br>     Usage: 0.75</div>`)[0];
+                popup_5c429377995d38df830d2c4e4cbf3cf1.setContent(html_3b635cfc4150667563a5ba5926f04c7a);
+            
+        
+
+        circle_marker_39607557ed04516eebd37569fe8d48aa.bindPopup(popup_5c429377995d38df830d2c4e4cbf3cf1)
+        ;
+
+        
+    
+    
+            var circle_marker_1c35f9cc90c351b033b5cb3ef088cc17 = L.circleMarker(
+                [43.616742, 3.87998],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_804f0ebd965aa5c38efac73d2953cb98 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_317548166231a8bad3a475ebd33c25f3 = $(`<div id="html_317548166231a8bad3a475ebd33c25f3" style="width: 100.0%; height: 100.0%;"><b>Emile Combes</b><br>     Vélos dispo: 7<br>     Capacité: 8<br>     Cluster: 0<br>     Usage: 0.88</div>`)[0];
+                popup_804f0ebd965aa5c38efac73d2953cb98.setContent(html_317548166231a8bad3a475ebd33c25f3);
+            
+        
+
+        circle_marker_1c35f9cc90c351b033b5cb3ef088cc17.bindPopup(popup_804f0ebd965aa5c38efac73d2953cb98)
+        ;
+
+        
+    
+    
+            var circle_marker_a4673e1c4501acfa9d9af478abb48435 = L.circleMarker(
+                [43.616698, 3.884981],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_d7dbc35feb217acebdc6e512ad3ecb0f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_94a035dbacecd742ac7f830463bebcd0 = $(`<div id="html_94a035dbacecd742ac7f830463bebcd0" style="width: 100.0%; height: 100.0%;"><b>Beaux-Arts</b><br>     Vélos dispo: 0<br>     Capacité: 16<br>     Cluster: 2<br>     Usage: 0.00</div>`)[0];
+                popup_d7dbc35feb217acebdc6e512ad3ecb0f.setContent(html_94a035dbacecd742ac7f830463bebcd0);
+            
+        
+
+        circle_marker_a4673e1c4501acfa9d9af478abb48435.bindPopup(popup_d7dbc35feb217acebdc6e512ad3ecb0f)
+        ;
+
+        
+    
+    
+            var circle_marker_7825de02761d2345971457dbd8eca63f = L.circleMarker(
+                [43.618692, 3.893844],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_3758c3e7765f046bc3cd45184a1e8a35 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2bca92e473bf788ae3f5d5d39be5edc5 = $(`<div id="html_2bca92e473bf788ae3f5d5d39be5edc5" style="width: 100.0%; height: 100.0%;"><b>Les Aubes</b><br>     Vélos dispo: 6<br>     Capacité: 8<br>     Cluster: 0<br>     Usage: 0.75</div>`)[0];
+                popup_3758c3e7765f046bc3cd45184a1e8a35.setContent(html_2bca92e473bf788ae3f5d5d39be5edc5);
+            
+        
+
+        circle_marker_7825de02761d2345971457dbd8eca63f.bindPopup(popup_3758c3e7765f046bc3cd45184a1e8a35)
+        ;
+
+        
+    
+    
+            var circle_marker_d45ca306ec2ef9666dc8997f79708c95 = L.circleMarker(
+                [43.607942, 3.890634],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_ddf3e8dd35b4dbfe4f1dabda31cc506f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a12a84a288a88d9203530e8f78cce9bd = $(`<div id="html_a12a84a288a88d9203530e8f78cce9bd" style="width: 100.0%; height: 100.0%;"><b>Antigone centre</b><br>     Vélos dispo: 8<br>     Capacité: 12<br>     Cluster: 0<br>     Usage: 0.67</div>`)[0];
+                popup_ddf3e8dd35b4dbfe4f1dabda31cc506f.setContent(html_a12a84a288a88d9203530e8f78cce9bd);
+            
+        
+
+        circle_marker_d45ca306ec2ef9666dc8997f79708c95.bindPopup(popup_ddf3e8dd35b4dbfe4f1dabda31cc506f)
+        ;
+
+        
+    
+    
+            var circle_marker_c504fc5b9ae595eb0610c8ca326c5b05 = L.circleMarker(
+                [43.608218, 3.89314],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_6b2cb65ba86dd4b62f3b2b6a13879350 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ee0661cf35864ea0f96e189ec99e5c1c = $(`<div id="html_ee0661cf35864ea0f96e189ec99e5c1c" style="width: 100.0%; height: 100.0%;"><b>Médiathèque Emile Zola</b><br>     Vélos dispo: 17<br>     Capacité: 16<br>     Cluster: 0<br>     Usage: 1.06</div>`)[0];
+                popup_6b2cb65ba86dd4b62f3b2b6a13879350.setContent(html_ee0661cf35864ea0f96e189ec99e5c1c);
+            
+        
+
+        circle_marker_c504fc5b9ae595eb0610c8ca326c5b05.bindPopup(popup_6b2cb65ba86dd4b62f3b2b6a13879350)
+        ;
+
+        
+    
+    
+            var circle_marker_5c832ef842bfe2caa6b265308bf2d01c = L.circleMarker(
+                [43.607859, 3.886644],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_06013eda4987b644b39dc219371e071a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_50f063bcc90d21f359358884558fdcbc = $(`<div id="html_50f063bcc90d21f359358884558fdcbc" style="width: 100.0%; height: 100.0%;"><b>Nombre d'Or</b><br>     Vélos dispo: 8<br>     Capacité: 16<br>     Cluster: 0<br>     Usage: 0.50</div>`)[0];
+                popup_06013eda4987b644b39dc219371e071a.setContent(html_50f063bcc90d21f359358884558fdcbc);
+            
+        
+
+        circle_marker_5c832ef842bfe2caa6b265308bf2d01c.bindPopup(popup_06013eda4987b644b39dc219371e071a)
+        ;
+
+        
+    
+    
+            var circle_marker_9c1ff9b58b8306f674b45e8ce4ccbfab = L.circleMarker(
+                [43.614642, 3.877648],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_e021370b7928fcca29c16d2860791da4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ef61cfedd600afb0c6291b3623512aa2 = $(`<div id="html_ef61cfedd600afb0c6291b3623512aa2" style="width: 100.0%; height: 100.0%;"><b>Louis Blanc</b><br>     Vélos dispo: 5<br>     Capacité: 16<br>     Cluster: 2<br>     Usage: 0.31</div>`)[0];
+                popup_e021370b7928fcca29c16d2860791da4.setContent(html_ef61cfedd600afb0c6291b3623512aa2);
+            
+        
+
+        circle_marker_9c1ff9b58b8306f674b45e8ce4ccbfab.bindPopup(popup_e021370b7928fcca29c16d2860791da4)
+        ;
+
+        
+    
+    
+            var circle_marker_9f899f2a253cc8008ad42d01a4d273de = L.circleMarker(
+                [43.607106, 3.870693],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_aa6dea744c614b5c5aa8bc4da73a3a43 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_affa85d056951fc13258b0197d205fdd = $(`<div id="html_affa85d056951fc13258b0197d205fdd" style="width: 100.0%; height: 100.0%;"><b>Gambetta</b><br>     Vélos dispo: 1<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.12</div>`)[0];
+                popup_aa6dea744c614b5c5aa8bc4da73a3a43.setContent(html_affa85d056951fc13258b0197d205fdd);
+            
+        
+
+        circle_marker_9f899f2a253cc8008ad42d01a4d273de.bindPopup(popup_aa6dea744c614b5c5aa8bc4da73a3a43)
+        ;
+
+        
+    
+    
+            var circle_marker_d593eac8811c6f26c9ea5499ea4e4c9e = L.circleMarker(
+                [43.60032, 3.89851],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.333333333333332, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_8f6ca023302569de2658b493ee388d34 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_81e0503ccb8a6e0b0f0e8a220f2475c7 = $(`<div id="html_81e0503ccb8a6e0b0f0e8a220f2475c7" style="width: 100.0%; height: 100.0%;"><b>Port Marianne</b><br>     Vélos dispo: 13<br>     Capacité: 16<br>     Cluster: 0<br>     Usage: 0.81</div>`)[0];
+                popup_8f6ca023302569de2658b493ee388d34.setContent(html_81e0503ccb8a6e0b0f0e8a220f2475c7);
+            
+        
+
+        circle_marker_d593eac8811c6f26c9ea5499ea4e4c9e.bindPopup(popup_8f6ca023302569de2658b493ee388d34)
+        ;
+
+        
+    
+    
+            var circle_marker_482a3747a12e13c127c3d05027839651 = L.circleMarker(
+                [43.612659, 3.867734],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_27122d64d921f014e01b92da845ff313 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_344ab6fc99fd96f46e1cd6834939ea51 = $(`<div id="html_344ab6fc99fd96f46e1cd6834939ea51" style="width: 100.0%; height: 100.0%;"><b>Les Arceaux</b><br>     Vélos dispo: 3<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.38</div>`)[0];
+                popup_27122d64d921f014e01b92da845ff313.setContent(html_344ab6fc99fd96f46e1cd6834939ea51);
+            
+        
+
+        circle_marker_482a3747a12e13c127c3d05027839651.bindPopup(popup_27122d64d921f014e01b92da845ff313)
+        ;
+
+        
+    
+    
+            var circle_marker_e54d222c3f576b5aa4bba5b8c3e29ad9 = L.circleMarker(
+                [43.601143, 3.884373],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_66db6fc667147e474b310d4b333203dc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_51f6b43d940390f470c6f4ef654db772 = $(`<div id="html_51f6b43d940390f470c6f4ef654db772" style="width: 100.0%; height: 100.0%;"><b>Cité Mion</b><br>     Vélos dispo: 7<br>     Capacité: 8<br>     Cluster: 0<br>     Usage: 0.88</div>`)[0];
+                popup_66db6fc667147e474b310d4b333203dc.setContent(html_51f6b43d940390f470c6f4ef654db772);
+            
+        
+
+        circle_marker_e54d222c3f576b5aa4bba5b8c3e29ad9.bindPopup(popup_66db6fc667147e474b310d4b333203dc)
+        ;
+
+        
+    
+    
+            var circle_marker_eda4106740cb36d63dcca9de8eab6bee = L.circleMarker(
+                [43.599817, 3.875757],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_a1a16aeb13a3cffc0a70f7f7fbcb454f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_44d9a2b6c516db5dff1f64749713ec3a = $(`<div id="html_44d9a2b6c516db5dff1f64749713ec3a" style="width: 100.0%; height: 100.0%;"><b>Nouveau Saint-Roch</b><br>     Vélos dispo: 8<br>     Capacité: 8<br>     Cluster: 0<br>     Usage: 1.00</div>`)[0];
+                popup_a1a16aeb13a3cffc0a70f7f7fbcb454f.setContent(html_44d9a2b6c516db5dff1f64749713ec3a);
+            
+        
+
+        circle_marker_eda4106740cb36d63dcca9de8eab6bee.bindPopup(popup_a1a16aeb13a3cffc0a70f7f7fbcb454f)
+        ;
+
+        
+    
+    
+            var circle_marker_1ff73cd70463bc02e6b7d6d161c53ab2 = L.circleMarker(
+                [43.603553, 3.867884],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_704c66f5c935ccece692965c6ad43b4c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a6c03f0917d7c5081fe260a7655e6647 = $(`<div id="html_a6c03f0917d7c5081fe260a7655e6647" style="width: 100.0%; height: 100.0%;"><b>Renouvier</b><br>     Vélos dispo: 2<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.25</div>`)[0];
+                popup_704c66f5c935ccece692965c6ad43b4c.setContent(html_a6c03f0917d7c5081fe260a7655e6647);
+            
+        
+
+        circle_marker_1ff73cd70463bc02e6b7d6d161c53ab2.bindPopup(popup_704c66f5c935ccece692965c6ad43b4c)
+        ;
+
+        
+    
+    
+            var circle_marker_8732b4405c8bd5658ecbbfe272c61366 = L.circleMarker(
+                [43.603424, 3.899263],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_07b76f7371bcafed2ef3658ed7502169 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_45c26914e7aa4f3688e789591ee4acaa = $(`<div id="html_45c26914e7aa4f3688e789591ee4acaa" style="width: 100.0%; height: 100.0%;"><b>Richter</b><br>     Vélos dispo: 10<br>     Capacité: 16<br>     Cluster: 0<br>     Usage: 0.62</div>`)[0];
+                popup_07b76f7371bcafed2ef3658ed7502169.setContent(html_45c26914e7aa4f3688e789591ee4acaa);
+            
+        
+
+        circle_marker_8732b4405c8bd5658ecbbfe272c61366.bindPopup(popup_07b76f7371bcafed2ef3658ed7502169)
+        ;
+
+        
+    
+    
+            var circle_marker_9eaee9a4e5fcb9a39760122910791801 = L.circleMarker(
+                [43.622038, 3.86672],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_1c522171a8bceb66473a07fc08949248 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4aaf277c2e0d35eea934fad1c54e3ec7 = $(`<div id="html_4aaf277c2e0d35eea934fad1c54e3ec7" style="width: 100.0%; height: 100.0%;"><b>Charles Flahault</b><br>     Vélos dispo: 1<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.12</div>`)[0];
+                popup_1c522171a8bceb66473a07fc08949248.setContent(html_4aaf277c2e0d35eea934fad1c54e3ec7);
+            
+        
+
+        circle_marker_9eaee9a4e5fcb9a39760122910791801.bindPopup(popup_1c522171a8bceb66473a07fc08949248)
+        ;
+
+        
+    
+    
+            var circle_marker_c5019836aee5aba7a4c4e8a03ea93d85 = L.circleMarker(
+                [43.603767, 3.888659],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_18de352208766538a9c4387771af98b7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e6fe66ef311b69bff4095defbd5fa60a = $(`<div id="html_e6fe66ef311b69bff4095defbd5fa60a" style="width: 100.0%; height: 100.0%;"><b>Voltaire</b><br>     Vélos dispo: 6<br>     Capacité: 8<br>     Cluster: 0<br>     Usage: 0.75</div>`)[0];
+                popup_18de352208766538a9c4387771af98b7.setContent(html_e6fe66ef311b69bff4095defbd5fa60a);
+            
+        
+
+        circle_marker_c5019836aee5aba7a4c4e8a03ea93d85.bindPopup(popup_18de352208766538a9c4387771af98b7)
+        ;
+
+        
+    
+    
+            var circle_marker_7b1bab10f8be613db724cf86397b7491 = L.circleMarker(
+                [43.59048, 3.884611],
+                {"bubblingMouseEvents": true, "color": "#3498DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498DB", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_d5c8f5f92477537699cb7ac7ecdfa252 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_62124ed05a8ccb60f05728b51887bfae = $(`<div id="html_62124ed05a8ccb60f05728b51887bfae" style="width: 100.0%; height: 100.0%;"><b>Prés d'Arènes</b><br>     Vélos dispo: 4<br>     Capacité: 8<br>     Cluster: 1<br>     Usage: 0.50</div>`)[0];
+                popup_d5c8f5f92477537699cb7ac7ecdfa252.setContent(html_62124ed05a8ccb60f05728b51887bfae);
+            
+        
+
+        circle_marker_7b1bab10f8be613db724cf86397b7491.bindPopup(popup_d5c8f5f92477537699cb7ac7ecdfa252)
+        ;
+
+        
+    
+    
+            var circle_marker_de8143cf0d094617625191d48049705c = L.circleMarker(
+                [43.590757, 3.890616],
+                {"bubblingMouseEvents": true, "color": "#3498DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498DB", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_3c8a0553411c7a98113a8c1380c7bfc2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_438f9383830131d345fa17ba9048b93e = $(`<div id="html_438f9383830131d345fa17ba9048b93e" style="width: 100.0%; height: 100.0%;"><b>Garcia Lorca</b><br>     Vélos dispo: 5<br>     Capacité: 8<br>     Cluster: 1<br>     Usage: 0.62</div>`)[0];
+                popup_3c8a0553411c7a98113a8c1380c7bfc2.setContent(html_438f9383830131d345fa17ba9048b93e);
+            
+        
+
+        circle_marker_de8143cf0d094617625191d48049705c.bindPopup(popup_3c8a0553411c7a98113a8c1380c7bfc2)
+        ;
+
+        
+    
+    
+            var circle_marker_cd918e1e2b41223ff0d2a3f82703d8f8 = L.circleMarker(
+                [43.63543, 3.871179],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_2ac390780c9dcec9410749337ee02075 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_da393eb7ee29cc72853745d344d044f7 = $(`<div id="html_da393eb7ee29cc72853745d344d044f7" style="width: 100.0%; height: 100.0%;"><b>Vert Bois</b><br>     Vélos dispo: 4<br>     Capacité: 16<br>     Cluster: 2<br>     Usage: 0.25</div>`)[0];
+                popup_2ac390780c9dcec9410749337ee02075.setContent(html_da393eb7ee29cc72853745d344d044f7);
+            
+        
+
+        circle_marker_cd918e1e2b41223ff0d2a3f82703d8f8.bindPopup(popup_2ac390780c9dcec9410749337ee02075)
+        ;
+
+        
+    
+    
+            var circle_marker_b301e61b87339ef71610056791c522bd = L.circleMarker(
+                [43.633679, 3.832861],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_9c479d48cb317d29970bd5e2210d4be8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c41ebc35ba8b4bbb30337f11c3bda803 = $(`<div id="html_c41ebc35ba8b4bbb30337f11c3bda803" style="width: 100.0%; height: 100.0%;"><b>Malbosc</b><br>     Vélos dispo: 5<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.62</div>`)[0];
+                popup_9c479d48cb317d29970bd5e2210d4be8.setContent(html_c41ebc35ba8b4bbb30337f11c3bda803);
+            
+        
+
+        circle_marker_b301e61b87339ef71610056791c522bd.bindPopup(popup_9c479d48cb317d29970bd5e2210d4be8)
+        ;
+
+        
+    
+    
+            var circle_marker_6a59bb64398dbcf46380657a352e43e4 = L.circleMarker(
+                [43.635689, 3.849597],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_ac0419eedfd57aba14064edc80c65867 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_62fbe5547f2ae938d8b39e99d97c44c9 = $(`<div id="html_62fbe5547f2ae938d8b39e99d97c44c9" style="width: 100.0%; height: 100.0%;"><b>Occitanie</b><br>     Vélos dispo: 5<br>     Capacité: 32<br>     Cluster: 2<br>     Usage: 0.16</div>`)[0];
+                popup_ac0419eedfd57aba14064edc80c65867.setContent(html_62fbe5547f2ae938d8b39e99d97c44c9);
+            
+        
+
+        circle_marker_6a59bb64398dbcf46380657a352e43e4.bindPopup(popup_ac0419eedfd57aba14064edc80c65867)
+        ;
+
+        
+    
+    
+            var circle_marker_6018e39228d32f98ea2064bb6788c143 = L.circleMarker(
+                [43.631318, 3.861299],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_065458f1cd0802d7ac7864d5dbd9e271 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5d8d8a882e3398200a569a938935d48b = $(`<div id="html_5d8d8a882e3398200a569a938935d48b" style="width: 100.0%; height: 100.0%;"><b>Fac des Sciences</b><br>     Vélos dispo: 12<br>     Capacité: 24<br>     Cluster: 0<br>     Usage: 0.50</div>`)[0];
+                popup_065458f1cd0802d7ac7864d5dbd9e271.setContent(html_5d8d8a882e3398200a569a938935d48b);
+            
+        
+
+        circle_marker_6018e39228d32f98ea2064bb6788c143.bindPopup(popup_065458f1cd0802d7ac7864d5dbd9e271)
+        ;
+
+        
+    
+    
+            var circle_marker_dc3fad469874688055eeaaa3bbd8cb25 = L.circleMarker(
+                [43.630437, 3.869539],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_60009e881b80a0c201988182bb04fc61 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f10c7abef9f9a97b1e52bbad14f0f675 = $(`<div id="html_f10c7abef9f9a97b1e52bbad14f0f675" style="width: 100.0%; height: 100.0%;"><b>Fac de Lettres</b><br>     Vélos dispo: 2<br>     Capacité: 12<br>     Cluster: 2<br>     Usage: 0.17</div>`)[0];
+                popup_60009e881b80a0c201988182bb04fc61.setContent(html_f10c7abef9f9a97b1e52bbad14f0f675);
+            
+        
+
+        circle_marker_dc3fad469874688055eeaaa3bbd8cb25.bindPopup(popup_60009e881b80a0c201988182bb04fc61)
+        ;
+
+        
+    
+    
+            var circle_marker_36e643942c6d8be25d9fbe27768b1c9b = L.circleMarker(
+                [43.626163, 3.882492],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_1da956512e612f5a1c9319e43f38163d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_063e70d4202566cb1031c6e13e59f6cb = $(`<div id="html_063e70d4202566cb1031c6e13e59f6cb" style="width: 100.0%; height: 100.0%;"><b>Aiguelongue</b><br>     Vélos dispo: 7<br>     Capacité: 8<br>     Cluster: 0<br>     Usage: 0.88</div>`)[0];
+                popup_1da956512e612f5a1c9319e43f38163d.setContent(html_063e70d4202566cb1031c6e13e59f6cb);
+            
+        
+
+        circle_marker_36e643942c6d8be25d9fbe27768b1c9b.bindPopup(popup_1da956512e612f5a1c9319e43f38163d)
+        ;
+
+        
+    
+    
+            var circle_marker_55504c4b61b5c6b4b343aafca1870790 = L.circleMarker(
+                [43.619701, 3.883831],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_cc112a06e4548b6fd5770937e059f1c5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e0988994d0a0a94e5df5ad7bfab7e63d = $(`<div id="html_e0988994d0a0a94e5df5ad7bfab7e63d" style="width: 100.0%; height: 100.0%;"><b>Jeu de Mail des Abbés</b><br>     Vélos dispo: 9<br>     Capacité: 8<br>     Cluster: 0<br>     Usage: 1.12</div>`)[0];
+                popup_cc112a06e4548b6fd5770937e059f1c5.setContent(html_e0988994d0a0a94e5df5ad7bfab7e63d);
+            
+        
+
+        circle_marker_55504c4b61b5c6b4b343aafca1870790.bindPopup(popup_cc112a06e4548b6fd5770937e059f1c5)
+        ;
+
+        
+    
+    
+            var circle_marker_97d62d7a4514cb8e32a085691c052b23 = L.circleMarker(
+                [43.639119, 3.828199],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_a7c56a2258089fb533279c4770586b00 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9ef0f17f640aeee4dc41e2d50bbac690 = $(`<div id="html_9ef0f17f640aeee4dc41e2d50bbac690" style="width: 100.0%; height: 100.0%;"><b>Euromédecine</b><br>     Vélos dispo: 5<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.62</div>`)[0];
+                popup_a7c56a2258089fb533279c4770586b00.setContent(html_9ef0f17f640aeee4dc41e2d50bbac690);
+            
+        
+
+        circle_marker_97d62d7a4514cb8e32a085691c052b23.bindPopup(popup_a7c56a2258089fb533279c4770586b00)
+        ;
+
+        
+    
+    
+            var circle_marker_d6d93f52c69bf8ba89981426d2253299 = L.circleMarker(
+                [43.619871, 3.873812],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_0cff95f6cb74b126b0aa7cc6abeda123 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4bf2ef29a0919cb1679cb1db8aefc137 = $(`<div id="html_4bf2ef29a0919cb1679cb1db8aefc137" style="width: 100.0%; height: 100.0%;"><b>Marie Caizergues</b><br>     Vélos dispo: 4<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.50</div>`)[0];
+                popup_0cff95f6cb74b126b0aa7cc6abeda123.setContent(html_4bf2ef29a0919cb1679cb1db8aefc137);
+            
+        
+
+        circle_marker_d6d93f52c69bf8ba89981426d2253299.bindPopup(popup_0cff95f6cb74b126b0aa7cc6abeda123)
+        ;
+
+        
+    
+    
+            var circle_marker_14a961d2bd5bd24d63fad8145076aba4 = L.circleMarker(
+                [43.584211, 3.860031],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_c017a94ce8e7291f8b5ad044c3f1a446 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fdc300ad1b3530ca4d6910fec091c232 = $(`<div id="html_fdc300ad1b3530ca4d6910fec091c232" style="width: 100.0%; height: 100.0%;"><b>Sabines</b><br>     Vélos dispo: 7<br>     Capacité: 8<br>     Cluster: 0<br>     Usage: 0.88</div>`)[0];
+                popup_c017a94ce8e7291f8b5ad044c3f1a446.setContent(html_fdc300ad1b3530ca4d6910fec091c232);
+            
+        
+
+        circle_marker_14a961d2bd5bd24d63fad8145076aba4.bindPopup(popup_c017a94ce8e7291f8b5ad044c3f1a446)
+        ;
+
+        
+    
+    
+            var circle_marker_e2c447b5fd2bbca1e096f5dcbc941a22 = L.circleMarker(
+                [43.61467, 3.832624],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_0770f8f0df1987463a76cd2d7f6aa9e4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_352f6f4e007c34ca406582a055624364 = $(`<div id="html_352f6f4e007c34ca406582a055624364" style="width: 100.0%; height: 100.0%;"><b>Celleneuve</b><br>     Vélos dispo: 3<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.38</div>`)[0];
+                popup_0770f8f0df1987463a76cd2d7f6aa9e4.setContent(html_352f6f4e007c34ca406582a055624364);
+            
+        
+
+        circle_marker_e2c447b5fd2bbca1e096f5dcbc941a22.bindPopup(popup_0770f8f0df1987463a76cd2d7f6aa9e4)
+        ;
+
+        
+    
+    
+            var circle_marker_d0d3ddbee401175421cee8949e65d4c0 = L.circleMarker(
+                [43.60585, 3.911576],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_0a1b8566c0634eef2640a0af4633cea7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_71f114cadf0d25274bac2efbc2490766 = $(`<div id="html_71f114cadf0d25274bac2efbc2490766" style="width: 100.0%; height: 100.0%;"><b>Jardin de la Lironde</b><br>     Vélos dispo: 7<br>     Capacité: 8<br>     Cluster: 0<br>     Usage: 0.88</div>`)[0];
+                popup_0a1b8566c0634eef2640a0af4633cea7.setContent(html_71f114cadf0d25274bac2efbc2490766);
+            
+        
+
+        circle_marker_d0d3ddbee401175421cee8949e65d4c0.bindPopup(popup_0a1b8566c0634eef2640a0af4633cea7)
+        ;
+
+        
+    
+    
+            var circle_marker_781ca199db169b1d3dd7340b36cce953 = L.circleMarker(
+                [43.621983, 3.855603],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_19d8be16ea51a58d85ae2c506a37fbe9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c1464196c773cc0d0d6c7cdc2aafb7e1 = $(`<div id="html_c1464196c773cc0d0d6c7cdc2aafb7e1" style="width: 100.0%; height: 100.0%;"><b>Père Soulas</b><br>     Vélos dispo: 4<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.50</div>`)[0];
+                popup_19d8be16ea51a58d85ae2c506a37fbe9.setContent(html_c1464196c773cc0d0d6c7cdc2aafb7e1);
+            
+        
+
+        circle_marker_781ca199db169b1d3dd7340b36cce953.bindPopup(popup_19d8be16ea51a58d85ae2c506a37fbe9)
+        ;
+
+        
+    
+    
+            var circle_marker_906cd97a629d936080691676e883be0a = L.circleMarker(
+                [43.616812, 3.855075],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_34252b0dbe5efdf10e02886dc20e7b67 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6898b6a40f13bfde0ef8d2cd434dd92f = $(`<div id="html_6898b6a40f13bfde0ef8d2cd434dd92f" style="width: 100.0%; height: 100.0%;"><b>Place Viala</b><br>     Vélos dispo: 4<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.50</div>`)[0];
+                popup_34252b0dbe5efdf10e02886dc20e7b67.setContent(html_6898b6a40f13bfde0ef8d2cd434dd92f);
+            
+        
+
+        circle_marker_906cd97a629d936080691676e883be0a.bindPopup(popup_34252b0dbe5efdf10e02886dc20e7b67)
+        ;
+
+        
+    
+    
+            var circle_marker_13281d6c97c47e2e219002be9bccdd40 = L.circleMarker(
+                [43.621682, 3.83477],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_bd9692292b2da1e07e808be5dcee7fb7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1149de6b492f78619dffac305e1746c0 = $(`<div id="html_1149de6b492f78619dffac305e1746c0" style="width: 100.0%; height: 100.0%;"><b>Hôtel du Département</b><br>     Vélos dispo: 4<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.50</div>`)[0];
+                popup_bd9692292b2da1e07e808be5dcee7fb7.setContent(html_1149de6b492f78619dffac305e1746c0);
+            
+        
+
+        circle_marker_13281d6c97c47e2e219002be9bccdd40.bindPopup(popup_bd9692292b2da1e07e808be5dcee7fb7)
+        ;
+
+        
+    
+    
+            var circle_marker_805e70ab248223bdba0457e8cbcce113 = L.circleMarker(
+                [43.615155, 3.839466],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_ce76cc14e4f842d4e610ed2dca8e09f0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a7cd217117e26f3b9274530f537f7bf4 = $(`<div id="html_a7cd217117e26f3b9274530f537f7bf4" style="width: 100.0%; height: 100.0%;"><b>Tonnelles</b><br>     Vélos dispo: 3<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.38</div>`)[0];
+                popup_ce76cc14e4f842d4e610ed2dca8e09f0.setContent(html_a7cd217117e26f3b9274530f537f7bf4);
+            
+        
+
+        circle_marker_805e70ab248223bdba0457e8cbcce113.bindPopup(popup_ce76cc14e4f842d4e610ed2dca8e09f0)
+        ;
+
+        
+    
+    
+            var circle_marker_940f8a70a4b5d4e7b4a8e718fd75e4d8 = L.circleMarker(
+                [43.603889, 3.879362],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_fcb0a70ecb109db4b1a6912cb766c75c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_926eadc60c8a0bad54f7fc95f44953e0 = $(`<div id="html_926eadc60c8a0bad54f7fc95f44953e0" style="width: 100.0%; height: 100.0%;"><b>Parvis Jules Ferry - Gare Saint-Roch</b><br>     Vélos dispo: 7<br>     Capacité: 8<br>     Cluster: 0<br>     Usage: 0.88</div>`)[0];
+                popup_fcb0a70ecb109db4b1a6912cb766c75c.setContent(html_926eadc60c8a0bad54f7fc95f44953e0);
+            
+        
+
+        circle_marker_940f8a70a4b5d4e7b4a8e718fd75e4d8.bindPopup(popup_fcb0a70ecb109db4b1a6912cb766c75c)
+        ;
+
+        
+    
+    
+            var circle_marker_3cf298bdf0d7cc520811cddd42129077 = L.circleMarker(
+                [43.606036, 3.882393],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_e6f12cb1ca14ab38b7159be3b32bc79f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fa907ce52d8d58f230c64040bdced94a = $(`<div id="html_fa907ce52d8d58f230c64040bdced94a" style="width: 100.0%; height: 100.0%;"><b>Pont de Lattes - Gare Saint-Roch</b><br>     Vélos dispo: 2<br>     Capacité: 12<br>     Cluster: 2<br>     Usage: 0.17</div>`)[0];
+                popup_e6f12cb1ca14ab38b7159be3b32bc79f.setContent(html_fa907ce52d8d58f230c64040bdced94a);
+            
+        
+
+        circle_marker_3cf298bdf0d7cc520811cddd42129077.bindPopup(popup_e6f12cb1ca14ab38b7159be3b32bc79f)
+        ;
+
+        
+    
+    
+            var circle_marker_f2364aec50dfbc604ed49616db787c4b = L.circleMarker(
+                [43.588239, 3.853421],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_26eab82f687ae81df5607a11872987ca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3a8ea41966020bbb82ca29a411658957 = $(`<div id="html_3a8ea41966020bbb82ca29a411658957" style="width: 100.0%; height: 100.0%;"><b>Providence - Ovalie</b><br>     Vélos dispo: 4<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.50</div>`)[0];
+                popup_26eab82f687ae81df5607a11872987ca.setContent(html_3a8ea41966020bbb82ca29a411658957);
+            
+        
+
+        circle_marker_f2364aec50dfbc604ed49616db787c4b.bindPopup(popup_26eab82f687ae81df5607a11872987ca)
+        ;
+
+        
+    
+    
+            var circle_marker_c724c7cbad98fc785eb05ce3fcf4a95b = L.circleMarker(
+                [43.558351, 3.963412],
+                {"bubblingMouseEvents": true, "color": "#3498DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498DB", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_b46bdeeabe3414edcfdb0653c05a220e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_28f08c10fdd03fc8707c14697a91b1d8 = $(`<div id="html_28f08c10fdd03fc8707c14697a91b1d8" style="width: 100.0%; height: 100.0%;"><b>Pérols Etang de l'Or</b><br>     Vélos dispo: 6<br>     Capacité: 68<br>     Cluster: 1<br>     Usage: 0.09</div>`)[0];
+                popup_b46bdeeabe3414edcfdb0653c05a220e.setContent(html_28f08c10fdd03fc8707c14697a91b1d8);
+            
+        
+
+        circle_marker_c724c7cbad98fc785eb05ce3fcf4a95b.bindPopup(popup_b46bdeeabe3414edcfdb0653c05a220e)
+        ;
+
+        
+    
+    
+            var circle_marker_71da0b317e45541e0c170f87b3701402 = L.circleMarker(
+                [43.614005, 3.873218],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_4f02ef9bdd093212baf4c3547cda4cab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6777a3e4ec0b7e3a76987c2c12be2fa9 = $(`<div id="html_6777a3e4ec0b7e3a76987c2c12be2fa9" style="width: 100.0%; height: 100.0%;"><b>Albert 1er - Cathédrale</b><br>     Vélos dispo: 8<br>     Capacité: 12<br>     Cluster: 0<br>     Usage: 0.67</div>`)[0];
+                popup_4f02ef9bdd093212baf4c3547cda4cab.setContent(html_6777a3e4ec0b7e3a76987c2c12be2fa9);
+            
+        
+
+        circle_marker_71da0b317e45541e0c170f87b3701402.bindPopup(popup_4f02ef9bdd093212baf4c3547cda4cab)
+        ;
+
+        
+    
+    
+            var circle_marker_48f15be037e65c1e557b96ea264199a5 = L.circleMarker(
+                [43.608996, 3.872752],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_8fc495c7c57ddbb4da907a2719533102 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_40a3e76d306e7be7a4fb402cd451b285 = $(`<div id="html_40a3e76d306e7be7a4fb402cd451b285" style="width: 100.0%; height: 100.0%;"><b>Saint-Guilhem - Courreau</b><br>     Vélos dispo: 2<br>     Capacité: 8<br>     Cluster: 2<br>     Usage: 0.25</div>`)[0];
+                popup_8fc495c7c57ddbb4da907a2719533102.setContent(html_40a3e76d306e7be7a4fb402cd451b285);
+            
+        
+
+        circle_marker_48f15be037e65c1e557b96ea264199a5.bindPopup(popup_8fc495c7c57ddbb4da907a2719533102)
+        ;
+
+        
+    
+    
+            var circle_marker_72f6c0666fb1d9169ecebc178868193d = L.circleMarker(
+                [43.59562, 3.9235],
+                {"bubblingMouseEvents": true, "color": "#3498DB", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498DB", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_ded6b95b22ecb76ac7249107b67f0328 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ce3eb7747a3e64defe29dede7958dc3d = $(`<div id="html_ce3eb7747a3e64defe29dede7958dc3d" style="width: 100.0%; height: 100.0%;"><b>Sud De France</b><br>     Vélos dispo: 3<br>     Capacité: 8<br>     Cluster: 1<br>     Usage: 0.38</div>`)[0];
+                popup_ded6b95b22ecb76ac7249107b67f0328.setContent(html_ce3eb7747a3e64defe29dede7958dc3d);
+            
+        
+
+        circle_marker_72f6c0666fb1d9169ecebc178868193d.bindPopup(popup_ded6b95b22ecb76ac7249107b67f0328)
+        ;
+
+        
+    
+    
+            var circle_marker_2d5b8a1793c51f1f1ace87b53a7a0923 = L.circleMarker(
+                [43.609857, 3.883884],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc);
+        
+    
+        var popup_d8a8e2f7fa334d1b4eff01351490fe6a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c09da6b638f9a8f2fc4d66bdf572e363 = $(`<div id="html_c09da6b638f9a8f2fc4d66bdf572e363" style="width: 100.0%; height: 100.0%;"><b>Jean de Beins</b><br>     Vélos dispo: 2<br>     Capacité: 16<br>     Cluster: 2<br>     Usage: 0.12</div>`)[0];
+                popup_d8a8e2f7fa334d1b4eff01351490fe6a.setContent(html_c09da6b638f9a8f2fc4d66bdf572e363);
+            
+        
+
+        circle_marker_2d5b8a1793c51f1f1ace87b53a7a0923.bindPopup(popup_d8a8e2f7fa334d1b4eff01351490fe6a)
+        ;
+
+        
+    
+    
+            marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc.addTo(map_231d16289c3fa093d30406ed2b180ea1);
+        
+    
+            var heat_map_5e94a54b1796bb997af684ac3a49519c = L.heatLayer(
+                [[43.605366, 3.881346, 7], [43.608148, 3.878778, 13], [43.599088, 3.894866, 11], [43.613989, 3.8816, 6], [43.616768, 3.873375, 3], [43.610989, 3.873345, 2], [43.606301, 3.87724, 8], [43.603038, 3.875796, 2], [43.608491, 3.868389, 4], [43.622629, 3.868375, 10], [43.616742, 3.87998, 8], [43.616698, 3.884981, 1], [43.618692, 3.893844, 7], [43.607942, 3.890634, 9], [43.608218, 3.89314, 18], [43.607859, 3.886644, 9], [43.614642, 3.877648, 6], [43.607106, 3.870693, 2], [43.60032, 3.89851, 14], [43.612659, 3.867734, 4], [43.601143, 3.884373, 8], [43.599817, 3.875757, 9], [43.603553, 3.867884, 3], [43.603424, 3.899263, 11], [43.622038, 3.86672, 2], [43.603767, 3.888659, 7], [43.59048, 3.884611, 5], [43.590757, 3.890616, 6], [43.63543, 3.871179, 5], [43.633679, 3.832861, 6], [43.635689, 3.849597, 6], [43.631318, 3.861299, 13], [43.630437, 3.869539, 3], [43.626163, 3.882492, 8], [43.619701, 3.883831, 10], [43.639119, 3.828199, 6], [43.619871, 3.873812, 5], [43.584211, 3.860031, 8], [43.61467, 3.832624, 4], [43.60585, 3.911576, 8], [43.621983, 3.855603, 5], [43.616812, 3.855075, 5], [43.621682, 3.83477, 5], [43.615155, 3.839466, 4], [43.603889, 3.879362, 8], [43.606036, 3.882393, 3], [43.588239, 3.853421, 5], [43.558351, 3.963412, 7], [43.614005, 3.873218, 9], [43.608996, 3.872752, 3], [43.59562, 3.9235, 4], [43.609857, 3.883884, 3]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_5e94a54b1796bb997af684ac3a49519c.addTo(map_231d16289c3fa093d30406ed2b180ea1);
+        
+    
+            var layer_control_6d9b98b9ec9636d9dd9827c7464440e1_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_91fc64ed787796bd6669be0b77ba467f,
+                },
+                overlays :  {
+                    "Stations V\u00e9lomagg" : marker_cluster_e7393b9c7a582ef07ef43fb85cf8c4cc,
+                    "Heatmap disponibilit\u00e9" : heat_map_5e94a54b1796bb997af684ac3a49519c,
+                },
+            };
+            let layer_control_6d9b98b9ec9636d9dd9827c7464440e1 = L.control.layers(
+                layer_control_6d9b98b9ec9636d9dd9827c7464440e1_layers.base_layers,
+                layer_control_6d9b98b9ec9636d9dd9827c7464440e1_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_231d16289c3fa093d30406ed2b180ea1);
+
+        
+</script>
+</html>

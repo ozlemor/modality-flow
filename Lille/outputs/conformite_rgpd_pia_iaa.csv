@@ -1,0 +1,10 @@
+﻿Domaine,Point,Statut,Détail
+RGPD,Données personnelles,Conforme,"Aucune donnée individuelle collectée. Données agrégées uniquement (stations, communes)."
+RGPD,Emprunts V'Lille,Conforme,"Pas de user_id, pas de géolocalisation individuelle. Données Open Data publiques."
+RGPD,Kafka streaming,Conforme,"Données capteurs IoT publics (stations, parkings). Pas de tracking utilisateur."
+RGPD,Rétention données,À définir,"Politique de rétention recommandée : 2 ans pour données temps réel, 10 ans pour historique."
+PIA,Analyse d'impact,Faible risque,"Données non-sensibles, open data. PIA simplifié suffisant."
+PIA,Tracking GPS,Hors scope,L'application mobile Modality-Flow ne collecte pas de trajets GPS individuels.
+IAA,Biais algorithmique,Surveillé,Score équité (connectivité) intégré dans l'IMD pour détecter les fractures territoriales.
+IAA,Transparence ML,Conforme,Modèle prédictif explicable (Random Forest). Features documentées. R²=0.9977.
+Souveraineté,Cloud,À surveiller,Railway hébergé aux USA. Recommandation : migrer vers OVH ou Scaleway (cloud souverain français).
