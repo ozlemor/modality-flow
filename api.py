@@ -1343,49 +1343,503 @@ def get_imd():
         return {"total": len(rows), "imd": rows}
     except Exception as e:
         return {"error": str(e)}
-@app.get("/clusters", tags=["Clustering"])
-def get_clusters():
-    """Clusters K-Means des stations Velomagg — zones prioritaires"""
+# ── BILLETTERIE UNIQUE ────────────────────────────────────────────────────────
+# Système de billetterie multimodal (Vélo + Bus/Tram)
+# - Bus/Tram : tarif fixe 1.80€, pas de remboursement
+# - Vélo : tarif à la distance, remboursement si distance réelle < distance max
+# - Anti-fraude : max 3 remboursements/jour, cooldown 30min, min 500m
+
+import uuid
+import hashlib
+from datetime import datetime, timedelta
+from typing import Optional
+from pydantic import BaseModel
+
+# ── Modèles ───────────────────────────────────────────────────────────────────
+
+class BoardRequest(BaseModel):
+    device_token: str           # token anonyme (hash appareil, pas user_id)
+    mode: str                   # 'velo', 'bus', 'tram', 'multimodal'
+    station_id: Optional[str] = None    # pour vélo
+    terminal_id: Optional[str] = None   # pour bus/tram
+    lat: Optional[float] = None
+    lon: Optional[float] = None
+
+class AlightRequest(BaseModel):
+    ticket_id: str
+    device_token: str
+    station_id: Optional[str] = None
+    terminal_id: Optional[str] = None
+    lat: Optional[float] = None
+    lon: Optional[float] = None
+    distance_reelle_km: float   # distance réellement parcourue
+
+class AddSegmentRequest(BaseModel):
+    ticket_id: str
+    device_token: str
+    mode: str                   # nouveau mode (ex: 'tram' après 'velo')
+    terminal_id: Optional[str] = None
+    lat: Optional[float] = None
+    lon: Optional[float] = None
+
+# ── Tarification ──────────────────────────────────────────────────────────────
+
+TARIF_BUS_TRAM = 1.80   # fixe, pas de remboursement
+
+def tarif_velo(distance_km: float) -> float:
+    """Tarif maximum Vélo selon distance (payé au départ)"""
+    if distance_km <= 1:
+        return 0.30
+    elif distance_km <= 3:
+        return 0.60
+    elif distance_km <= 5:
+        return 1.00
+    else:
+        return 1.50
+
+def tarif_velo_reel(distance_km: float) -> float:
+    """Tarif réel Vélo selon distance réellement parcourue"""
+    return tarif_velo(distance_km)
+
+# ── Règles anti-fraude ────────────────────────────────────────────────────────
+
+MAX_REMBOURSEMENTS_JOUR = 3
+MIN_DISTANCE_REMBOURSEMENT_KM = 0.5
+COOLDOWN_MINUTES = 30
+MAX_COURTS_TRAJETS_MEME_SENS = 10  # même trajet dans la journée
+
+# ── Création tables ───────────────────────────────────────────────────────────
+
+CREATE_TABLES = """
+CREATE TABLE IF NOT EXISTS public.fact_tickets_v2 (
+    ticket_id       VARCHAR(36) PRIMARY KEY,
+    device_token    VARCHAR(64),        -- hash anonyme, pas de données perso
+    mode_principal  VARCHAR(20),        -- velo, bus, tram, multimodal
+    segments        JSONB DEFAULT '[]', -- liste des segments du trajet
+    tarif_paye      DOUBLE PRECISION,   -- montant payé au départ
+    tarif_reel      DOUBLE PRECISION,   -- montant réel après calcul
+    remboursement   DOUBLE PRECISION DEFAULT 0,
+    statut          VARCHAR(20) DEFAULT 'en_cours', -- en_cours, termine, annule
+    fraude_flag     BOOLEAN DEFAULT FALSE,
+    terminal_depart VARCHAR(50),
+    created_at      TIMESTAMP DEFAULT NOW(),
+    closed_at       TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS public.fact_remboursements (
+    id              SERIAL PRIMARY KEY,
+    ticket_id       VARCHAR(36),
+    device_token    VARCHAR(64),
+    montant         DOUBLE PRECISION,
+    terminal_id     VARCHAR(50),        -- terminal où récupérer le remboursement
+    statut          VARCHAR(20) DEFAULT 'a_recuperer', -- a_recuperer, recupere
+    created_at      TIMESTAMP DEFAULT NOW(),
+    expires_at      TIMESTAMP           -- 24h pour récupérer
+);
+"""
+
+# ── Helpers anti-fraude ───────────────────────────────────────────────────────
+
+def check_fraude(conn, device_token: str, terminal_id: str = None) -> dict:
+    """Vérifie les règles anti-fraude pour un device token"""
+    cur = conn.cursor()
+    today = datetime.now().date()
+
+    # 1. Nombre de remboursements aujourd'hui
+    cur.execute("""
+        SELECT COUNT(*) FROM public.fact_remboursements
+        WHERE device_token = %s
+        AND DATE(created_at) = %s
+    """, (device_token, today))
+    nb_remboursements = cur.fetchone()[0]
+
+    # 2. Cooldown terminal (30 min)
+    cooldown_ok = True
+    if terminal_id:
+        cur.execute("""
+            SELECT COUNT(*) FROM public.fact_tickets_v2
+            WHERE device_token = %s
+            AND terminal_depart = %s
+            AND created_at > NOW() - INTERVAL '30 minutes'
+        """, (device_token, terminal_id))
+        cooldown_ok = cur.fetchone()[0] == 0
+
+    # 3. Trajets courts répétitifs aujourd'hui
+    cur.execute("""
+        SELECT COUNT(*) FROM public.fact_tickets_v2
+        WHERE device_token = %s
+        AND DATE(created_at) = %s
+        AND statut = 'termine'
+    """, (device_token, today))
+    nb_trajets_jour = cur.fetchone()[0]
+
+    cur.close()
+
+    return {
+        "nb_remboursements_jour": nb_remboursements,
+        "remboursement_possible": nb_remboursements < MAX_REMBOURSEMENTS_JOUR,
+        "cooldown_ok": cooldown_ok,
+        "nb_trajets_jour": nb_trajets_jour,
+        "trajets_ok": nb_trajets_jour < MAX_COURTS_TRAJETS_MEME_SENS,
+    }
+
+# ── Endpoints ─────────────────────────────────────────────────────────────────
+
+@app.post("/ticket/board", tags=["Billetterie"])
+def board(req: BoardRequest):
+    """
+    Biniş — ouvre un ticket et débite le tarif maximum.
+    - Bus/Tram : 1.80€ fixe
+    - Vélo : tarif max (5km = 1.50€) — remboursement possible à la descente
+    """
+    try:
+        conn = get_pg()
+
+        # Créer tables si nécessaire
+        cur = conn.cursor()
+        cur.execute(CREATE_TABLES)
+        conn.commit()
+
+        # Anti-fraude check
+        fraude = check_fraude(conn, req.device_token, req.terminal_id or req.station_id)
+        if not fraude["cooldown_ok"]:
+            cur.close(); conn.close()
+            return {
+                "error": "Cooldown actif — attendez 30 minutes avant de reprendre au même terminal",
+                "code": "COOLDOWN"
+            }
+
+        # Calcul tarif selon mode
+        if req.mode in ["bus", "tram"]:
+            tarif_paye = TARIF_BUS_TRAM
+            remboursement_possible = False
+        elif req.mode == "velo":
+            tarif_paye = tarif_velo(5.0)  # max distance par défaut = 5km
+            remboursement_possible = fraude["remboursement_possible"]
+        elif req.mode == "multimodal":
+            tarif_paye = TARIF_BUS_TRAM + tarif_velo(5.0)
+            remboursement_possible = fraude["remboursement_possible"]
+        else:
+            cur.close(); conn.close()
+            return {"error": f"Mode inconnu : {req.mode}"}
+
+        ticket_id = str(uuid.uuid4())
+        segment = {
+            "mode": req.mode,
+            "station_id": req.station_id,
+            "terminal_id": req.terminal_id,
+            "lat": req.lat,
+            "lon": req.lon,
+            "heure_depart": datetime.now().isoformat(),
+            "tarif": tarif_paye
+        }
+
+        cur.execute("""
+            INSERT INTO public.fact_tickets_v2
+                (ticket_id, device_token, mode_principal, segments,
+                 tarif_paye, tarif_reel, terminal_depart)
+            VALUES (%s, %s, %s, %s::jsonb, %s, %s, %s)
+        """, (
+            ticket_id,
+            req.device_token,
+            req.mode,
+            __import__('json').dumps([segment]),
+            tarif_paye,
+            tarif_paye,
+            req.terminal_id or req.station_id
+        ))
+        conn.commit()
+        cur.close(); conn.close()
+
+        return {
+            "ticket_id": ticket_id,
+            "mode": req.mode,
+            "tarif_paye": tarif_paye,
+            "remboursement_possible": remboursement_possible,
+            "statut": "en_cours",
+            "message": f"Ticket ouvert — {tarif_paye:.2f}€ débité",
+            "qr_data": f"MODALITY:{ticket_id}:{req.mode}",
+            "info": "Présentez ce QR code au contrôleur"
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.post("/ticket/alight", tags=["Billetterie"])
+def alight(req: AlightRequest):
+    """
+    Descente — ferme le ticket, calcule le remboursement éventuel.
+    - Bus/Tram : pas de remboursement
+    - Vélo : remboursement si distance réelle < distance max ET règles anti-fraude OK
+    """
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+
+        # Récupérer le ticket
+        cur.execute("""
+            SELECT * FROM public.fact_tickets_v2
+            WHERE ticket_id = %s AND device_token = %s AND statut = 'en_cours'
+        """, (req.ticket_id, req.device_token))
+        ticket = cur.fetchone()
+
+        if not ticket:
+            cur.close(); conn.close()
+            return {"error": "Ticket non trouvé ou déjà fermé"}
+
+        ticket = dict(ticket)
+        mode = ticket["mode_principal"]
+        tarif_paye = float(ticket["tarif_paye"])
+        remboursement = 0.0
+        remboursement_terminal = None
+        fraude_flag = False
+
+        # Calcul remboursement Vélo
+        if mode in ["velo", "multimodal"]:
+            fraude = check_fraude(conn, req.device_token)
+
+            if (req.distance_reelle_km >= MIN_DISTANCE_REMBOURSEMENT_KM
+                    and fraude["remboursement_possible"]
+                    and fraude["trajets_ok"]):
+
+                if mode == "velo":
+                    tarif_reel = tarif_velo_reel(req.distance_reelle_km)
+                    remboursement = round(tarif_paye - tarif_reel, 2)
+                elif mode == "multimodal":
+                    tarif_velo_reel_val = tarif_velo_reel(req.distance_reelle_km)
+                    remboursement = round(tarif_velo(5.0) - tarif_velo_reel_val, 2)
+
+                if remboursement < 0:
+                    remboursement = 0.0
+
+                # Enregistrer le remboursement
+                if remboursement > 0:
+                    terminal = req.terminal_id or req.station_id or "TERMINAL_PROCHE"
+                    cur2 = conn.cursor()
+                    cur2.execute("""
+                        INSERT INTO public.fact_remboursements
+                            (ticket_id, device_token, montant, terminal_id, expires_at)
+                        VALUES (%s, %s, %s, %s, %s)
+                    """, (
+                        req.ticket_id,
+                        req.device_token,
+                        remboursement,
+                        terminal,
+                        datetime.now() + timedelta(hours=24)
+                    ))
+                    conn.commit()
+                    cur2.close()
+                    remboursement_terminal = terminal
+
+            elif not fraude["trajets_ok"]:
+                fraude_flag = True
+
+        tarif_reel = tarif_paye - remboursement
+
+        # Fermer le ticket
+        cur3 = conn.cursor()
+        cur3.execute("""
+            UPDATE public.fact_tickets_v2
+            SET statut = 'termine',
+                tarif_reel = %s,
+                remboursement = %s,
+                fraude_flag = %s,
+                closed_at = NOW()
+            WHERE ticket_id = %s
+        """, (tarif_reel, remboursement, fraude_flag, req.ticket_id))
+        conn.commit()
+        cur3.close()
+        cur.close()
+        conn.close()
+
+        response = {
+            "ticket_id": req.ticket_id,
+            "mode": mode,
+            "distance_reelle_km": req.distance_reelle_km,
+            "tarif_paye": tarif_paye,
+            "tarif_reel": tarif_reel,
+            "remboursement": remboursement,
+            "statut": "termine",
+            "message": "Bon voyage !"
+        }
+
+        if remboursement > 0:
+            response["remboursement_info"] = {
+                "montant": remboursement,
+                "terminal": remboursement_terminal,
+                "validite": "24 heures",
+                "message": f"Récupérez {remboursement:.2f}€ au terminal {remboursement_terminal}"
+            }
+
+        if fraude_flag:
+            response["warning"] = "Trop de trajets courts aujourd'hui — remboursement non applicable"
+
+        return response
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.post("/ticket/add_segment", tags=["Billetterie"])
+def add_segment(req: AddSegmentRequest):
+    """
+    Ajouter un segment à un ticket multimodal en cours.
+    Ex: après le vélo, prendre le tram avec le même ticket.
+    """
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        import json
+
+        cur.execute("""
+            SELECT * FROM public.fact_tickets_v2
+            WHERE ticket_id = %s AND device_token = %s AND statut = 'en_cours'
+        """, (req.ticket_id, req.device_token))
+        ticket = cur.fetchone()
+
+        if not ticket:
+            cur.close(); conn.close()
+            return {"error": "Ticket non trouvé ou déjà fermé"}
+
+        ticket = dict(ticket)
+        segments = ticket["segments"] if ticket["segments"] else []
+
+        # Tarif supplémentaire selon mode
+        if req.mode in ["bus", "tram"]:
+            tarif_sup = TARIF_BUS_TRAM
+        elif req.mode == "velo":
+            tarif_sup = tarif_velo(5.0)
+        else:
+            tarif_sup = 0.0
+
+        nouveau_segment = {
+            "mode": req.mode,
+            "terminal_id": req.terminal_id,
+            "lat": req.lat,
+            "lon": req.lon,
+            "heure_depart": datetime.now().isoformat(),
+            "tarif": tarif_sup
+        }
+        segments.append(nouveau_segment)
+
+        nouveau_tarif = float(ticket["tarif_paye"]) + tarif_sup
+
+        cur2 = conn.cursor()
+        cur2.execute("""
+            UPDATE public.fact_tickets_v2
+            SET segments = %s::jsonb,
+                tarif_paye = %s,
+                tarif_reel = %s,
+                mode_principal = 'multimodal'
+            WHERE ticket_id = %s
+        """, (json.dumps(segments), nouveau_tarif, nouveau_tarif, req.ticket_id))
+        conn.commit()
+        cur2.close()
+        cur.close()
+        conn.close()
+
+        return {
+            "ticket_id": req.ticket_id,
+            "nouveau_mode": req.mode,
+            "tarif_supplementaire": tarif_sup,
+            "tarif_total_paye": nouveau_tarif,
+            "nb_segments": len(segments),
+            "message": f"Segment {req.mode} ajouté — {tarif_sup:.2f}€ débité"
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/ticket/{ticket_id}", tags=["Billetterie"])
+def get_ticket(ticket_id: str):
+    """Vérifier le statut d'un ticket"""
     try:
         conn = get_pg()
         cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         cur.execute("""
-            SELECT
-                station_id, nom, lat, lon,
-                cluster_id, cluster_label, cluster_priority, cluster_color,
-                dist_centre_km, capacite, avg_bikes, taux_vide,
-                silhouette_score, features, computed_at
-            FROM public.dim_station_clusters
-            ORDER BY cluster_id, dist_centre_km
-        """)
-        rows = [dict(r) for r in cur.fetchall()]
+            SELECT t.*,
+                   r.montant as montant_remboursement,
+                   r.terminal_id as terminal_remboursement,
+                   r.statut as statut_remboursement,
+                   r.expires_at as remboursement_expire_le
+            FROM public.fact_tickets_v2 t
+            LEFT JOIN public.fact_remboursements r ON t.ticket_id = r.ticket_id
+            WHERE t.ticket_id = %s
+        """, (ticket_id,))
+        row = cur.fetchone()
         cur.close(); conn.close()
 
-        # Grouper par cluster
-        clusters = {}
-        for row in rows:
-            cid = row["cluster_id"]
-            if cid not in clusters:
-                clusters[cid] = {
-                    "cluster_id": cid,
-                    "label": row["cluster_label"],
-                    "priority": row["cluster_priority"],
-                    "color": row["cluster_color"],
-                    "nb_stations": 0,
-                    "stations": []
-                }
-            clusters[cid]["stations"].append(row)
-            clusters[cid]["nb_stations"] += 1
+        if not row:
+            return {"error": "Ticket non trouvé"}
+
+        return dict(row)
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/remboursement/{ticket_id}/recuperer", tags=["Billetterie"])
+def recuperer_remboursement(ticket_id: str, terminal_id: str):
+    """Marquer un remboursement comme récupéré au terminal"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor()
+        cur.execute("""
+            UPDATE public.fact_remboursements
+            SET statut = 'recupere'
+            WHERE ticket_id = %s
+            AND terminal_id = %s
+            AND statut = 'a_recuperer'
+            AND expires_at > NOW()
+        """, (ticket_id, terminal_id))
+        updated = cur.rowcount
+        conn.commit()
+        cur.close(); conn.close()
+
+        if updated == 0:
+            return {"error": "Remboursement non trouvé, déjà récupéré ou expiré"}
 
         return {
-            "nb_clusters": len(clusters),
-            "silhouette_score": rows[0]["silhouette_score"] if rows else None,
-            "clusters": list(clusters.values()),
-            "zones_prioritaires": [
-                r for r in rows
-                if r["cluster_priority"] in ["high", "critical"]
-            ],
-            "timestamp": rows[0]["computed_at"].isoformat() if rows else None
+            "message": "Remboursement effectué avec succès",
+            "ticket_id": ticket_id,
+            "terminal_id": terminal_id
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/billetterie/stats", tags=["Billetterie"])
+def billetterie_stats():
+    """Statistiques globales de la billetterie"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+
+        cur.execute("""
+            SELECT
+                COUNT(*) as total_tickets,
+                SUM(CASE WHEN statut='termine' THEN 1 ELSE 0 END) as tickets_termines,
+                SUM(CASE WHEN statut='en_cours' THEN 1 ELSE 0 END) as tickets_actifs,
+                SUM(tarif_reel) as recettes_totales,
+                SUM(remboursement) as remboursements_totaux,
+                AVG(remboursement) as remboursement_moyen,
+                SUM(CASE WHEN fraude_flag THEN 1 ELSE 0 END) as alertes_fraude
+            FROM public.fact_tickets_v2
+        """)
+        stats = dict(cur.fetchone())
+
+        cur.execute("""
+            SELECT mode_principal, COUNT(*) as nb,
+                   SUM(tarif_reel) as recettes,
+                   SUM(remboursement) as remboursements
+            FROM public.fact_tickets_v2
+            GROUP BY mode_principal ORDER BY nb DESC
+        """)
+        by_mode = [dict(r) for r in cur.fetchall()]
+
+        cur.close(); conn.close()
+
+        return {
+            "stats_globales": stats,
+            "par_mode": by_mode
         }
     except Exception as e:
         return {"error": str(e)}
