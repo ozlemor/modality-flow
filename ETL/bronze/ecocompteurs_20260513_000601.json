@@ -1,0 +1,3512 @@
+[
+  {
+    "id": "urn:ngsi-ld:EcoCounter:XTH19101158",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 3,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T04:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 188609530,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.61621,
+          3.874408
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104775",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T03:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 8584788,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.6001,
+          3.8776
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H20042632",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2024-02-01T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 97705885,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.5907,
+          3.81324
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H20063164",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-09-12T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 105575465,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.626698,
+          3.8956287
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H19070220",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 26,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T23:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 121403593,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.6097,
+          3.89694
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104771",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 477652564,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.6233,
+          3.9089
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21070350",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-01-23T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 31450087,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.539352,
+          3.887153
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21070349",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 20,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 374829525,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.63199,
+          3.852038
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21070348",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 2,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-09-23T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 359148100,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.610302,
+          3.913589
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104766",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 162938367,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.6452,
+          3.8224
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21070343",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 755700690,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.67179,
+          3.867914
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H20042635",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T03:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 137058167,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.57883,
+          3.93324
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22043030",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 249856379,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.614933,
+          3.8156247
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22043035",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 1,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T03:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 295726077,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.60383,
+          3.86779
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22043033",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 2,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 399988317,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.59888,
+          3.89867
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:XTH21070328",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2023-09-20T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 930381158,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.660053,
+          3.900942
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104772",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-08-04T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 477652563,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.6232,
+          3.9089
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104777",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 1,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T03:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 643789819,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.614,
+          3.8847
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21070342",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 1,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-08-30T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 135001721,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.62387,
+          3.85339
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21070346",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 243439664,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.671215,
+          3.913031
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H20063163",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 6,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-09-12T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 105575465,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.626698,
+          3.8956287
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22043034",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T03:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 295726077,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.60381,
+          3.8677
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21111120",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 11,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-06-21T23:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 437445704,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.6167,
+          3.8683
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104767",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 2,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 104300810,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.6316,
+          3.915
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H20042634",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T03:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 25871951,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.57926,
+          3.93327
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22043029",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 249866952,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.64891,
+          3.855992
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104765",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 1085031414,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.538,
+          3.6988
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104768",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 8,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 155831324,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.6115,
+          3.8899
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104773",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 1,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 376991821,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.614,
+          3.8981
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H20042633",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 5,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 734202564,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.61465,
+          3.8336
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104774",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T04:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 31450626,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.614,
+          3.8981
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104769",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 1,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T04:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 38292462,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.5754,
+          3.8617
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:XTH21015106",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 1,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 97705917,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.589825,
+          3.800261
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21070347",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 755700690,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.67179,
+          3.867914
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21070344",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 38,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 813676445,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.606274,
+          3.863965
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104770",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 1396155904,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.613808,
+          3.8684704
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22043032",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 60703959,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.63751,
+          3.9297264
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21111121",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 29,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T23:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 563323786,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.61464,
+          3.87009
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H20063161",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 4,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2023-09-11T23:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 676645909,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.61574,
+          3.9096322
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21070345",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 1,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 563115296,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.5852,
+          3.859721
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21070341",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 17,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T23:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 135001721,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.62387,
+          3.85339
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22043031",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 60703759,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.6376,
+          3.929538
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H20063162",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 12,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 23231541,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.613884,
+          3.868467
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H21070351",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 1,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-08-28T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 253757735,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.58435,
+          3.907998
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H22104776",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T03:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 8584788,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.6001,
+          3.8776
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H20104132",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 10429699,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.62959,
+          3.89379
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:XAH23111501",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 1,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2024-06-25T23:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 930381158,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.660053,
+          3.900942
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:867228050089043",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 27,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2024-05-26T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 1182343623,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.59705,
+          3.8838003
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:867228050089217",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 49,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2024-05-26T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 121403595,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.60975,
+          3.8985744
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:867228050089787",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 54,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2024-05-26T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 105575465,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.62364,
+          3.8922596
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:867228050089159",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 1,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2024-05-26T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 37618918,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.584373,
+          3.8610432
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:867228050092989",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 11,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2024-05-26T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 140548130,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.608955,
+          3.841698
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ED223110501",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 1,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-06-15T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 37618918,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.584377,
+          3.8610451
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ED223110497",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 8,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-06-15T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 1182343623,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.596973,
+          3.8837383
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ED223110495",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 45,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-06-15T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 105575465,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.6236,
+          3.8922825
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ED223110500",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 7,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-06-15T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 140548130,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.60895,
+          3.8417304
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ED223110496",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 39,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-06-15T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 121403595,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.609722,
+          3.8985717
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:XTH24072390",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T02:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 930381158,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.660053,
+          3.900942
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H24042101",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 3,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-04-15T09:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 97705885,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.5907,
+          3.81324
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ED223110494",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-06-15T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 162937166,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.655155,
+          3.935122
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:D223110499",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-01-12T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "None",
+      "value": null,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.53385,
+          3.86086
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ED223110499",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2025-06-16T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 365190978,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.53849,
+          3.870437
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:X2H25023006",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-12T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 31450087,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.539352,
+          3.887153
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ZLT25011699",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 25,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T12:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 676645909,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.61558,
+          3.9091
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:COM23120112",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 12,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-09T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 140548130,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.608948,
+          3.8416345
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:COM23120113",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 54,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-10T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 105575465,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.623657,
+          3.8922434
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:COM23120117",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 1,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T01:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 162937166,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.65515,
+          3.935133
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:COM23120114",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 75,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-10T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 121403595,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.609684,
+          3.898649
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:COM23120111",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 19,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-01-21T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 1182343623,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.59704,
+          3.8837109
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:COM23120110",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-10T14:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 37618918,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.58442,
+          3.8610795
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:COM24010120",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 365190978,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.53849,
+          3.870437
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:COM24010121",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 3,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T23:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 368597548,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.63053,
+          3.8694615
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:COM24010119",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 73897211,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.60877,
+          3.7896466
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ZLT25112692",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 1315709015,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.60707,
+          3.87788
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ZLT25112669",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 1315709018,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.61007,
+          3.88252
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ZLT25112720",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 18,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 1230331740,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.60704,
+          3.87046
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ZLT25112718",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 1435092124,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.60055,
+          3.84852
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:EcoCounter:ZLT25112719",
+    "type": "EcoCounter",
+    "deviceType": {
+      "type": "Text",
+      "value": "TrafficFlowObserved",
+      "metadata": {}
+    },
+    "intensity": {
+      "type": "Number",
+      "value": 0,
+      "metadata": {
+        "TimeInstant": {
+          "type": "DateTime",
+          "value": "2026-05-11T00:00:00.000Z"
+        }
+      }
+    },
+    "laneId": {
+      "type": "Number",
+      "value": 1415342430,
+      "metadata": {}
+    },
+    "location": {
+      "type": "geo:json",
+      "value": {
+        "type": "Point",
+        "coordinates": [
+          43.60038,
+          3.84867
+        ]
+      },
+      "metadata": {}
+    },
+    "reversedLane": {
+      "type": "Boolean",
+      "value": false,
+      "metadata": {}
+    },
+    "vehicleType": {
+      "type": "Text",
+      "value": "bicycle",
+      "metadata": {}
+    }
+  }
+]

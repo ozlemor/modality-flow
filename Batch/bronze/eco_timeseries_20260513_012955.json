@@ -1,0 +1,681 @@
+[
+  {
+    "compteur_id": "XTH19101158",
+    "full_id": "urn:ngsi-ld:EcoCounter:XTH19101158",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 21,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "XTH19101158",
+    "full_id": "urn:ngsi-ld:EcoCounter:XTH19101158",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 9,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "XTH19101158",
+    "full_id": "urn:ngsi-ld:EcoCounter:XTH19101158",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 9,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "XTH19101158",
+    "full_id": "urn:ngsi-ld:EcoCounter:XTH19101158",
+    "timestamp": "2026-05-12 03:00:00+00:00",
+    "intensite": 3,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "XTH19101158",
+    "full_id": "urn:ngsi-ld:EcoCounter:XTH19101158",
+    "timestamp": "2026-05-12 04:00:00+00:00",
+    "intensite": 3,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104775",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104775",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 3,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104775",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104775",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 3,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104775",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104775",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104775",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104775",
+    "timestamp": "2026-05-12 03:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104771",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104771",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104771",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104771",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104771",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104771",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H21070349",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H21070349",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 10,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H21070349",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H21070349",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 20,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104766",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104766",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104766",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104766",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H21070343",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H21070343",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20042635",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20042635",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 6,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20042635",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20042635",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20042635",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20042635",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 3,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20042635",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20042635",
+    "timestamp": "2026-05-12 03:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043030",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043030",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 7,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043030",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043030",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043030",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043030",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043035",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043035",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 8,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043035",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043035",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 5,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043035",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043035",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043035",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043035",
+    "timestamp": "2026-05-12 03:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043033",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043033",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 11,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043033",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043033",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 4,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043033",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043033",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 2,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104777",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104777",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 16,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104777",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104777",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 6,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104777",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104777",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 3,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104777",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104777",
+    "timestamp": "2026-05-12 03:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H21070346",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H21070346",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H21070346",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H21070346",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043034",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043034",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043034",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043034",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043034",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043034",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043034",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043034",
+    "timestamp": "2026-05-12 03:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104767",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104767",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 5,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104767",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104767",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 2,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20042634",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20042634",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20042634",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20042634",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20042634",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20042634",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20042634",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20042634",
+    "timestamp": "2026-05-12 03:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043029",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043029",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043029",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043029",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104765",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104765",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104768",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104768",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 6,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104768",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104768",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 8,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104773",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104773",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 2,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104773",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104773",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104773",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104773",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20042633",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20042633",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 23,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20042633",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20042633",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20042633",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20042633",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 5,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104774",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104774",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 6,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104774",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104774",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 2,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104774",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104774",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104774",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104774",
+    "timestamp": "2026-05-12 03:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104774",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104774",
+    "timestamp": "2026-05-12 04:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104769",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104769",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104769",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104769",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104769",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104769",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104769",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104769",
+    "timestamp": "2026-05-12 03:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104769",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104769",
+    "timestamp": "2026-05-12 04:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "XTH21015106",
+    "full_id": "urn:ngsi-ld:EcoCounter:XTH21015106",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "XTH21015106",
+    "full_id": "urn:ngsi-ld:EcoCounter:XTH21015106",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H21070347",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H21070347",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H21070347",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H21070347",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H21070344",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H21070344",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 38,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104770",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104770",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 5,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104770",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104770",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 5,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104770",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104770",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043032",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043032",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043032",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043032",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043032",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043032",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H21070345",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H21070345",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043031",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043031",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043031",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043031",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 1,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22043031",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22043031",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20063162",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20063162",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 12,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104776",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104776",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 6,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104776",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104776",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 6,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104776",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104776",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 7,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H22104776",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H22104776",
+    "timestamp": "2026-05-12 03:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20104132",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20104132",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20104132",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20104132",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H20104132",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H20104132",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "XTH24072390",
+    "full_id": "urn:ngsi-ld:EcoCounter:XTH24072390",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "XTH24072390",
+    "full_id": "urn:ngsi-ld:EcoCounter:XTH24072390",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "XTH24072390",
+    "full_id": "urn:ngsi-ld:EcoCounter:XTH24072390",
+    "timestamp": "2026-05-12 02:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H25023006",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H25023006",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "X2H25023006",
+    "full_id": "urn:ngsi-ld:EcoCounter:X2H25023006",
+    "timestamp": "2026-05-12 01:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  },
+  {
+    "compteur_id": "COM24010120",
+    "full_id": "urn:ngsi-ld:EcoCounter:COM24010120",
+    "timestamp": "2026-05-12 00:00:00+00:00",
+    "intensite": 0,
+    "source": "ngsi_timeseries"
+  }
+]

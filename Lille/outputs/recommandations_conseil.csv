@@ -1,0 +1,6 @@
+﻿Priorité,Ville,Dimension,Constat,Action,Impact estimé
+Urgent,Montpellier,Vélo,Densité bisiklet istasyonu très faible : 0.9 stations/km²,Tripler le nombre de stations Vélomagg en zones périphériques,+15 pts IMD
+Urgent,Montpellier,Équité,"68% des stations en zone périphérique, seulement 10% en centre",Rééquilibrer la distribution des stations Vélomagg,+8 pts IMD
+Court terme,Lille,Environnement,Score environnemental 41.8/100 — pollution NO2 élevée,Renforcer les zones à faibles émissions (ZFE) et pistes cyclables,+10 pts IMD
+Court terme,Les deux,Mix modal,"Manque d'intégration entre vélo, TC et parking-relais",Déployer hubs multimodaux (vélo + TC + P+R) aux nœuds stratégiques,+5 pts IMD
+Long terme,Modèle national,Déploiement,Indice IMD reproductible pour toute ville française,Standardiser le pipeline Modality-Flow comme référentiel national,Scalable sur 100+ villes

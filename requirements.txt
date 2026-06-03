@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+psycopg2-binary
+duckdb
+pandas
+numpy
+pydantic
+scikit-learn
+pyarrow
+requests
+python-dotenv
+confluent-kafka
+protobuf
+joblib

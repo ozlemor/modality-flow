@@ -29,3 +29,19 @@ npm --workspace apps/mobile run start
 ## Architecture
 
 Voir [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+## API Endpoints Railway
+
+Base URL historique Railway: `https://modality-flow.railway.app`
+
+### ML Prediction
+
+`POST /stations/{station_id}/predict`
+
+### Stations real-time
+
+`GET /stations`
+
+### CO2 Route
+
+`POST /route/co2`

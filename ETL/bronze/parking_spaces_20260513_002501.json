@@ -1,0 +1,6994 @@
+[
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-001",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue Foch",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "10",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.61100267",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "5",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.87320075",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "190",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Arc de Triomphe",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "3",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Ville de Montpellier",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "451",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "438",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "21340172202058",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "9375",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-002",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue Foch",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Privé",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.60923384",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.88184418",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "190",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Triangle",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Indigo",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "594",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "436",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "158",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "32022964405241",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-003",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue du Carré du Roi",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "10",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.61224494",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "3",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.87019117",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "256",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Pitot",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "9",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "9",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Ville de Montpellier",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "771",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "553",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "208",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "21340172202058",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "18000",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-004",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "cours Gambetta",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "10",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.60695138",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "1",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.87137436",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "190",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Gambetta",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "2",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Ville de Montpellier",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "482",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "472",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "21340172202058",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "10950",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-005",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "Place des Martyrs de la Resistance",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "9",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.61074912",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "5",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.87657084",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "190",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Foch Préfecture",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Ville de Montpellier",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "685",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "385",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "291",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "21340172202058",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "10750",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-006",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "place de la Comedie",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "17",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.60856092",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "4",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.87976196",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "185",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Comédie",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "9",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Ville de Montpellier",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "824",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "787",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "20",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "21340172202058",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "19800",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-007",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue des Pertuisanes",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "20",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.60837096",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "4",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.88476539",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Polygone",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Ville de Montpellier",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "1942",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "1922",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "21340172202058",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "49325",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-008",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "boulevard d Antigone",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "6",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.60871606",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "2",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.88881893",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "185",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Antigone",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Ville de Montpellier",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "248",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "242",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "21340172202058",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "4000",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-009",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "Rue Poséidon",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "10",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.60784971",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "2",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.89253074",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "250",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Europa",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Ville de Montpellier",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "600",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "590",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "21340172202058",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "5560",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-010",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue du Faubourg de Nimes",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "10",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.61388821",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "3",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.88225773",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "185",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Corum",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "483",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "473",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-011",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue du Grand Saint Jean",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "12",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.60329149",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "11",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.87855072",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "200",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Saint Roch",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "30",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "40",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Ville de Montpellier",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "805",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "711",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "94",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "21340172202058",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-012",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue Paladihle",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.611297",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.87038378",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Peyrou",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-013",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "avenue Germaine Tillion",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "15",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.599231",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "4",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.89585327",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "190",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Hôtel de ville",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "19",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "2",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Ville de Montpellier",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "682",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "452",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "232",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "21340172202058",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-014",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue Georges Melies",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.60495377",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.9178495",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "190",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Circé Odysseum",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "1200",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Parc relais",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-015",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "avenue Helène Maingain",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34120",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.6545987",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.91288475",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Jacou",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "80",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Proximité",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-016",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "avenue du Maréchal de Lattre de Tassigny",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34057",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.6493392",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.92108419",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "200",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Georges Pompidou",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "260",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Proximité",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-017",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue Olympie",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34090",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.64665801",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.92953808",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Via Domitia",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "60",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Proximité",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-018",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "chemin du Pech Saint Peyre",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34057",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.63419194",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.92229536",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "200",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Notre Dame de Sablassou",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "350",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Proximité",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-019",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue du Prado",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34057",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.62854212",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.8977621",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "190",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Charles de Gaulle",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "50",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Proximité",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-020",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "avenue de Palavas",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.59098509",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.8907158",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "200",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Garcia Lorca",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "400",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Parc relais",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-021",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "avenue du Colonel Pavelet",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.58383263",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.8602246",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "200",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Sabines",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "350",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Parc relais",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-022",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "route de Lodève",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.61623716",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.81966554",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "210",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Mosson",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "450",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Parc relais",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-023",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue de Chambert",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.63895359",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.82772365",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "200",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Euromédecine",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "350",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Parc relais",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-024",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "avenue du Doyen Giraud",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.63456232",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.84859796",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "200",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Occitanie",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "620",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Parc relais",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-025",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "chemin des Caunelles",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34123",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.61740374",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.80962186",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "190",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Juvignac",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "180",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Parc relais",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-026",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "avenue de Libria",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34270",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.57496279",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.83058552",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "195",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Saint-Jean-de-Védas Centre",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "80",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Proximité",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-027",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "avenue de Libria",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34270",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.57082225",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.8379312",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "220",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Saint-Jean-le-Sec",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "282",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Parc relais",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-028",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "avenue de l Europe",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34129",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.57080988",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.90481762",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Lattes",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "50",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Parc relais",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-029",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue de la foire",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34198",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.57291021",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.94567852",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Parc expo",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "400",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Parc relais",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-030",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue Georges Barnoyer",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Public",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34198",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.56537857",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.95735556",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Pérols centre",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Montpellier Méditerranée Métropole",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "70",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "24340001700022",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Parc relais",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-031",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "boulevard Télémaque",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Privé",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.60618559",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.92380038",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "220",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Décathlon",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Décathlon",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "744",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "50056940503239",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Commercial",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-032",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "boulevard Télémaque",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Privé",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.60460962",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.92558256",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "250",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Ikéa",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Ikéa",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "1300",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "35174572400200",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Commercial",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-033",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "boulevard Télémaque",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Privé",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.6031556",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.92210413",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "210",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Géant Casino",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Géant Casino",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "2050",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "42826802302958",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Commercial",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-034",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "boulevard Pénélope",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Privé",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.6023708",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.91901514",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Mare Nostrum",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Mare Nostrum",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "843",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "78866559400016",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Commercial",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-035",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "boulevard Pénélope",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Privé",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.60289651",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.91477371",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Végapolis",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Végapolis",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "172",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "75031007000016",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Commercial",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-036",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "avenue Thomas Jefferson",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Privé",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.60415243",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.91411076",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "200",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Multiplexe",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Gaumont",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "650",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "enclos_en_surface",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "43839104700034",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Commercial",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-037",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "avenue de la mer-Raymond Dugrand",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "20",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "Privé",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34172",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.59877296",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "3",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.90239994",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "190",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "La Mantilla",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "SERM",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "738",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "ouvrage",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "441",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "297",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "53826912700014",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "Centre-ville",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "0",
+      "metadata": {}
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:ParkingSpace:34172-P-038",
+    "type": "ParkingSpace",
+    "abo_non_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "abo_resident": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "address": {
+      "type": "Text",
+      "value": "rue de la Crouzette",
+      "metadata": {}
+    },
+    "disabledParkingNumber": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "domaniality": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "info": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "insee": {
+      "type": "Text",
+      "value": "34057",
+      "metadata": {}
+    },
+    "isFree": {
+      "type": "Text",
+      "value": "false",
+      "metadata": {}
+    },
+    "latitude": {
+      "type": "Text",
+      "value": "43.632657",
+      "metadata": {}
+    },
+    "levelNumber": {
+      "type": "Text",
+      "value": "1",
+      "metadata": {}
+    },
+    "longitude": {
+      "type": "Text",
+      "value": "3.898429",
+      "metadata": {}
+    },
+    "maxHeight": {
+      "type": "Text",
+      "value": "190",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Viccarello",
+      "metadata": {}
+    },
+    "nb_2_rm": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_2r_el": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_autopartage": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_covoit": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_pr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_velo": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "nb_voitures_electriques": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "owner": {
+      "type": "Text",
+      "value": "Castelnau le Lez",
+      "metadata": {}
+    },
+    "parkingSpaceNumber": {
+      "type": "Text",
+      "value": "64",
+      "metadata": {}
+    },
+    "parkingType": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "publicSpaces": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "remainingSpaces": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "siretNumber": {
+      "type": "Text",
+      "value": "21340057500014",
+      "metadata": {}
+    },
+    "tarif_1h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_24h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_2h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_3h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_4h": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "tarif_pmr": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "typeOfUse": {
+      "type": "Text",
+      "value": "tous",
+      "metadata": {}
+    },
+    "typology": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "url": {
+      "type": "Text",
+      "value": "_",
+      "metadata": {}
+    },
+    "usableSurfaceArea": {
+      "type": "Text",
+      "value": "1350",
+      "metadata": {}
+    }
+  }
+]

@@ -1,0 +1,39 @@
+id,nom,adres,lat,lon,type,typology,domaniality,total_places,places_publiques,places_restantes,places_pmr,voitures_electriques,nb_velo,hauteur_max,proprietaire,est_gratuit
+urn:ngsi-ld:ParkingSpace:34172-P-001,Arc de Triomphe,rue Foch,43.61100267,3.87320075,ouvrage,Centre-ville,Public,451,438,0,10,3,0,190,Ville de Montpellier,false
+urn:ngsi-ld:ParkingSpace:34172-P-002,Triangle,rue Foch,43.60923384,3.88184418,ouvrage,Centre-ville,Privé,594,436,158,0,0,0,190,Indigo,false
+urn:ngsi-ld:ParkingSpace:34172-P-003,Pitot,rue du Carré du Roi,43.61224494,3.87019117,ouvrage,Centre-ville,Public,771,553,208,10,0,9,256,Ville de Montpellier,false
+urn:ngsi-ld:ParkingSpace:34172-P-004,Gambetta,cours Gambetta,43.60695138,3.87137436,ouvrage,Centre-ville,Public,482,472,0,10,0,0,190,Ville de Montpellier,false
+urn:ngsi-ld:ParkingSpace:34172-P-005,Foch Préfecture,Place des Martyrs de la Resistance,43.61074912,3.87657084,ouvrage,Centre-ville,Public,685,385,291,9,0,0,190,Ville de Montpellier,false
+urn:ngsi-ld:ParkingSpace:34172-P-006,Comédie,place de la Comedie,43.60856092,3.87976196,ouvrage,Centre-ville,Public,824,787,20,17,0,0,185,Ville de Montpellier,false
+urn:ngsi-ld:ParkingSpace:34172-P-007,Polygone,rue des Pertuisanes,43.60837096,3.88476539,ouvrage,Centre-ville,Public,1942,1922,0,20,0,0,_,Ville de Montpellier,false
+urn:ngsi-ld:ParkingSpace:34172-P-008,Antigone,boulevard d Antigone,43.60871606,3.88881893,ouvrage,Centre-ville,Public,248,242,0,6,0,0,185,Ville de Montpellier,false
+urn:ngsi-ld:ParkingSpace:34172-P-009,Europa,Rue Poséidon,43.60784971,3.89253074,ouvrage,Centre-ville,Public,600,590,0,10,0,0,250,Ville de Montpellier,false
+urn:ngsi-ld:ParkingSpace:34172-P-010,Corum,rue du Faubourg de Nimes,43.61388821,3.88225773,ouvrage,Centre-ville,Public,483,473,0,10,0,0,185,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-011,Saint Roch,rue du Grand Saint Jean,43.60329149,3.87855072,ouvrage,Centre-ville,Public,805,711,94,12,0,40,200,Ville de Montpellier,false
+urn:ngsi-ld:ParkingSpace:34172-P-012,Peyrou,rue Paladihle,43.611297,3.87038378,ouvrage,Centre-ville,Public,0,0,0,0,0,0,_,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-013,Hôtel de ville,avenue Germaine Tillion,43.599231,3.89585327,ouvrage,Centre-ville,Public,682,452,232,15,0,2,190,Ville de Montpellier,false
+urn:ngsi-ld:ParkingSpace:34172-P-014,Circé Odysseum,rue Georges Melies,43.60495377,3.9178495,ouvrage,Parc relais,Public,1200,0,0,0,0,0,190,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-015,Jacou,avenue Helène Maingain,43.6545987,3.91288475,enclos_en_surface,Proximité,Public,80,0,0,0,0,0,_,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-016,Georges Pompidou,avenue du Maréchal de Lattre de Tassigny,43.6493392,3.92108419,enclos_en_surface,Proximité,Public,260,0,0,0,0,0,200,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-017,Via Domitia,rue Olympie,43.64665801,3.92953808,enclos_en_surface,Proximité,Public,60,0,0,0,0,0,_,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-018,Notre Dame de Sablassou,chemin du Pech Saint Peyre,43.63419194,3.92229536,enclos_en_surface,Proximité,Public,350,0,0,0,0,0,200,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-019,Charles de Gaulle,rue du Prado,43.62854212,3.8977621,enclos_en_surface,Proximité,Public,50,0,0,0,0,0,190,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-020,Garcia Lorca,avenue de Palavas,43.59098509,3.8907158,ouvrage,Parc relais,Public,400,0,0,0,0,0,200,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-021,Sabines,avenue du Colonel Pavelet,43.58383263,3.8602246,enclos_en_surface,Parc relais,Public,350,0,0,0,0,0,200,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-022,Mosson,route de Lodève,43.61623716,3.81966554,enclos_en_surface,Parc relais,Public,450,0,0,0,0,0,210,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-023,Euromédecine,rue de Chambert,43.63895359,3.82772365,enclos_en_surface,Parc relais,Public,350,0,0,0,0,0,200,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-024,Occitanie,avenue du Doyen Giraud,43.63456232,3.84859796,ouvrage,Parc relais,Public,620,0,0,0,0,0,200,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-025,Juvignac,chemin des Caunelles,43.61740374,3.80962186,enclos_en_surface,Parc relais,Public,180,0,0,0,0,0,190,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-026,Saint-Jean-de-Védas Centre,avenue de Libria,43.57496279,3.83058552,enclos_en_surface,Proximité,Public,80,0,0,0,0,0,195,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-027,Saint-Jean-le-Sec,avenue de Libria,43.57082225,3.8379312,enclos_en_surface,Parc relais,Public,282,0,0,0,0,0,220,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-028,Lattes,avenue de l Europe,43.57080988,3.90481762,enclos_en_surface,Parc relais,Public,50,0,0,0,0,0,_,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-029,Parc expo,rue de la foire,43.57291021,3.94567852,enclos_en_surface,Parc relais,Public,400,0,0,0,0,0,_,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-030,Pérols centre,rue Georges Barnoyer,43.56537857,3.95735556,enclos_en_surface,Parc relais,Public,70,0,0,0,0,0,_,Montpellier Méditerranée Métropole,false
+urn:ngsi-ld:ParkingSpace:34172-P-031,Décathlon,boulevard Télémaque,43.60618559,3.92380038,ouvrage,Commercial,Privé,744,0,0,0,0,0,220,Décathlon,false
+urn:ngsi-ld:ParkingSpace:34172-P-032,Ikéa,boulevard Télémaque,43.60460962,3.92558256,ouvrage,Commercial,Privé,1300,0,0,0,0,0,250,Ikéa,false
+urn:ngsi-ld:ParkingSpace:34172-P-033,Géant Casino,boulevard Télémaque,43.6031556,3.92210413,ouvrage,Commercial,Privé,2050,0,0,0,0,0,210,Géant Casino,false
+urn:ngsi-ld:ParkingSpace:34172-P-034,Mare Nostrum,boulevard Pénélope,43.6023708,3.91901514,enclos_en_surface,Commercial,Privé,843,0,0,0,0,0,_,Mare Nostrum,false
+urn:ngsi-ld:ParkingSpace:34172-P-035,Végapolis,boulevard Pénélope,43.60289651,3.91477371,enclos_en_surface,Commercial,Privé,172,0,0,0,0,0,_,Végapolis,false
+urn:ngsi-ld:ParkingSpace:34172-P-036,Multiplexe,avenue Thomas Jefferson,43.60415243,3.91411076,enclos_en_surface,Commercial,Privé,650,0,0,0,0,0,200,Gaumont,false
+urn:ngsi-ld:ParkingSpace:34172-P-037,La Mantilla,avenue de la mer-Raymond Dugrand,43.59877296,3.90239994,ouvrage,Centre-ville,Privé,738,441,297,20,0,0,190,SERM,false
+urn:ngsi-ld:ParkingSpace:34172-P-038,Viccarello,rue de la Crouzette,43.632657,3.898429,_,_,_,64,_,_,_,_,_,190,Castelnau le Lez,false

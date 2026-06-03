@@ -1,0 +1,197 @@
+FID,objectid,mode_transport,libelle_arret_commercial,code_arret_physique,url_plan,code_insee,commune
+cartographie_station.1,1,Tramway,LE QUESNE,LQS001,media.ilevia.fr/opendata/cartographie/Tramway_LQS001_Le quesne.pdf,59378,Marcq-en-Barœul
+cartographie_station.2,2,Tramway,LE QUESNE,LQS012,media.ilevia.fr/opendata/cartographie/Tramway_LQS012_Le quesne.pdf,59378,Marcq-en-Barœul
+cartographie_station.3,3,Tramway,CLEMENCEAU HIPPODROME,MCL031,media.ilevia.fr/opendata/cartographie/Tramway_MCL031_Clemenceau hippodrome.pdf,59378,Marcq-en-Barœul
+cartographie_station.4,4,Tramway,CLEMENCEAU HIPPODROME,MCL032,media.ilevia.fr/opendata/cartographie/Tramway_MCL032_Clemenceau hippodrome.pdf,59378,Marcq-en-Barœul
+cartographie_station.5,5,Tramway,ACACIAS,ACA001,media.ilevia.fr/opendata/cartographie/Tramway_ACA001_Acacias.pdf,59378,Marcq-en-Barœul
+cartographie_station.6,6,Tramway,ACACIAS,ACA012,media.ilevia.fr/opendata/cartographie/Tramway_ACA012_Acacias.pdf,59378,Marcq-en-Barœul
+cartographie_station.7,7,Tramway,FOCH,OCH021,media.ilevia.fr/opendata/cartographie/Tramway_OCH021_Foch.pdf,59378,Marcq-en-Barœul
+cartographie_station.8,8,Tramway,FOCH,OCH032,media.ilevia.fr/opendata/cartographie/Tramway_OCH032_Foch.pdf,59378,Marcq-en-Barœul
+cartographie_station.9,9,Tramway,CHATEAU ROUGE,CTR021,media.ilevia.fr/opendata/cartographie/Tramway_CTR021_Château Rouge.pdf,59378,Marcq-en-Barœul
+cartographie_station.10,10,Tramway,CHATEAU ROUGE,CTR032,media.ilevia.fr/opendata/cartographie/Tramway_CTR032_Château Rouge.pdf,59378,Marcq-en-Barœul
+cartographie_station.11,11,Tramway,BROSSOLETTE,OSS001,media.ilevia.fr/opendata/cartographie/Tramway_OSS001_Brossolette.pdf,59378,Marcq-en-Barœul
+cartographie_station.12,12,Tramway,BROSSOLETTE,OSS012,media.ilevia.fr/opendata/cartographie/Tramway_OSS012_Brossolette.pdf,59378,Marcq-en-Barœul
+cartographie_station.13,13,Tramway,CROISÉ LAROCHE,CRL021,media.ilevia.fr/opendata/cartographie/Tramway_CRL021_Croise laroche.pdf,59378,Marcq-en-Barœul
+cartographie_station.14,14,Tramway,CROISÉ LAROCHE,CRL032,media.ilevia.fr/opendata/cartographie/Tramway_CRL032_Croise laroche.pdf,59378,Marcq-en-Barœul
+cartographie_station.15,15,Tramway,BUISSON,MAB021,media.ilevia.fr/opendata/cartographie/Tramway_MAB021_Buisson.pdf,59378,Marcq-en-Barœul
+cartographie_station.16,16,Tramway,BUISSON,MAB032,media.ilevia.fr/opendata/cartographie/Tramway_MAB032_Buisson.pdf,59378,Marcq-en-Barœul
+cartographie_station.17,17,Tramway,FAIDHERBE,DAI001,media.ilevia.fr/opendata/cartographie/Tramway_DAI001_Faidherbe.pdf,59421,Mouvaux
+cartographie_station.18,18,Tramway,FAIDHERBE,DAI012,media.ilevia.fr/opendata/cartographie/Tramway_DAI012_Faidherbe.pdf,59421,Mouvaux
+cartographie_station.19,19,Tramway,TROIS SUISSES,3SU021,media.ilevia.fr/opendata/cartographie/Tramway_3SU021_Trois Suisses.pdf,59421,Mouvaux
+cartographie_station.20,20,Tramway,TROIS SUISSES,3SU032,media.ilevia.fr/opendata/cartographie/Tramway_3SU032_Trois Suisses.pdf,59421,Mouvaux
+cartographie_station.21,21,Tramway,BOL D'AIR,BOA001,media.ilevia.fr/opendata/cartographie/Tramway_BOA001_Bol D'air.pdf,59512,Roubaix
+cartographie_station.22,22,Tramway,BOL D'AIR,BOA012,media.ilevia.fr/opendata/cartographie/Tramway_BOA012_Bol D'air.pdf,59512,Roubaix
+cartographie_station.23,23,Tramway,JEAN MOULIN,QUI021,media.ilevia.fr/opendata/cartographie/Tramway_QUI021_Jean moulin.pdf,59512,Roubaix
+cartographie_station.24,24,Tramway,JEAN MOULIN,QUI032,media.ilevia.fr/opendata/cartographie/Tramway_QUI032_Jean moulin.pdf,59512,Roubaix
+cartographie_station.25,25,Tramway,ROUBAIX EUROTELEPORT,ROU121,media.ilevia.fr/opendata/cartographie/Tramway_ROU121_Euroteleport.pdf,59512,Roubaix
+cartographie_station.26,26,Tramway,ROUBAIX EUROTELEPORT,ROU122,media.ilevia.fr/opendata/cartographie/Tramway_ROU121_Euroteleport.pdf,59512,Roubaix
+cartographie_station.27,27,Tramway,PARC BARBIEUX,PBA021,media.ilevia.fr/opendata/cartographie/Tramway_PBA021_Parc barbieux.pdf,59512,Roubaix
+cartographie_station.28,28,Tramway,PARC BARBIEUX,PBA032,media.ilevia.fr/opendata/cartographie/Tramway_PBA032_Parc barbieux.pdf,59512,Roubaix
+cartographie_station.29,29,Tramway,ALFRED MONGY,MAM021,media.ilevia.fr/opendata/cartographie/Tramway_MAM021_Alfred mongy.pdf,59512,Roubaix
+cartographie_station.30,30,Tramway,ALFRED MONGY,MAM032,media.ilevia.fr/opendata/cartographie/Tramway_MAM032_Alfred mongy.pdf,59512,Roubaix
+cartographie_station.31,31,Tramway,PONT HYDRAULIQUE,PHY001,media.ilevia.fr/opendata/cartographie/Tramway_PHY001_Pont hydraulique.pdf,59599,Tourcoing
+cartographie_station.32,32,Tramway,PONT HYDRAULIQUE,PHY012,media.ilevia.fr/opendata/cartographie/Tramway_PHY012_Pont hydraulique.pdf,59599,Tourcoing
+cartographie_station.33,33,Tramway,VICTOIRE,ICT021,media.ilevia.fr/opendata/cartographie/Tramway_ICT021_Victoire.pdf,59599,Tourcoing
+cartographie_station.34,34,Tramway,VICTOIRE,ICT032,media.ilevia.fr/opendata/cartographie/Tramway_ICT032_Victoire.pdf,59599,Tourcoing
+cartographie_station.35,35,Tramway,MA CAMPAGNE,CAM021,media.ilevia.fr/opendata/cartographie/Tramway_CAM021_Ma campagne.pdf,59599,Tourcoing
+cartographie_station.36,36,Tramway,MA CAMPAGNE,CAM032,media.ilevia.fr/opendata/cartographie/Tramway_CAM032_Ma campagne.pdf,59599,Tourcoing
+cartographie_station.37,37,Tramway,LE SART,SNO031,media.ilevia.fr/opendata/cartographie/Tramway_SNO031_Le sart.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.38,38,Tramway,LE SART,SNO042,media.ilevia.fr/opendata/cartographie/Tramway_SNO042_Le sart.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.39,39,Tramway,PLANCHE EPINOY,PLE001,media.ilevia.fr/opendata/cartographie/Tramway_PLE001_Planche epinoy.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.40,40,Tramway,PLANCHE EPINOY,PLE012,media.ilevia.fr/opendata/cartographie/Tramway_PLE012_Planche epinoy.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.41,41,Tramway,PONT DE WASQUEHAL,PDW001,media.ilevia.fr/opendata/cartographie/Tramway_PDW001_Pont de wasquehal.pdf,59646,Wasquehal
+cartographie_station.42,42,Tramway,PONT DE WASQUEHAL,PDW012,media.ilevia.fr/opendata/cartographie/Tramway_PDW012_Pont de wasquehal.pdf,59646,Wasquehal
+cartographie_station.43,43,Tramway,WASQUEHAL PAVÉ DE LILLE,PVL021,media.ilevia.fr/opendata/cartographie/Tramway_PVL021_Pave de lille.pdf,59646,Wasquehal
+cartographie_station.44,44,Tramway,WASQUEHAL PAVÉ DE LILLE,PVL032,media.ilevia.fr/opendata/cartographie/Tramway_PVL032_Pave de lille.pdf,59646,Wasquehal
+cartographie_station.45,45,Tramway,LA TERRASSE,LAT001,media.ilevia.fr/opendata/cartographie/Tramway_LAT001_La terrasse.pdf,59646,Wasquehal
+cartographie_station.46,46,Tramway,LA TERRASSE,LAT012,media.ilevia.fr/opendata/cartographie/Tramway_LAT012_La terrasse.pdf,59646,Wasquehal
+cartographie_station.47,47,Tramway,CARTELOT,TEL001,media.ilevia.fr/opendata/cartographie/Tramway_TEL001_Cartelot.pdf,59646,Wasquehal
+cartographie_station.48,48,Tramway,CARTELOT,TEL012,media.ilevia.fr/opendata/cartographie/Tramway_TEL012_Cartelot.pdf,59646,Wasquehal
+cartographie_station.49,49,Tramway,GRAND COTTIGNIES,GDC001,media.ilevia.fr/opendata/cartographie/Tramway_GDC001_Grand cottignies.pdf,59646,Wasquehal
+cartographie_station.50,50,Tramway,GRAND COTTIGNIES,GDC012,media.ilevia.fr/opendata/cartographie/Tramway_GDC012_Grand cottignies.pdf,59646,Wasquehal
+cartographie_station.51,51,Tramway,TRIEZ,TRI021,media.ilevia.fr/opendata/cartographie/Tramway_TRI021_Triez.pdf,59421,Mouvaux
+cartographie_station.52,52,Tramway,TRIEZ,TRI032,media.ilevia.fr/opendata/cartographie/Tramway_TRI032_Triez.pdf,59421,Mouvaux
+cartographie_station.53,53,Tramway,LA MARQUE,ARQ001,media.ilevia.fr/opendata/cartographie/Tramway_ARQ001_La marque.pdf,59163,Croix
+cartographie_station.54,54,Tramway,LA MARQUE,ARQ012,media.ilevia.fr/opendata/cartographie/Tramway_ARQ012_La marque.pdf,59163,Croix
+cartographie_station.55,55,Tramway,VILLA CAVROIS,CLD001,media.ilevia.fr/opendata/cartographie/Tramway_CLD001_Villa cavrois.pdf,59163,Croix
+cartographie_station.56,56,Tramway,VILLA CAVROIS,CLD012,media.ilevia.fr/opendata/cartographie/Tramway_CLD012_Villa cavrois.pdf,59163,Croix
+cartographie_station.57,57,Tramway,CERISAIE CENTRE D'AFFAIRES,CDA001,media.ilevia.fr/opendata/cartographie/Tramway_CDA001_Cerisaie.pdf,59378,Marcq-en-Barœul
+cartographie_station.58,58,Tramway,CERISAIE CENTRE D'AFFAIRES,CDA012,media.ilevia.fr/opendata/cartographie/Tramway_CDA012_Cerisaie.pdf,59378,Marcq-en-Barœul
+cartographie_station.59,59,Tramway,BOTANIQUE,BOT001,media.ilevia.fr/opendata/cartographie/Tramway_BOT001_Botanique.pdf,59368,La Madeleine
+cartographie_station.60,60,Tramway,BOTANIQUE,BOT012,media.ilevia.fr/opendata/cartographie/Tramway_BOT012_Botanique.pdf,59368,La Madeleine
+cartographie_station.61,61,Tramway,SAINT MAUR,SMA001,media.ilevia.fr/opendata/cartographie/Tramway_SMA001_Saint maur.pdf,59368,La Madeleine
+cartographie_station.62,62,Tramway,SAINT MAUR,SMA012,media.ilevia.fr/opendata/cartographie/Tramway_SMA012_Saint maur.pdf,59368,La Madeleine
+cartographie_station.63,63,Tramway,ROMARIN,ROM021,media.ilevia.fr/opendata/cartographie/Tramway_ROM021_Romarin.pdf,59368,La Madeleine
+cartographie_station.64,64,Tramway,ROMARIN,ROM032,media.ilevia.fr/opendata/cartographie/Tramway_ROM032_Romarin.pdf,59368,La Madeleine
+cartographie_station.65,65,Tramway,TOURCOING CENTRE,TOU111,media.ilevia.fr/opendata/cartographie/Tramway_TOU111_Tourcoing centre.pdf,59599,Tourcoing
+cartographie_station.66,66,Tramway,TOURCOING CENTRE,TOU202,media.ilevia.fr/opendata/cartographie/Tramway_TOU202_Tourcoing centre.pdf,59599,Tourcoing
+cartographie_station.67,67,Tramway,HOPITAL VICTOR PROVO,BDC001,media.ilevia.fr/opendata/cartographie/Tramway_BDC001_Hopital Victor Provo.pdf,59512,Roubaix
+cartographie_station.68,68,Tramway,HOPITAL VICTOR PROVO,BDC012,media.ilevia.fr/opendata/cartographie/Tramway_BDC012_Hopital Victor Provo.pdf,59512,Roubaix
+cartographie_station.69,69,Tramway,GARE LILLE EUROPE,EUR021,media.ilevia.fr/opendata/cartographie/Tramway_EUR021_Lille europe.pdf,59350,Lille
+cartographie_station.70,70,Tramway,GARE LILLE EUROPE,EUR032,media.ilevia.fr/opendata/cartographie/Tramway_EUR032_Lille europe.pdf,59350,Lille
+cartographie_station.71,71,Tramway,GARE LILLE FLANDRES,LIG011,media.ilevia.fr/opendata/cartographie/Metro_920_Gare Lille Flandres.pdf,59350,Lille
+cartographie_station.72,72,Tramway,GARE LILLE FLANDRES,LIG022,media.ilevia.fr/opendata/cartographie/Metro_920_Gare Lille Flandres.pdf,59350,Lille
+cartographie_station.73,73,Tramway,GARE LILLE FLANDRES,LIG111,media.ilevia.fr/opendata/cartographie/Metro_920_Gare Lille Flandres.pdf,59350,Lille
+cartographie_station.74,74,Metro,PONT SUPERIEUR,PSU098,media.ilevia.fr/opendata/cartographie/Metro_1003_Pont Superieur.pdf,59350,Lille
+cartographie_station.75,75,Metro,PONT SUPERIEUR,PSU099,media.ilevia.fr/opendata/cartographie/Metro_1003_Pont Superieur.pdf,59350,Lille
+cartographie_station.76,76,Metro,MAISON DES ENFANTS,MDE098,media.ilevia.fr/opendata/cartographie/Metro_1004_Maison Des Enfants.pdf,59350,Lille
+cartographie_station.77,77,Metro,MAISON DES ENFANTS,MDE099,media.ilevia.fr/opendata/cartographie/Metro_1004_Maison Des Enfants.pdf,59350,Lille
+cartographie_station.78,78,Metro,LOMME BOURG,BRG298,media.ilevia.fr/opendata/cartographie/Metro_1034_Lomme Bourg.pdf,59350,Lille
+cartographie_station.79,79,Metro,LOMME BOURG,BRG299,media.ilevia.fr/opendata/cartographie/Metro_1034_Lomme Bourg.pdf,59350,Lille
+cartographie_station.80,80,Metro,MITTERIE,MIT298,media.ilevia.fr/opendata/cartographie/Metro_1036_Mitterie.pdf,59350,Lille
+cartographie_station.81,81,Metro,MITTERIE,MIT299,media.ilevia.fr/opendata/cartographie/Metro_1036_Mitterie.pdf,59350,Lille
+cartographie_station.82,82,Metro,MONS SARTS,MSA098,media.ilevia.fr/opendata/cartographie/Metro_1208_Mons Sarts.pdf,59410,Mons-en-Barœul
+cartographie_station.83,83,Metro,MONS SARTS,MSA099,media.ilevia.fr/opendata/cartographie/Metro_1208_Mons Sarts.pdf,59410,Mons-en-Barœul
+cartographie_station.84,84,Metro,FORT DE MONS,FOR099,media.ilevia.fr/opendata/cartographie/Metro_1222_Fort De Mons.pdf,59410,Mons-en-Barœul
+cartographie_station.85,85,Metro,FORT DE MONS,FOR298,media.ilevia.fr/opendata/cartographie/Metro_1222_Fort De Mons.pdf,59410,Mons-en-Barœul
+cartographie_station.86,86,Metro,MAIRIE DE MONS,MDM098,media.ilevia.fr/opendata/cartographie/Metro_1231_Mairie De Mons.pdf,59410,Mons-en-Barœul
+cartographie_station.87,87,Metro,MAIRIE DE MONS,MDM099,media.ilevia.fr/opendata/cartographie/Metro_1231_Mairie De Mons.pdf,59410,Mons-en-Barœul
+cartographie_station.88,88,Metro,ROUBAIX CHARLES DE GAULLE,CDG098,media.ilevia.fr/opendata/cartographie/Metro_1453_Roubaix Charles De Gaulle.pdf,59512,Roubaix
+cartographie_station.89,89,Metro,ROUBAIX CHARLES DE GAULLE,CDG099,media.ilevia.fr/opendata/cartographie/Metro_1453_Roubaix Charles De Gaulle.pdf,59512,Roubaix
+cartographie_station.90,90,Metro,ROUBAIX EUROTELEPORT,ROU096,media.ilevia.fr/opendata/cartographie/Metro_1508_Roubaix Euroteleport.pdf,59512,Roubaix
+cartographie_station.91,91,Metro,ROUBAIX EUROTELEPORT,ROU097,media.ilevia.fr/opendata/cartographie/Metro_1508_Roubaix Euroteleport.pdf,59512,Roubaix
+cartographie_station.92,92,Metro,ALSACE,ALS098,media.ilevia.fr/opendata/cartographie/Metro_1519_Alsace.pdf,59512,Roubaix
+cartographie_station.93,93,Metro,ALSACE,ALS099,media.ilevia.fr/opendata/cartographie/Metro_1519_Alsace.pdf,59512,Roubaix
+cartographie_station.94,94,Metro,BOURGOGNE,TBO098,media.ilevia.fr/opendata/cartographie/Metro_1719_Bourgogne.pdf,59599,Tourcoing
+cartographie_station.95,95,Metro,BOURGOGNE,TBO099,media.ilevia.fr/opendata/cartographie/Metro_1719_Bourgogne.pdf,59599,Tourcoing
+cartographie_station.96,96,Metro,C.H. DRON,DRO098,media.ilevia.fr/opendata/cartographie/Metro_1736_C.H. Dron.pdf,59599,Tourcoing
+cartographie_station.97,97,Metro,C.H. DRON,DRO099,media.ilevia.fr/opendata/cartographie/Metro_1736_C.H. Dron.pdf,59599,Tourcoing
+cartographie_station.98,98,Metro,MERCURE,MER098,media.ilevia.fr/opendata/cartographie/Metro_1805_Mercure.pdf,59599,Tourcoing
+cartographie_station.99,99,Metro,MERCURE,MER099,media.ilevia.fr/opendata/cartographie/Metro_1805_Mercure.pdf,59599,Tourcoing
+cartographie_station.100,100,Metro,PHALEMPINS,TPH098,media.ilevia.fr/opendata/cartographie/Metro_1818_Phalempins.pdf,59599,Tourcoing
+cartographie_station.101,101,Metro,PHALEMPINS,TPH099,media.ilevia.fr/opendata/cartographie/Metro_1818_Phalempins.pdf,59599,Tourcoing
+cartographie_station.102,102,Metro,GARE DE TOURCOING,SEB098,media.ilevia.fr/opendata/cartographie/Metro_1822_Gare De Tourcoing.pdf,59599,Tourcoing
+cartographie_station.103,103,Metro,GARE DE TOURCOING,SEB099,media.ilevia.fr/opendata/cartographie/Metro_1822_Gare De Tourcoing.pdf,59599,Tourcoing
+cartographie_station.104,104,Metro,TRIOLO,TIO098,media.ilevia.fr/opendata/cartographie/Metro_1903_Triolo.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.105,105,Metro,TRIOLO,TIO099,media.ilevia.fr/opendata/cartographie/Metro_1903_Triolo.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.106,106,Metro,V. D'ASCQ HOTEL DE VILLE,HDV099,media.ilevia.fr/opendata/cartographie/Metro_1942_V. D'ascq Hotel De Ville.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.107,107,Metro,VILLENEUVE D'ASCQ HOTEL DE VILLE,HDV098,media.ilevia.fr/opendata/cartographie/Metro_1942_V. D'ascq Hotel De Ville.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.108,108,Metro,LES PRES-EDGARD PISANI,PRS098,media.ilevia.fr/opendata/cartographie/Metro_1968_Les Pres-Edgard Pisani.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.109,109,Metro,LES PRES-EDGARD PISANI,PRS099,media.ilevia.fr/opendata/cartographie/Metro_1968_Les Pres-Edgard Pisani.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.110,110,Metro,V. D'ASCQ PONT DE BOIS,PDB098,media.ilevia.fr/opendata/cartographie/Metro_1971_V. D'ascq Pont De Bois.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.111,111,Metro,V. D'ASCQ PONT DE BOIS,PDB099,media.ilevia.fr/opendata/cartographie/Metro_1971_V. D'ascq Pont De Bois.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.112,112,Metro,WASQUEHAL HOTEL DE VILLE,WMI098,media.ilevia.fr/opendata/cartographie/Metro_2044_Wasquehal Hotel De Ville.pdf,59646,Wasquehal
+cartographie_station.113,113,Metro,WASQUEHAL HOTEL DE VILLE,WMI099,media.ilevia.fr/opendata/cartographie/Metro_2044_Wasquehal Hotel De Ville.pdf,59646,Wasquehal
+cartographie_station.114,114,Metro,WASQUEHAL PAVÉ DE LILLE,PVL096,media.ilevia.fr/opendata/cartographie/Metro_2071_Wasquehal Pave De Lille.pdf,59646,Wasquehal
+cartographie_station.115,115,Metro,WASQUEHAL PAVÉ DE LILLE,PVL097,media.ilevia.fr/opendata/cartographie/Metro_2071_Wasquehal Pave De Lille.pdf,59646,Wasquehal
+cartographie_station.116,116,Metro,CROIX CENTRE,CPL098,media.ilevia.fr/opendata/cartographie/Metro_302_Croix Centre.pdf,59163,Croix
+cartographie_station.117,117,Metro,CROIX CENTRE,CPL099,media.ilevia.fr/opendata/cartographie/Metro_302_Croix Centre.pdf,59163,Croix
+cartographie_station.118,118,Metro,4 CANTONS STADE PIERRE MAUROY,4CA098,media.ilevia.fr/opendata/cartographie/Metro_4703_4 Cantons - Stade Pierre-Mauroy.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.119,119,Metro,4 CANTONS STADE PIERRE MAUROY,4CA099,media.ilevia.fr/opendata/cartographie/Metro_4703_4 Cantons - Stade Pierre-Mauroy.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.120,120,Metro,MARBRERIE,MRB098,media.ilevia.fr/opendata/cartographie/Metro_488_Marbrerie.pdf,59350,Lille
+cartographie_station.121,121,Metro,SQUARE FLANDRES,LZN099,media.ilevia.fr/opendata/cartographie/Metro_492_Square Flandres.pdf,59350,Lille
+cartographie_station.122,122,Metro,MAIRIE D'HELLEMMES,MHE098,media.ilevia.fr/opendata/cartographie/Metro_494_Mairie D'hellemmes.pdf,59350,Lille
+cartographie_station.123,123,Metro,MAIRIE D'HELLEMMES,MHE099,media.ilevia.fr/opendata/cartographie/Metro_494_Mairie D'hellemmes.pdf,59350,Lille
+cartographie_station.124,124,Metro,GAMBETTA,CGA098,media.ilevia.fr/opendata/cartographie/Metro_5456_Gambetta.pdf,59350,Lille
+cartographie_station.125,125,Metro,GAMBETTA,CGA099,media.ilevia.fr/opendata/cartographie/Metro_5456_Gambetta.pdf,59350,Lille
+cartographie_station.126,126,Metro,WAZEMMES,WAZ098,media.ilevia.fr/opendata/cartographie/Metro_5457_Wazemmes.pdf,59350,Lille
+cartographie_station.127,127,Metro,WAZEMMES,WAZ099,media.ilevia.fr/opendata/cartographie/Metro_5457_Wazemmes.pdf,59350,Lille
+cartographie_station.128,128,Metro,CITÉ SCIENTIFIQUE PR GABILLARD,CSC098,media.ilevia.fr/opendata/cartographie/Metro_6415_Cite Scientifique.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.129,129,Metro,CITÉ SCIENTIFIQUE PR GABILLARD,CSC099,media.ilevia.fr/opendata/cartographie/Metro_6415_Cite Scientifique.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.130,130,Metro,GARE JEAN LEBAS ROUBAIX,MGR098,media.ilevia.fr/opendata/cartographie/Metro_6587_Gare Jean Lebas Roubaix.pdf,59512,Roubaix
+cartographie_station.131,131,Metro,GARE JEAN LEBAS ROUBAIX,MGR099,media.ilevia.fr/opendata/cartographie/Metro_6587_Gare Jean Lebas Roubaix.pdf,59512,Roubaix
+cartographie_station.132,132,Metro,TOURCOING CENTRE,TOU098,media.ilevia.fr/opendata/cartographie/Metro_6666_Tourcoing Centre.pdf,59599,Tourcoing
+cartographie_station.133,133,Metro,TOURCOING CENTRE,TOU099,media.ilevia.fr/opendata/cartographie/Metro_6666_Tourcoing Centre.pdf,59599,Tourcoing
+cartographie_station.134,134,Metro,V. D'ASCQ JEAN JAURES,JRS098,media.ilevia.fr/opendata/cartographie/Metro_6699_V. D'ascq Jean Jaures.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.135,135,Metro,V. D'ASCQ JEAN JAURES,JRS099,media.ilevia.fr/opendata/cartographie/Metro_6699_V. D'ascq Jean Jaures.pdf,59009,Villeneuve-d'Ascq
+cartographie_station.136,136,Metro,CANTELEU,CAN098,media.ilevia.fr/opendata/cartographie/Metro_678_Canteleu.pdf,59328,Lambersart
+cartographie_station.137,137,Metro,CANTELEU,CAN099,media.ilevia.fr/opendata/cartographie/Metro_678_Canteleu.pdf,59350,Lille
+cartographie_station.138,138,Metro,LILLE GRAND PALAIS,LGP098,media.ilevia.fr/opendata/cartographie/Metro_6841_Lille Grand Palais.pdf,59350,Lille
+cartographie_station.139,139,Metro,LILLE GRAND PALAIS,LGP099,media.ilevia.fr/opendata/cartographie/Metro_6841_Lille Grand Palais.pdf,59350,Lille
+cartographie_station.140,140,Metro,MAIRIE DE CROIX,CXM098,media.ilevia.fr/opendata/cartographie/Metro_7017_Mairie De Croix.pdf,59163,Croix
+cartographie_station.141,141,Metro,MAIRIE DE CROIX,CXM099,media.ilevia.fr/opendata/cartographie/Metro_7017_Mairie De Croix.pdf,59163,Croix
+cartographie_station.142,142,Metro,LILLE PORTE DES POSTES,PDP099,media.ilevia.fr/opendata/cartographie/Metro_7028_Lille Porte Des Postes.pdf,59350,Lille
+cartographie_station.143,143,Metro,LILLE PORTE DES POSTES,PDP398,media.ilevia.fr/opendata/cartographie/Metro_7028_Lille Porte Des Postes.pdf,59350,Lille
+cartographie_station.144,144,Metro,LILLE PORTE DES POSTES,PDP399,media.ilevia.fr/opendata/cartographie/Metro_7028_Lille Porte Des Postes.pdf,59350,Lille
+cartographie_station.145,145,Metro,LILLE CHU-CENTRE O. LAMBRET,CHR098,media.ilevia.fr/opendata/cartographie/Metro_7214_Lille Chu-Centre O. Lambret.pdf,59350,Lille
+cartographie_station.146,146,Metro,LILLE CHU-CENTRE O. LAMBRET,CHR099,media.ilevia.fr/opendata/cartographie/Metro_7214_Lille Chu-Centre O. Lambret.pdf,59350,Lille
+cartographie_station.147,147,Metro,SQUARE FLANDRES,LZN098,media.ilevia.fr/opendata/cartographie/Metro_492_Square Flandres.pdf,59346,Lezennes
+cartographie_station.148,148,Metro,GARE LILLE EUROPE,EUR098,media.ilevia.fr/opendata/cartographie/Metro_7536_Gare Lille Europe.pdf,59350,Lille
+cartographie_station.149,149,Metro,GARE LILLE EUROPE,EUR099,media.ilevia.fr/opendata/cartographie/Metro_7536_Gare Lille Europe.pdf,59350,Lille
+cartographie_station.150,150,Metro,RÉPUBLIQUE BEAUX-ARTS,REP098,media.ilevia.fr/opendata/cartographie/Metro_773_République Beaux-Arts.pdf,59350,Lille
+cartographie_station.151,151,Metro,RÉPUBLIQUE BEAUX-ARTS,REP099,media.ilevia.fr/opendata/cartographie/Metro_773_République Beaux-Arts.pdf,59350,Lille
+cartographie_station.152,152,Metro,MADELEINE CAULIER,CIE098,media.ilevia.fr/opendata/cartographie/Metro_774_Caulier.pdf,59350,Lille
+cartographie_station.153,153,Metro,MADELEINE CAULIER,CIE099,media.ilevia.fr/opendata/cartographie/Metro_774_Caulier.pdf,59350,Lille
+cartographie_station.154,154,Metro,LILLE PORTE DE DOUAI,PDO098,media.ilevia.fr/opendata/cartographie/Metro_776_Lille Porte De Douai.pdf,59350,Lille
+cartographie_station.155,155,Metro,LILLE PORTE DE DOUAI,PDO099,media.ilevia.fr/opendata/cartographie/Metro_776_Lille Porte De Douai.pdf,59350,Lille
+cartographie_station.156,156,Metro,FIVES,DFI098,media.ilevia.fr/opendata/cartographie/Metro_778_Fives.pdf,59350,Lille
+cartographie_station.157,157,Metro,FIVES,DFI099,media.ilevia.fr/opendata/cartographie/Metro_778_Fives.pdf,59350,Lille
+cartographie_station.158,158,Metro,ROUBAIX GRAND PLACE,RXP098,media.ilevia.fr/opendata/cartographie/Metro_7903_Roubaix Grand Place.pdf,59512,Roubaix
+cartographie_station.159,159,Metro,ROUBAIX GRAND PLACE,RXP099,media.ilevia.fr/opendata/cartographie/Metro_7903_Roubaix Grand Place.pdf,59512,Roubaix
+cartographie_station.160,160,Metro,COLBERT,COB098,media.ilevia.fr/opendata/cartographie/Metro_7904_Colbert.pdf,59599,Tourcoing
+cartographie_station.161,161,Metro,COLBERT,COB099,media.ilevia.fr/opendata/cartographie/Metro_7904_Colbert.pdf,59599,Tourcoing
+cartographie_station.162,162,Metro,EPEULE MONTESQUIEU,EPL098,media.ilevia.fr/opendata/cartographie/Metro_7905_Epeule Montesquieu.pdf,59512,Roubaix
+cartographie_station.163,163,Metro,EPEULE MONTESQUIEU,EPL099,media.ilevia.fr/opendata/cartographie/Metro_7905_Epeule Montesquieu.pdf,59512,Roubaix
+cartographie_station.164,164,Metro,ST MAURICE PELLEVOISIN,SMP098,media.ilevia.fr/opendata/cartographie/Metro_797_St Maurice Pellevoisin.pdf,59350,Lille
+cartographie_station.165,165,Metro,ST MAURICE PELLEVOISIN,SMP099,media.ilevia.fr/opendata/cartographie/Metro_797_St Maurice Pellevoisin.pdf,59350,Lille
+cartographie_station.166,166,Metro,CORMONTAIGNE,COR098,media.ilevia.fr/opendata/cartographie/Metro_809_Cormontaigne.pdf,59350,Lille
+cartographie_station.167,167,Metro,CORMONTAIGNE,COR099,media.ilevia.fr/opendata/cartographie/Metro_809_Cormontaigne.pdf,59350,Lille
+cartographie_station.168,168,Metro,MARBRERIE,MRB099,media.ilevia.fr/opendata/cartographie/Metro_488_Marbrerie.pdf,59350,Lille
+cartographie_station.169,169,Metro,LILLE PORTE D'ARRAS,PRR098,media.ilevia.fr/opendata/cartographie/Metro_866_Lille Porte D'arras.pdf,59350,Lille
+cartographie_station.170,170,Metro,LILLE PORTE D'ARRAS,PRR099,media.ilevia.fr/opendata/cartographie/Metro_866_Lille Porte D'arras.pdf,59350,Lille
+cartographie_station.171,171,Metro,PONT DE NEUVILLE,PTN098,media.ilevia.fr/opendata/cartographie/Metro_8780_Pont De Neuville.pdf,59599,Tourcoing
+cartographie_station.172,172,Metro,PONT DE NEUVILLE,PTN099,media.ilevia.fr/opendata/cartographie/Metro_8780_Pont De Neuville.pdf,59599,Tourcoing
+cartographie_station.173,173,Metro,CARLIERS,CTL098,media.ilevia.fr/opendata/cartographie/Metro_8811_Carliers.pdf,59599,Tourcoing
+cartographie_station.174,174,Metro,CARLIERS,CTL099,media.ilevia.fr/opendata/cartographie/Metro_8811_Carliers.pdf,59599,Tourcoing
+cartographie_station.175,175,Metro,GARE LILLE FLANDRES,LIG098,media.ilevia.fr/opendata/cartographie/Metro_920_Gare Lille Flandres.pdf,59350,Lille
+cartographie_station.176,176,Metro,GARE LILLE FLANDRES,LIG099,media.ilevia.fr/opendata/cartographie/Metro_920_Gare Lille Flandres.pdf,59350,Lille
+cartographie_station.177,177,Metro,GARE LILLE FLANDRES,LIG398,media.ilevia.fr/opendata/cartographie/Metro_920_Gare Lille Flandres.pdf,59350,Lille
+cartographie_station.178,178,Metro,GARE LILLE FLANDRES,LIG399,media.ilevia.fr/opendata/cartographie/Metro_920_Gare Lille Flandres.pdf,59350,Lille
+cartographie_station.179,179,Metro,PORT DE LILLE,PTL098,media.ilevia.fr/opendata/cartographie/Metro_934_Port De Lille.pdf,59350,Lille
+cartographie_station.180,180,Metro,PORT DE LILLE,PTL099,media.ilevia.fr/opendata/cartographie/Metro_934_Port De Lille.pdf,59350,Lille
+cartographie_station.181,181,Metro,MAIRIE DE LILLE,MDL098,media.ilevia.fr/opendata/cartographie/Metro_935_Mairie De Lille.pdf,59350,Lille
+cartographie_station.182,182,Metro,MAIRIE DE LILLE,MDL099,media.ilevia.fr/opendata/cartographie/Metro_935_Mairie De Lille.pdf,59350,Lille
+cartographie_station.183,183,Metro,RIHOUR,RIH098,media.ilevia.fr/opendata/cartographie/Metro_942_Rihour.pdf,59350,Lille
+cartographie_station.184,184,Metro,RIHOUR,RIH099,media.ilevia.fr/opendata/cartographie/Metro_942_Rihour.pdf,59350,Lille
+cartographie_station.185,185,Metro,MONTEBELLO,MNT098,media.ilevia.fr/opendata/cartographie/Metro_946_Montebello.pdf,59350,Lille
+cartographie_station.186,186,Metro,MONTEBELLO,MNT099,media.ilevia.fr/opendata/cartographie/Metro_946_Montebello.pdf,59350,Lille
+cartographie_station.187,187,Metro,PORTE DE VALENCIENNES,PDV098,media.ilevia.fr/opendata/cartographie/Metro_965_Porte De Valenciennes.pdf,59350,Lille
+cartographie_station.188,188,Metro,PORTE DE VALENCIENNES,PDV099,media.ilevia.fr/opendata/cartographie/Metro_965_Porte De Valenciennes.pdf,59350,Lille
+cartographie_station.189,189,Metro,BOIS BLANCS,LPC098,media.ilevia.fr/opendata/cartographie/Metro_971_Bois Blancs.pdf,59328,Lambersart
+cartographie_station.190,190,Metro,BOIS BLANCS,LPC099,media.ilevia.fr/opendata/cartographie/Metro_971_Bois Blancs.pdf,59350,Lille
+cartographie_station.191,191,Metro,CHU EURASANTÉ,CAL098,media.ilevia.fr/opendata/cartographie/Metro_974_Chu-Eurasante.pdf,59350,Lille
+cartographie_station.192,192,Metro,CHU EURASANTÉ,CAL099,media.ilevia.fr/opendata/cartographie/Metro_974_Chu-Eurasante.pdf,59350,Lille
+cartographie_station.193,193,Metro,LOMME-LAMBERSART ARTHUR NOTEBART,LLO098,media.ilevia.fr/opendata/cartographie/Metro_997_Lomme-Lambersart Arthur Notebart.pdf,59350,Lille
+cartographie_station.194,194,Metro,LOMME-LAMBERSART ARTHUR NOTEBART,LLO099,media.ilevia.fr/opendata/cartographie/Metro_997_Lomme-Lambersart Arthur Notebart.pdf,59350,Lille
+cartographie_station.195,195,Metro,LOMME SAINT PHILIBERT,HSP098,media.ilevia.fr/opendata/cartographie/Metro_999_Lomme Saint Philibert.pdf,59350,Lille
+cartographie_station.196,196,Metro,LOMME SAINT PHILIBERT,HSP099,media.ilevia.fr/opendata/cartographie/Metro_999_Lomme Saint Philibert.pdf,59350,Lille

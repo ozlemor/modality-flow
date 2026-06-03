@@ -1,0 +1,592 @@
+[
+  {
+    "dataset": "velomagg_stations",
+    "timestamp": "2026-05-12T20:44:27.053605+00:00",
+    "nb_lignes": 57,
+    "nb_colonnes": 12,
+    "mesures": {
+      "completude": {
+        "station_id": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "station_code": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "adresse": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "bikes_available": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "free_slots": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "total_capacity": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "status": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "lat": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "lon": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "taux_occupation": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "timestamp": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "type": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        }
+      },
+      "unicite": {
+        "lignes_uniques": 57,
+        "doublons": 0,
+        "unicite_pct": 100.0,
+        "statut": "ok"
+      },
+      "validite_geo": {
+        "zone": "Hérault (lat 43.0-44.5, lon 3.0-5.0)",
+        "coords_valides": 57,
+        "coords_invalides": 0,
+        "validite_geo_pct": 100.0,
+        "statut": "ok"
+      },
+      "fraicheur": {
+        "extraction_at": "2026-05-12T20:44:27.056745+00:00",
+        "source": "API temps réel"
+      }
+    },
+    "score_global": {
+      "score": 100.0,
+      "statut": "Bonne",
+      "detail": {
+        "completude_avg": 100.0,
+        "unicite": 100.0,
+        "validite_geo": 100.0
+      }
+    }
+  },
+  {
+    "dataset": "gbfs_station_information",
+    "timestamp": "2026-05-12T20:44:27.089652+00:00",
+    "nb_lignes": 52,
+    "nb_colonnes": 8,
+    "mesures": {
+      "completude": {
+        "station_id": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "nom": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "lat": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "lon": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "capacite": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "adresse": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "type": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "source": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        }
+      },
+      "unicite": {
+        "lignes_uniques": 52,
+        "doublons": 0,
+        "unicite_pct": 100.0,
+        "statut": "ok"
+      },
+      "validite_geo": {
+        "zone": "Hérault (lat 43.0-44.5, lon 3.0-5.0)",
+        "coords_valides": 52,
+        "coords_invalides": 0,
+        "validite_geo_pct": 100.0,
+        "statut": "ok"
+      },
+      "fraicheur": {
+        "extraction_at": "2026-05-12T20:44:27.090486+00:00",
+        "source": "fichier CSV"
+      }
+    },
+    "score_global": {
+      "score": 100.0,
+      "statut": "Bonne",
+      "detail": {
+        "completude_avg": 100.0,
+        "unicite": 100.0,
+        "validite_geo": 100.0
+      }
+    }
+  },
+  {
+    "dataset": "gbfs_station_status",
+    "timestamp": "2026-05-12T20:44:27.091983+00:00",
+    "nb_lignes": 52,
+    "nb_colonnes": 8,
+    "mesures": {
+      "completude": {
+        "station_id": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "bikes_available": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "docks_available": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "is_installed": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "is_renting": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "is_returning": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "last_reported": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "timestamp": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        }
+      },
+      "unicite": {
+        "lignes_uniques": 52,
+        "doublons": 0,
+        "unicite_pct": 100.0,
+        "statut": "ok"
+      },
+      "fraicheur": {
+        "extraction_at": "2026-05-12T20:44:27.092583+00:00",
+        "source": "API temps réel"
+      }
+    },
+    "score_global": {
+      "score": 100.0,
+      "statut": "Bonne",
+      "detail": {
+        "completude_avg": 100.0,
+        "unicite": 100.0,
+        "validite_geo": 100.0
+      }
+    }
+  },
+  {
+    "dataset": "gbfs_free_bike_status",
+    "timestamp": "2026-05-12T20:44:27.094284+00:00",
+    "nb_lignes": 282,
+    "nb_colonnes": 7,
+    "mesures": {
+      "completude": {
+        "bike_id": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "lat": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "lon": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "is_reserved": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "is_disabled": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "vehicle_type_id": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "timestamp": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        }
+      },
+      "unicite": {
+        "lignes_uniques": 282,
+        "doublons": 0,
+        "unicite_pct": 100.0,
+        "statut": "ok"
+      },
+      "validite_geo": {
+        "zone": "Hérault (lat 43.0-44.5, lon 3.0-5.0)",
+        "coords_valides": 282,
+        "coords_invalides": 0,
+        "validite_geo_pct": 100.0,
+        "statut": "ok"
+      },
+      "fraicheur": {
+        "extraction_at": "2026-05-12T20:44:27.095055+00:00",
+        "source": "API temps réel"
+      }
+    },
+    "score_global": {
+      "score": 100.0,
+      "statut": "Bonne",
+      "detail": {
+        "completude_avg": 100.0,
+        "unicite": 100.0,
+        "validite_geo": 100.0
+      }
+    }
+  },
+  {
+    "dataset": "parkings",
+    "timestamp": "2026-05-12T20:44:27.096657+00:00",
+    "nb_lignes": 24,
+    "nb_colonnes": 12,
+    "mesures": {
+      "completude": {
+        "parking_id": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "parking_code": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "adresse": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "free_spots": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "total_spots": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "occupied_spots": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "taux_occupation": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "status": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "lat": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "lon": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "timestamp": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "type": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        }
+      },
+      "unicite": {
+        "lignes_uniques": 24,
+        "doublons": 0,
+        "unicite_pct": 100.0,
+        "statut": "ok"
+      },
+      "validite_geo": {
+        "zone": "Hérault (lat 43.0-44.5, lon 3.0-5.0)",
+        "coords_valides": 24,
+        "coords_invalides": 0,
+        "validite_geo_pct": 100.0,
+        "statut": "ok"
+      },
+      "fraicheur": {
+        "extraction_at": "2026-05-12T20:44:27.097678+00:00",
+        "source": "API temps réel"
+      }
+    },
+    "score_global": {
+      "score": 100.0,
+      "statut": "Bonne",
+      "detail": {
+        "completude_avg": 100.0,
+        "unicite": 100.0,
+        "validite_geo": 100.0
+      }
+    }
+  },
+  {
+    "dataset": "parking_spaces",
+    "timestamp": "2026-05-12T20:44:27.098842+00:00",
+    "nb_lignes": 38,
+    "nb_colonnes": 16,
+    "mesures": {
+      "completude": {
+        "parking_id": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "nom": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "adresse": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "lat": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "lon": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "type_parking": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "typology": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "domaniality": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "total_places": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "places_publiques": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "places_restantes": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "places_pmr": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "voitures_electriques": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "hauteur_max_cm": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "proprietaire": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "est_gratuit": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        }
+      },
+      "unicite": {
+        "lignes_uniques": 38,
+        "doublons": 0,
+        "unicite_pct": 100.0,
+        "statut": "ok"
+      },
+      "validite_geo": {
+        "zone": "Hérault (lat 43.0-44.5, lon 3.0-5.0)",
+        "coords_valides": 38,
+        "coords_invalides": 0,
+        "validite_geo_pct": 100.0,
+        "statut": "ok"
+      },
+      "fraicheur": {
+        "extraction_at": "2026-05-12T20:44:27.099708+00:00",
+        "source": "fichier CSV"
+      }
+    },
+    "score_global": {
+      "score": 100.0,
+      "statut": "Bonne",
+      "detail": {
+        "completude_avg": 100.0,
+        "unicite": 100.0,
+        "validite_geo": 100.0
+      }
+    }
+  },
+  {
+    "dataset": "ecocompteurs",
+    "timestamp": "2026-05-12T20:44:27.101951+00:00",
+    "nb_lignes": 78,
+    "nb_colonnes": 6,
+    "mesures": {
+      "completude": {
+        "compteur_id": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "code": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "intensite": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "lat": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "lon": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        },
+        "timestamp": {
+          "completude_pct": 100.0,
+          "nulles": 0,
+          "statut": "ok"
+        }
+      },
+      "unicite": {
+        "lignes_uniques": 78,
+        "doublons": 0,
+        "unicite_pct": 100.0,
+        "statut": "ok"
+      },
+      "validite_geo": {
+        "zone": "Hérault (lat 43.0-44.5, lon 3.0-5.0)",
+        "coords_valides": 0,
+        "coords_invalides": 78,
+        "validite_geo_pct": 0.0,
+        "statut": "nope"
+      },
+      "fraicheur": {
+        "extraction_at": "2026-05-12T20:44:27.102619+00:00",
+        "source": "API temps réel"
+      }
+    },
+    "score_global": {
+      "score": 70.0,
+      "statut": "Acceptable",
+      "detail": {
+        "completude_avg": 100.0,
+        "unicite": 100.0,
+        "validite_geo": 0.0
+      }
+    }
+  }
+]

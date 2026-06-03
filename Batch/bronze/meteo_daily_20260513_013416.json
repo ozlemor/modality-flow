@@ -1,0 +1,12 @@
+[
+  {
+    "date": "2026-05-12",
+    "temperature_max": 20.0,
+    "temperature_min": 13.4,
+    "temperature_mean": 16.5,
+    "precipitation_sum": 0.0,
+    "wind_speed_max": 16.3,
+    "weather_code": 3,
+    "source": "open_meteo"
+  }
+]

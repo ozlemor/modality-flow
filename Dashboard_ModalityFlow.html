@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MODALITY-FLOW — Dashboard KPI/KRI</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#f0f4ef;--bg2:#e8efe6;--card:#ffffff;--card2:#f7faf6;
+  --border:rgba(74,111,60,0.12);--primary:#3a7d44;--primary-light:#e8f5ea;
+  --primary-mid:#5a9e63;--secondary:#6b9e78;--earth:#8b6f4e;
+  --earth-light:#f5ede3;--sky:#4a7fa5;--sky-light:#e3f0f7;
+  --warn:#c17f24;--warn-light:#fdf3e3;--danger:#b5433a;--danger-light:#fdecea;
+  --text:#1e2d1a;--text2:#3d5235;--muted:#7a9070;
+  --serif:'Playfair Display',serif;--sans:'Nunito',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh;
+  background-image:radial-gradient(ellipse at 10% 20%,rgba(90,158,99,0.08) 0%,transparent 50%),
+  radial-gradient(ellipse at 90% 80%,rgba(107,158,120,0.06) 0%,transparent 50%);}
+.layout{max-width:1400px;margin:0 auto;padding:36px 28px;}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:48px;
+  padding-bottom:24px;border-bottom:1px solid var(--border);}
+.logo{display:flex;align-items:center;gap:18px;}
+.logo-mark{width:52px;height:52px;background:linear-gradient(135deg,var(--primary),var(--primary-mid));
+  border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:24px;
+  box-shadow:0 4px 20px rgba(58,125,68,0.25);}
+.logo-text h1{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--primary);}
+.logo-text p{font-size:13px;color:var(--muted);margin-top:2px;}
+.header-right{display:flex;align-items:center;gap:14px;}
+.live-badge{display:flex;align-items:center;gap:8px;background:var(--primary-light);
+  border:1.5px solid rgba(58,125,68,0.2);border-radius:24px;padding:8px 18px;
+  font-size:13px;color:var(--primary);font-weight:600;}
+.live-dot{width:8px;height:8px;border-radius:50%;background:var(--primary);
+  animation:pulse 2.5s infinite;}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(58,125,68,0.4)}50%{box-shadow:0 0 0 6px rgba(58,125,68,0)}}
+.last-update{font-size:12px;color:var(--muted);}
+.refresh-btn{background:var(--card);border:1.5px solid var(--border);color:var(--text2);
+  border-radius:10px;padding:10px 20px;font-family:var(--sans);font-size:13px;font-weight:600;
+  cursor:pointer;transition:all 0.2s;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+.refresh-btn:hover{background:var(--primary-light);border-color:var(--primary);color:var(--primary);}
+.section-title{display:flex;align-items:center;gap:12px;margin:44px 0 20px;}
+.section-title h2{font-family:var(--serif);font-size:20px;color:var(--primary);font-weight:600;white-space:nowrap;}
+.section-title .line{flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent);}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;}
+.kpi-card{background:var(--card);border:1.5px solid var(--border);border-radius:20px;
+  padding:24px;position:relative;overflow:hidden;transition:transform 0.25s,box-shadow 0.25s;
+  box-shadow:0 2px 12px rgba(0,0,0,0.05);animation:riseUp 0.5s ease forwards;opacity:0;transform:translateY(16px);}
+.kpi-card:hover{transform:translateY(-4px);box-shadow:0 8px 28px rgba(58,125,68,0.12);}
+@keyframes riseUp{to{opacity:1;transform:translateY(0);}}
+.kpi-card:nth-child(1){animation-delay:.05s}.kpi-card:nth-child(2){animation-delay:.1s}
+.kpi-card:nth-child(3){animation-delay:.15s}.kpi-card:nth-child(4){animation-delay:.2s}
+.kpi-card:nth-child(5){animation-delay:.25s}.kpi-card:nth-child(6){animation-delay:.3s}
+.kpi-card:nth-child(7){animation-delay:.35s}.kpi-card:nth-child(8){animation-delay:.4s}
+.kpi-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--acc,linear-gradient(90deg,var(--primary),var(--primary-mid)));border-radius:20px 20px 0 0;}
+.kpi-card.warn{--acc:linear-gradient(90deg,var(--warn),#e8a030);}
+.kpi-card.danger{--acc:linear-gradient(90deg,var(--danger),#d4655e);}
+.kpi-card.sky{--acc:linear-gradient(90deg,var(--sky),#6aaed6);}
+.kpi-card.earth{--acc:linear-gradient(90deg,var(--earth),#a88b6a);}
+.kpi-bg-icon{position:absolute;bottom:-10px;right:-10px;font-size:64px;opacity:.06;pointer-events:none;transform:rotate(-10deg);}
+.kpi-label{font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.5px;margin-bottom:14px;text-transform:uppercase;}
+.kpi-value{font-family:var(--serif);font-size:38px;font-weight:700;color:var(--text);line-height:1;margin-bottom:4px;}
+.kpi-value.loading{background:linear-gradient(90deg,var(--bg2) 25%,var(--bg) 50%,var(--bg2) 75%);
+  background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:8px;height:40px;width:90px;display:block;}
+@keyframes shimmer{to{background-position:-200% 0;}}
+.kpi-unit{font-size:13px;color:var(--muted);}
+.kpi-sub{font-size:12px;color:var(--muted);margin-top:10px;padding-top:10px;border-top:1px solid var(--border);}
+.kri-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;}
+.kri-card{background:var(--card);border:1.5px solid var(--border);border-radius:16px;padding:20px;
+  box-shadow:0 2px 12px rgba(0,0,0,0.04);animation:riseUp 0.5s ease forwards;opacity:0;transform:translateY(16px);}
+.kri-card:nth-child(1){animation-delay:.45s}.kri-card:nth-child(2){animation-delay:.5s}
+.kri-card:nth-child(3){animation-delay:.55s}.kri-card:nth-child(4){animation-delay:.6s}
+.kri-card:nth-child(5){animation-delay:.65s}
+.kri-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.kri-name{font-size:14px;font-weight:600;color:var(--text2);}
+.kri-badge{font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px;}
+.kri-badge.ok{background:var(--primary-light);color:var(--primary);}
+.kri-badge.warn{background:var(--warn-light);color:var(--warn);}
+.kri-badge.critical{background:var(--danger-light);color:var(--danger);}
+.kri-bar-bg{background:var(--bg2);border-radius:6px;height:8px;overflow:hidden;margin-bottom:10px;}
+.kri-bar-fill{height:100%;border-radius:6px;transition:width 1.2s cubic-bezier(.4,0,.2,1);
+  background:linear-gradient(90deg,var(--primary),var(--primary-mid));}
+.kri-bar-fill.warn{background:linear-gradient(90deg,var(--warn),#e8a030);}
+.kri-bar-fill.critical{background:linear-gradient(90deg,var(--danger),#d4655e);}
+.kri-values{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);}
+.stations-wrap{background:var(--card);border:1.5px solid var(--border);border-radius:20px;
+  overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.05);
+  animation:riseUp 0.5s .7s ease forwards;opacity:0;transform:translateY(16px);}
+.table-header{padding:18px 24px;border-bottom:1.5px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;background:var(--card2);}
+.table-header h3{font-family:var(--serif);font-size:16px;color:var(--primary);}
+.table-header .count{font-size:12px;color:var(--muted);}
+table{width:100%;border-collapse:collapse;}
+thead th{padding:12px 18px;text-align:left;font-size:11px;font-weight:700;color:var(--muted);
+  letter-spacing:.8px;text-transform:uppercase;border-bottom:1.5px solid var(--border);background:var(--card2);}
+tbody tr{border-bottom:1px solid var(--border);transition:background 0.15s;}
+tbody tr:hover{background:var(--primary-light);}
+tbody td{padding:11px 18px;font-size:13px;}
+.avail-bar{display:flex;align-items:center;gap:8px;}
+.avail-mini{width:56px;height:6px;background:var(--bg2);border-radius:3px;overflow:hidden;}
+.avail-mini-fill{height:100%;border-radius:3px;background:var(--primary);}
+.avail-mini-fill.medium{background:var(--warn);}
+.avail-mini-fill.low{background:var(--danger);}
+.status-pill{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;}
+.status-pill.ok{background:var(--primary-light);color:var(--primary);}
+.status-pill.ko{background:var(--danger-light);color:var(--danger);}
+.bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+@media(max-width:768px){.bottom-grid{grid-template-columns:1fr;}}
+.info-card{background:var(--card);border:1.5px solid var(--border);border-radius:20px;padding:24px;
+  box-shadow:0 2px 12px rgba(0,0,0,0.05);animation:riseUp 0.5s .75s ease forwards;opacity:0;transform:translateY(16px);}
+.info-card h3{font-family:var(--serif);font-size:17px;color:var(--primary);margin-bottom:20px;}
+.co2-hero{text-align:center;padding:20px;background:linear-gradient(135deg,var(--primary-light),#f0f7f0);
+  border-radius:14px;margin-bottom:16px;}
+.co2-big{font-family:var(--serif);font-size:54px;font-weight:700;color:var(--primary);line-height:1;}
+.co2-unit{font-size:16px;color:var(--muted);margin-top:4px;}
+.co2-roi{padding:12px 16px;background:var(--primary-light);border-radius:10px;
+  font-size:13px;color:var(--primary);text-align:center;font-weight:600;margin-bottom:14px;
+  border:1px solid rgba(58,125,68,0.15);}
+.co2-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.co2-item{background:var(--bg2);border-radius:10px;padding:12px;}
+.co2-item-label{font-size:11px;color:var(--muted);margin-bottom:4px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+.co2-item-val{font-size:16px;font-weight:700;color:var(--text2);}
+.meteo-hero{display:flex;align-items:center;gap:18px;padding:18px;background:var(--sky-light);
+  border-radius:14px;margin-bottom:16px;border:1px solid rgba(74,127,165,0.15);}
+.meteo-icon{font-size:42px;}
+.meteo-val{font-family:var(--serif);font-size:38px;font-weight:700;color:var(--sky);}
+.meteo-desc{font-size:13px;color:var(--muted);margin-top:2px;}
+.meteo-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.meteo-item{background:var(--bg2);border-radius:10px;padding:12px;}
+.meteo-item-label{font-size:11px;color:var(--muted);margin-bottom:4px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+.meteo-item-val{font-size:16px;font-weight:700;color:var(--text2);}
+footer{text-align:center;margin-top:48px;padding:24px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);}
+footer a{color:var(--primary);text-decoration:none;font-weight:600;}
+</style>
+</head>
+<body>
+<div class="layout">
+
+<header>
+  <div class="logo">
+    <div class="logo-mark">🌿</div>
+    <div class="logo-text">
+      <h1>MODALITY-FLOW</h1>
+      <p>Tableau de bord KPI / KRI · Montpellier Méditerranée Métropole</p>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="live-badge"><div class="live-dot"></div>Temps réel</div>
+    <div class="last-update" id="lastUpdate"></div>
+    <button class="refresh-btn" onclick="loadAll()">↻ Actualiser</button>
+  </div>
+</header>
+
+<div class="section-title"><h2>Indicateurs de performance (KPI)</h2><div class="line"></div></div>
+<div class="kpi-grid">
+  <div class="kpi-card" id="card-dispo">
+    
+    <div class="kpi-label">Disponibilité moyenne</div>
+    <div class="kpi-value" id="kpi-dispo"><span class="loading"></span></div>
+    <div class="kpi-unit">% vélos disponibles</div>
+    <div class="kpi-sub" id="kpi-dispo-sub">Chargement...</div>
+  </div>
+  <div class="kpi-card sky">
+    
+    <div class="kpi-label">Vélos disponibles</div>
+    <div class="kpi-value" id="kpi-bikes"><span class="loading"></span></div>
+    <div class="kpi-unit">sur 52 stations</div>
+    <div class="kpi-sub" id="kpi-bikes-sub">Chargement...</div>
+  </div>
+  <div class="kpi-card">
+    
+    <div class="kpi-label">Stations actives</div>
+    <div class="kpi-value" id="kpi-stations"><span class="loading"></span></div>
+    <div class="kpi-unit">stations Velomagg</div>
+    <div class="kpi-sub" id="kpi-stations-sub">Chargement...</div>
+  </div>
+  <div class="kpi-card warn">
+    
+    <div class="kpi-label">Stations vides</div>
+    <div class="kpi-value" id="kpi-empty"><span class="loading"></span></div>
+    <div class="kpi-unit">% sans vélo</div>
+    <div class="kpi-sub" id="kpi-empty-sub">Chargement...</div>
+  </div>
+  <div class="kpi-card" id="card-aqi">
+    
+    <div class="kpi-label">Qualité de l'air</div>
+    <div class="kpi-value" id="kpi-aqi"><span class="loading"></span></div>
+    <div class="kpi-unit" id="kpi-aqi-label">Indice ATMO</div>
+    <div class="kpi-sub" id="kpi-aqi-sub">Chargement...</div>
+  </div>
+  <div class="kpi-card sky">
+    
+    <div class="kpi-label">Température</div>
+    <div class="kpi-value" id="kpi-temp"><span class="loading"></span></div>
+    <div class="kpi-unit">°C · Montpellier</div>
+    <div class="kpi-sub" id="kpi-temp-sub">Chargement...</div>
+  </div>
+  <div class="kpi-card earth">
+    
+    <div class="kpi-label">Parking libres</div>
+    <div class="kpi-value" id="kpi-parkings"><span class="loading"></span></div>
+    <div class="kpi-unit">places disponibles</div>
+    <div class="kpi-sub" id="kpi-parkings-sub">Chargement...</div>
+  </div>
+  <div class="kpi-card">
+    
+    <div class="kpi-label">Score éco-mobilité</div>
+    <div class="kpi-value" id="kpi-score"><span class="loading"></span></div>
+    <div class="kpi-unit">/ 100 points</div>
+    <div class="kpi-sub" id="kpi-score-sub">Chargement...</div>
+  </div>
+</div>
+
+<div class="section-title"><h2>Indicateurs de risque (KRI)</h2><div class="line"></div></div>
+<div class="kri-grid">
+  <div class="kri-card">
+    <div class="kri-header"><div class="kri-name">Disponibilité critique</div><div class="kri-badge ok" id="kri-dispo-badge">OK</div></div>
+    <div class="kri-bar-bg"><div class="kri-bar-fill" id="kri-dispo-bar" style="width:0%"></div></div>
+    <div class="kri-values"><span id="kri-dispo-val">—</span><span>Seuil: &lt;70%</span></div>
+  </div>
+  <div class="kri-card">
+    <div class="kri-header"><div class="kri-name">Stations sans vélo</div><div class="kri-badge ok" id="kri-empty-badge">OK</div></div>
+    <div class="kri-bar-bg"><div class="kri-bar-fill" id="kri-empty-bar" style="width:0%"></div></div>
+    <div class="kri-values"><span id="kri-empty-val">—</span><span>Seuil: &gt;15%</span></div>
+  </div>
+  <div class="kri-card">
+    <div class="kri-header"><div class="kri-name">Qualité de l'air</div><div class="kri-badge ok" id="kri-aqi-badge">OK</div></div>
+    <div class="kri-bar-bg"><div class="kri-bar-fill" id="kri-aqi-bar" style="width:0%"></div></div>
+    <div class="kri-values"><span id="kri-aqi-val">—</span><span>Seuil: ATMO &ge; 5</span></div>
+  </div>
+  <div class="kri-card">
+    <div class="kri-header"><div class="kri-name">Saturation parkings</div><div class="kri-badge ok" id="kri-park-badge">OK</div></div>
+    <div class="kri-bar-bg"><div class="kri-bar-fill" id="kri-park-bar" style="width:0%"></div></div>
+    <div class="kri-values"><span id="kri-park-val">—</span><span>Seuil: &gt;80%</span></div>
+  </div>
+  <div class="kri-card">
+    <div class="kri-header"><div class="kri-name">Conditions météo vélo</div><div class="kri-badge ok" id="kri-meteo-badge">OK</div></div>
+    <div class="kri-bar-bg"><div class="kri-bar-fill" id="kri-meteo-bar" style="width:0%"></div></div>
+    <div class="kri-values"><span id="kri-meteo-val">—</span><span>Seuil: pluie &gt;5mm</span></div>
+  </div>
+</div>
+
+<div class="section-title"><h2>Stations Velomagg — État temps réel</h2><div class="line"></div></div>
+<div class="stations-wrap">
+  <div class="table-header">
+    <h3>52 stations Velomagg · Montpellier</h3>
+    <div class="count" id="table-count">Chargement...</div>
+  </div>
+  <div style="overflow-x:auto;max-height:360px;overflow-y:auto;">
+    <table>
+      <thead><tr><th>Station</th><th>Vélos</th><th>Places libres</th><th>Disponibilité</th><th>Statut</th><th>Mis à jour</th></tr></thead>
+      <tbody id="stations-tbody"><tr><td colspan="6" style="text-align:center;padding:28px;color:var(--muted)">Chargement des stations...</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="section-title"><h2>Empreinte carbone & Météo</h2><div class="line"></div></div>
+<div class="bottom-grid">
+  <div class="info-card">
+    <h3>Bilan carbone — Green FinOps</h3>
+    <div class="co2-hero">
+      <div class="co2-big">40.7</div>
+      <div class="co2-unit">g CO₂ par an</div>
+    </div>
+    <div class="co2-roi">ROI environnemental : <strong>2 580×</strong> son empreinte évitée par le report modal vélo</div>
+    <div class="co2-grid">
+      <div class="co2-item"><div class="co2-item-label">Infrastructure</div><div class="co2-item-val" style="color:var(--primary)">0 € / mois</div></div>
+      <div class="co2-item"><div class="co2-item-label">Volume BDD</div><div class="co2-item-val">163 MB</div></div>
+      <div class="co2-item"><div class="co2-item-label">Facteur CO₂</div><div class="co2-item-val">100 g/kWh</div></div>
+      <div class="co2-item"><div class="co2-item-label">Source</div><div class="co2-item-val" style="font-size:13px">RTE France 2023</div></div>
+    </div>
+  </div>
+  <div class="info-card">
+    <h3>Météo Montpellier</h3>
+    <div class="meteo-hero">
+      <div class="meteo-icon" id="meteo-icon">⏳</div>
+      <div><div class="meteo-val" id="meteo-temp">—</div><div class="meteo-desc" id="meteo-desc">Chargement...</div></div>
+    </div>
+    <div class="meteo-grid">
+      <div class="meteo-item"><div class="meteo-item-label">Précipitations</div><div class="meteo-item-val" id="meteo-precip">—</div></div>
+      <div class="meteo-item"><div class="meteo-item-label">Vent max</div><div class="meteo-item-val" id="meteo-wind">—</div></div>
+      <div class="meteo-item"><div class="meteo-item-label">Conditions vélo</div><div class="meteo-item-val" id="meteo-velo">—</div></div>
+      <div class="meteo-item"><div class="meteo-item-label">Source</div><div class="meteo-item-val" style="font-size:13px">Open-Meteo</div></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section-title"><span>📍</span><h2>Clustering K-Means — Zones prioritaires</h2><div class="line"></div></div>
+<div class="kri-grid" id="clusters-grid">
+  <div class="kri-card" style="grid-column:1/-1;text-align:center;padding:28px;color:var(--muted)">Chargement des clusters...</div>
+</div>
+
+<footer>
+  MODALITY-FLOW · Eco-Mobilité 2026 · Montpellier Méditerranée Métropole ·
+  API : <a href="https://web-production-8fb77.up.railway.app/docs" target="_blank">Railway FastAPI</a>
+</footer>
+</div>
+
+<script>
+const BASE='https://web-production-8fb77.up.railway.app';
+const WMO={0:'☀️ Ciel dégagé',1:'🌤️ Peu nuageux',2:'⛅ Partiellement nuageux',3:'☁️ Couvert',
+  45:'🌫️ Brouillard',51:'🌦️ Bruine légère',61:'🌧️ Pluie légère',63:'🌧️ Pluie modérée',
+  65:'🌧️ Forte pluie',80:'🌦️ Averses',95:'⛈️ Orage'};
+function sv(id,v){const e=document.getElementById(id);if(e)e.innerHTML=v;}
+function badge(bid,barid,vid,pct,w,c,lbl){
+  const b=document.getElementById(bid),bar=document.getElementById(barid),v=document.getElementById(vid);
+  if(!b||!bar)return;
+  const cl=pct>=c?'critical':pct>=w?'warn':'ok';
+  const tx=pct>=c?'CRITIQUE':pct>=w?'ALERTE':'OK';
+  b.className='kri-badge '+cl;b.textContent=tx;
+  bar.style.width=Math.min(pct,100)+'%';
+  bar.className='kri-bar-fill '+(cl==='ok'?'':cl);
+  if(v)v.textContent=lbl;
+}
+async function loadStations(){
+  try{
+    const d=(await(await fetch(BASE+'/stations')).json());
+    const ss=d.stations||[];
+    const tot=ss.length,bikes=ss.reduce((s,x)=>s+(x.bikes_available||0),0);
+    const cap=ss.reduce((s,x)=>s+(x.capacite||0),0);
+    const docks=ss.reduce((s,x)=>s+(x.docks_available||0),0);
+    const empty=ss.filter(x=>(x.bikes_available||0)===0).length;
+    const ep=Math.round(empty/tot*100),dp=Math.round(bikes/Math.max(cap,1)*100);
+    sv('kpi-dispo',dp+'<span class="kpi-unit" style="font-size:20px">%</span>');
+    sv('kpi-dispo-sub',bikes+' vélos · '+cap+' places totales');
+    sv('kpi-bikes',bikes);sv('kpi-bikes-sub',docks+' places libres');
+    sv('kpi-stations',tot);sv('kpi-stations-sub',ss.filter(x=>x.is_renting).length+' en service');
+    sv('kpi-empty',ep+'<span class="kpi-unit" style="font-size:20px">%</span>');
+    sv('kpi-empty-sub',empty+' stations sans vélo');
+    const sc=Math.min(100,Math.round(dp*.6+(100-ep)*.4));
+    sv('kpi-score',sc);sv('kpi-score-sub','Indice combiné disponibilité + accessibilité');
+    badge('kri-dispo-badge','kri-dispo-bar','kri-dispo-val',100-dp,30,50,dp+'% disponibles');
+    badge('kri-empty-badge','kri-empty-bar','kri-empty-val',ep,15,30,ep+'% vides ('+empty+'/'+tot+')');
+    const sorted=[...ss].sort((a,b)=>(a.bikes_available||0)-(b.bikes_available||0));
+    document.getElementById('stations-tbody').innerHTML=sorted.map(s=>{
+      const av=s.bikes_available||0,cp=s.capacite||1,pt=Math.round(av/cp*100);
+      const cl=pt===0?'low':pt<30?'medium':'';
+      const ts=s.timestamp?new Date(s.timestamp).toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}):'--';
+      return '<tr><td><strong>'+(s.nom||s.station_id)+'</strong></td>'
+        +'<td style="font-weight:700;color:'+(av===0?'var(--danger)':av<3?'var(--warn)':'var(--primary)')+'">'+av+'</td>'
+        +'<td>'+(s.docks_available||0)+'</td>'
+        +'<td><div class="avail-bar"><div class="avail-mini"><div class="avail-mini-fill '+cl+'" style="width:'+pt+'%"></div></div>'
+        +'<span style="font-size:12px;color:var(--muted)">'+pt+'%</span></div></td>'
+        +'<td><span class="status-pill '+(s.is_renting?'ok':'ko')+'">'+(s.is_renting?'En service':'Hors service')+'</span></td>'
+        +'<td style="font-size:11px;color:var(--muted)">'+ts+'</td></tr>';
+    }).join('');
+    sv('table-count',tot+' stations · '+bikes+' vélos');
+  }catch(e){console.error(e);}
+}
+async function loadAQI(){
+  try{
+    const d=await(await fetch(BASE+'/aqi')).json();
+    const aqi=d.indice_qualite||d.aqi||3;
+    const lbl=d.libelle_qualite||(aqi<=2?'Bon':aqi<=4?'Moyen':aqi<=6?'Dégradé':'Mauvais');
+    const col=aqi>=7?'var(--danger)':aqi>=5?'var(--warn)':'var(--primary)';
+    sv('kpi-aqi','<span style="color:'+col+'">'+aqi+'</span>');
+    sv('kpi-aqi-label',lbl);
+    sv('kpi-aqi-sub','NO₂: '+(d.no2||'—')+'  O₃: '+(d.o3||'—')+'  PM10: '+(d.pm10||'—'));
+    badge('kri-aqi-badge','kri-aqi-bar','kri-aqi-val',aqi/10*100,50,70,'ATMO: '+aqi+'/10 — '+lbl);
+  }catch(e){sv('kpi-aqi','—');}
+}
+async function loadMeteo(){
+  try{
+    const d=await(await fetch(BASE+'/meteo')).json();
+    const t=d.today||d;
+    const temp=t.temperature_max??'—';
+    const pr=t.precipitation_sum??0;
+    const wn=t.wind_speed_max??'—';
+    const wcode=t.weather_code??wcode;
+    const ws=WMO[wcode]||'🌤️ Conditions normales';
+    sv('kpi-temp',temp+'<span class="kpi-unit" style="font-size:20px">°C</span>');
+    sv('kpi-temp-sub','Vent '+wn+' km/h · Précip. '+pr+' mm');
+    sv('meteo-icon',ws.split(' ')[0]);
+    sv('meteo-temp',temp+'°C');
+    sv('meteo-desc',ws.split(' ').slice(1).join(' '));
+    sv('meteo-precip',pr+' mm');sv('meteo-wind',wn+' km/h');
+    const ok=pr<5&&wn<40;
+    sv('meteo-velo',ok?'Favorable':'Déconseillé');
+    const risk=Math.max(pr>5?80:pr>2?50:15,wn>40?75:wn>25?40:10);
+    badge('kri-meteo-badge','kri-meteo-bar','kri-meteo-val',risk,40,70,'Pluie: '+pr+'mm · Vent: '+wn+'km/h');
+  }catch(e){sv('kpi-temp','—');}
+}
+async function loadParkings(){
+  try{
+    const d=await(await fetch(BASE+'/parkings')).json();
+    const arr=Array.isArray(d.parkings)?d.parkings:Array.isArray(d)?d:[];
+    const fr=arr.reduce((s,p)=>s+(p.free_spots||p.nb_libre||0),0);
+    const tot=arr.reduce((s,p)=>s+(p.total_spots||p.nb_total||0),0);
+    const occ=tot>0?Math.round((tot-fr)/tot*100):0;
+    sv('kpi-parkings',fr.toLocaleString('fr'));
+    sv('kpi-parkings-sub',arr.length+' parkings · '+occ+'% occupation');
+    badge('kri-park-badge','kri-park-bar','kri-park-val',occ,70,85,occ+'% occupation · '+fr+' libres');
+  }catch(e){sv('kpi-parkings','—');}
+}
+
+async function loadClusters(){
+  try{
+    const d=await(await fetch(BASE+'/clusters')).json();
+    const clusters=d.clusters||[];
+    const colors={'low':'var(--primary)','medium':'var(--warn)','high':'var(--warn)','critical':'var(--danger)'};
+    const grid=document.getElementById('clusters-grid');
+    grid.innerHTML=clusters.map(c=>{
+      const col=colors[c.priority]||'var(--primary)';
+      const nb=c.nb_stations||c.stations?.length||0;
+      return '<div class="kri-card">'
+        +'<div class="kri-header">'
+        +'<div class="kri-name" style="color:'+col+'">'+c.label+'</div>'
+        +'<div class="kri-badge '+(c.priority==='critical'?'critical':c.priority==='high'?'warn':'ok')+'">'+nb+' stations</div>'
+        +'</div>'
+        +'<div style="font-size:12px;color:var(--muted);margin-top:8px">'
+        +'Priorité : <strong style="color:'+col+'">'+c.priority+'</strong>'
+        +'</div>'
+        +'</div>';
+    }).join('');
+  }catch(e){console.error(e);}
+}
+
+async function loadAll(){
+  sv('lastUpdate','Mis à jour : '+new Date().toLocaleTimeString('fr-FR'));
+  await Promise.allSettled([loadStations(),loadAQI(),loadMeteo(),loadParkings(),loadClusters()]);
+}
+loadAll();
+setInterval(loadAll,60000);
+</script>
+</body>
+</html>
