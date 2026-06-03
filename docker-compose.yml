@@ -1,0 +1,43 @@
+services:
+  postgres:
+    image: postgis/postgis:16-3.4
+    container_name: modality_postgres
+    environment:
+      POSTGRES_USER: modality
+      POSTGRES_PASSWORD: modality
+      POSTGRES_DB: modality_flow
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql
+
+  redis:
+    image: redis:7-alpine
+    container_name: modality_redis
+    ports:
+      - "6379:6379"
+
+  ai-service:
+    build: ./apps/ai-service
+    container_name: modality_ai
+    ports:
+      - "8000:8000"
+
+  api:
+    build: ./apps/api
+    container_name: modality_api
+    depends_on:
+      - postgres
+      - redis
+      - ai-service
+    environment:
+      DATABASE_URL: postgresql://modality:modality@postgres:5432/modality_flow
+      REDIS_URL: redis://redis:6379
+      AI_SERVICE_URL: http://ai-service:8000
+      API_PORT: 3000
+    ports:
+      - "3001:3000"
+
+volumes:
+  postgres_data:

@@ -1,0 +1,277 @@
+{
+  "project": {
+    "name": "Modality Flow",
+    "type": "mobile-first smart urban mobility app",
+    "status": "daily mobility coach with fused map journey and Pass Flow ticketing",
+    "workspace": "C:/Users/hazem.LENOVO.000/Downloads/modality-flow-app",
+    "currentWebUrl": "https://surfaces-academic-colon-barnes.trycloudflare.com",
+    "apiBaseUrl": "https://web-production-8fb77.up.railway.app",
+    "aiServiceUrl": "https://web-production-8fb77.up.railway.app/docs"
+  },
+  "productVision": {
+    "goal": "Create a daily mobility habit: open app, see recommendation, use the intelligent map, start Pass Flow, finish trip, earn XP.",
+    "targetExperience": "Coach-like home screen with a large recommendation card, current hour, simple weather/traffic context, tracked city Montpellier, XP, streak and badge progression.",
+    "inspiration": ["Apple Product Design", "Duolingo Growth", "Uber Rider", "Citymapper UX", "Strava Engagement"],
+    "modes": ["bike", "walk", "transit", "car"]
+  },
+  "mandatoryObjectivesCovered": {
+    "homeIntelligent": true,
+    "realTimeMap": true,
+    "smartJourney": true,
+    "aiScoring": true,
+    "bikePrediction30min": true,
+    "dashboardKpi": true,
+    "trackedCityMontpellier": true,
+    "userLocationFallback": true,
+    "xpBadgesStreaks": true,
+    "passFlowTicketing": true,
+    "fusedMapJourney": true,
+    "forbiddenLilleProtection": true,
+    "smartNotificationsConcept": true,
+    "darkModePremiumUi": true,
+    "webSocketOrPolling": true,
+    "postgresPostgisSchema": true,
+    "fastApiAiService": true,
+    "nestJsBackend": true,
+    "expoReactNativeFrontend": true
+  },
+  "architecture": {
+    "frontend": {
+      "framework": "React Native Expo",
+      "language": "TypeScript",
+      "ui": "custom premium dark UI, NativeWind-ready",
+      "animations": "react-native-reanimated",
+      "stateAndData": ["@tanstack/react-query", "socket.io-client"],
+      "entryPoint": "apps/mobile/index.ts",
+      "mainApp": "apps/mobile/App.tsx",
+      "webFix": "index.ts uses registerRootComponent(App) so Expo Web mounts into #root"
+    },
+    "backend": {
+      "framework": "NestJS",
+      "language": "TypeScript",
+      "apiStyle": "REST + Socket.IO WebSocket",
+      "databaseClient": "pg",
+      "mainModule": "apps/api/src/app.module.ts"
+    },
+    "database": {
+      "engine": "PostgreSQL + PostGIS",
+      "schema": "database/schema.sql",
+      "tables": ["stations", "parkings", "trips", "predictions", "notification_events"],
+      "geoIndexes": ["stations_location_idx", "parkings_location_idx"]
+    },
+    "ai": {
+      "framework": "FastAPI",
+      "language": "Python",
+      "file": "apps/ai-service/app/main.py",
+      "models": ["mobility-score-v1", "mobility-rf-sim-v1"],
+      "note": "Current model is a deterministic production-shaped simulation, ready to replace with RandomForest/XGBoost artifact."
+    },
+    "infra": {
+      "dockerCompose": "docker-compose.yml",
+      "services": ["postgres", "redis", "ai-service", "api"]
+    }
+  },
+  "frontendScreens": {
+    "home": {
+      "file": "apps/mobile/src/screens/HomeScreen.tsx",
+      "purpose": "Daily coach. Shows what to choose now, not raw KPIs.",
+      "usesEndpoints": ["/environment/context", "/stations"],
+      "visibleSignals": ["current time and period", "outside Montpellier warning", "Montpellier access estimate", "recommended mode", "origin", "destination", "simple reason", "CO2 avoidable", "streak", "XP", "badge progress"],
+      "forbiddenOnHome": ["raw AQI number", "parking count", "critical station count", "dashboard-style KPI grid"],
+      "decisionExample": "If weather is stable, air is acceptable, traffic is high and bikes are available, bike is recommended and car is penalized."
+    },
+    "map": {
+      "nativeFile": "apps/mobile/src/screens/MapScreen.tsx",
+      "webFile": "apps/mobile/src/screens/MapScreen.web.tsx",
+      "purpose": "Main app surface. Fuses map, journey calculation, station choice and Pass Flow.",
+      "usesEndpoints": ["/stations", "/parkings", "/environment/context", "/journey", "/ticket/board"],
+      "usesRealtime": "Socket.IO namespace /realtime with stations:update",
+      "visibleElements": ["real raster map tiles", "user point", "Port Marianne destination", "route line", "bike stations from /stations", "parkings from /parkings", "TAM stops from /tam/stops", "AQI badge", "weather context", "traffic estimate", "recommended station", "bike/walk/tram/bus/car options", "bottom sheet tabs", "Commencer avec Pass Flow"],
+      "bottomSheetTabs": ["Resume", "Options", "Stations", "Pass"],
+      "note": "Native mobile version is Mapbox-ready. Web version now uses real OpenStreetMap raster tiles with API markers overlaid; no fake street canvas remains."
+    },
+    "journey": {
+      "file": "apps/mobile/src/screens/JourneyScreen.tsx",
+      "purpose": "Legacy screen kept in code but removed from final navigation. Journey is now handled on the map.",
+      "usesEndpoints": ["/environment/context", "/stations", "/journey"],
+      "logic": "Uses effective location: real Montpellier position if inside city, otherwise follows Montpellier from Comedie. Sends temperature, precipitation, wind, AQI, trafficIndex and hour to backend.",
+      "output": ["recommended mode", "AI score", "duration", "CO2", "best station", "bike prediction", "timeline"]
+    },
+    "dashboard": {
+      "file": "apps/mobile/src/screens/DashboardScreen.tsx",
+      "purpose": "Shows operational KPIs.",
+      "usesEndpoints": ["/dashboard/kpi"],
+      "metrics": ["bikes available", "critical stations", "parking places", "AQI"]
+    },
+    "pass": {
+      "file": "apps/mobile/src/screens/PassScreen.tsx",
+      "purpose": "Pass Flow wallet-like ticketing screen.",
+      "usesEndpoints": ["/ticket/board", "/ticket/add_segment", "/ticket/alight", "/ticket/{ticket_id}", "/remboursement/{ticket_id}/recuperer"],
+      "features": ["device token UUID persisted in AsyncStorage", "real qr_data display when returned by API", "no fake QR", "multimodal segments", "automatic Haversine distance on alight", "refund recovery with terminal_id query param", "RewardModal after trip"]
+    }
+  },
+  "backendEndpoints": {
+    "stations": {
+      "GET /stations": "All stations with health and availability ratio.",
+      "GET /stations/{station_id}": "Single station.",
+      "POST /stations/{station_id}/predict": "Predicts station bike availability."
+    },
+    "parkings": {
+      "GET /parkings": "All parkings ordered by availability."
+    },
+    "journey": {
+      "POST /journey": "Computes multimodal route options and ranks them by AI score.",
+      "body": {
+        "lat_a": 43.6086,
+        "lon_a": 3.8795,
+        "lat_b": 43.5989,
+        "lon_b": 3.8981,
+        "temperature": 24,
+        "precipitation": 0,
+        "wind_speed": 9,
+        "indice_qualite": 3,
+        "heure": 18
+      },
+      "railway": "Mobile calls the official Railway /journey endpoint directly."
+    },
+    "prediction": {
+      "POST /stations/{station_id}/predict": "Predicts bike availability for a station."
+    },
+    "environment": {
+      "GET /meteo": "Weather signal.",
+      "GET /aqi": "Air quality signal.",
+      "GET /co2/factors": "CO2 factors per transport mode."
+    },
+    "dashboard": {
+      "GET /billetterie/stats": "Ticketing stats."
+    },
+    "realtime": {
+      "namespace": "/realtime",
+      "clientEvent": "stations:refresh",
+      "serverEvent": "stations:update",
+      "file": "apps/api/src/modules/realtime/realtime.gateway.ts"
+    },
+    "ticketing": {
+      "POST /ticket/board": "Official Railway POST /ticket/board.",
+      "POST /ticket/add_segment": "Official Railway POST /ticket/add_segment.",
+      "POST /ticket/alight": "Official Railway POST /ticket/alight.",
+      "GET /ticket/{ticket_id}": "Official Railway GET /ticket/{ticket_id}.",
+      "GET /remboursement/{ticket_id}/recuperer?terminal_id=mobile-app": "Refund recovery. terminal_id is query parameter.",
+      "GET /billetterie/stats": "Official Railway billetterie stats."
+    },
+    "tam": {
+      "GET /tam/stops": "Official Railway /tam/stops returning GTFS TAM stops.",
+      "GET /tam/routes": "Official Railway /tam/routes returning GTFS TAM routes."
+    }
+  },
+  "aiLogic": {
+    "scoreEndpoint": "POST https://web-production-8fb77.up.railway.app/score",
+    "predictEndpoint": "POST https://web-production-8fb77.up.railway.app/stations/{station_id}/predict",
+    "scoringInputs": ["duration_minutes", "co2_grams", "comfort", "availability", "weather_penalty", "pollution_penalty", "traffic_index"],
+    "predictionInputs": ["station_capacity", "bikes_available", "hour", "day_of_week", "temperature", "precipitation", "wind_speed", "aqi"],
+    "scoreBreakdown": ["duration", "co2", "comfort", "availability", "penalties"],
+    "importantFile": "apps/api/src/modules/journey/journey.service.ts"
+  },
+  "importantFiles": [
+    "apps/mobile/index.ts",
+    "apps/mobile/App.tsx",
+    "apps/mobile/src/screens/HomeScreen.tsx",
+    "apps/mobile/src/screens/MapScreen.tsx",
+    "apps/mobile/src/screens/MapScreen.web.tsx",
+    "apps/mobile/src/screens/JourneyScreen.tsx",
+    "apps/mobile/src/services/location.service.ts",
+    "apps/mobile/src/features/recommendation/recommendation.logic.ts",
+    "apps/mobile/src/hooks/useEffectiveLocation.ts",
+    "apps/mobile/src/hooks/useTimeContext.ts",
+    "apps/mobile/src/screens/PassScreen.tsx",
+    "apps/mobile/src/services/ticket.service.ts",
+    "apps/mobile/src/features/ticket/ticket.types.ts",
+    "apps/mobile/src/features/ticket/ticket.store.ts",
+    "apps/mobile/src/features/gamification/gamification.store.ts",
+    "apps/mobile/src/components/pass/PassCard.tsx",
+    "apps/mobile/src/components/pass/TicketActionButton.tsx",
+    "apps/mobile/src/components/pass/TicketTimeline.tsx",
+    "apps/mobile/src/components/pass/RefundCard.tsx",
+    "apps/mobile/src/components/ui/RewardModal.tsx",
+    "apps/mobile/src/components/ui/ScoreRing.tsx",
+    "apps/mobile/src/components/ui/LiveChip.tsx",
+    "apps/mobile/src/components/ui/BottomSheet.tsx",
+    "apps/mobile/src/services/mobility.service.ts",
+    "apps/mobile/src/components/map/RealRasterMap.tsx",
+    "apps/mobile/src/components/map/MapLayerToggle.tsx",
+    "apps/mobile/src/components/map/StationMarker.tsx",
+    "apps/mobile/src/components/map/ParkingMarker.tsx",
+    "apps/mobile/src/components/map/TamStopMarker.tsx",
+    "apps/mobile/src/components/map/UserMarker.tsx",
+    "apps/mobile/src/components/map/DestinationMarker.tsx",
+    "apps/mobile/src/components/map/RoutePolyline.tsx",
+    "apps/api/src/modules/tam/tam-proxy.controller.ts",
+    "apps/mobile/src/screens/DashboardScreen.tsx",
+    "apps/mobile/src/services/api.ts",
+    "apps/mobile/src/types/index.ts",
+    "apps/api/src/app.module.ts",
+    "apps/api/src/modules/environment/environment.controller.ts",
+    "apps/api/src/modules/journey/journey.service.ts",
+    "apps/api/src/modules/stations/stations.service.ts",
+    "apps/api/src/modules/predictions/predictions.service.ts",
+    "apps/api/src/modules/realtime/realtime.gateway.ts",
+    "apps/ai-service/app/main.py",
+    "database/schema.sql",
+    "docker-compose.yml",
+    "docs/ARCHITECTURE.md"
+  ],
+  "knownDesignDecisions": {
+    "mapbox": "Native mobile keeps rnmapbox. Web uses MapScreen.web.tsx fallback because rnmapbox web caused missing mapbox-gl CSS dependency.",
+    "icons": "Custom text-based Icon component replaces @expo/vector-icons on web to avoid Expo SDK 51 expo-font incompatibility.",
+    "expoWeb": "apps/mobile/index.ts registers App with registerRootComponent. This fixed the previous blank page where #root had zero children.",
+    "environmentData": "Currently simulated city signals. Can later be replaced by Open-Meteo, Atmo, TAM, GBFS and real traffic providers."
+    ,"trackedCityMode": "If the real GPS location is outside Montpellier, the app shows approximate access time to Montpellier and continues with Montpellier as the followed city.",
+    "endpointProtection": "apps/mobile/src/services/api.ts blocks any request path starting with /lille. Backend ticket proxy also blocks forbidden prefixes.",
+    "deviceToken": "Generated once with crypto randomUUID/getRandomValues fallback and stored in AsyncStorage. No hardcoded device token.",
+    "qrPolicy": "PassCard displays qr_data returned by API. If missing, it says QR indisponible pour ce trajet."
+  },
+  "verification": {
+    "apiBuild": "npm.cmd run build in apps/api passed",
+    "mobileTypecheck": "npx.cmd tsc --noEmit in apps/mobile passed",
+    "pythonCompile": "python -m py_compile apps/ai-service/app/main.py passed earlier",
+    "docker": "docker compose up -d --build ran successfully earlier",
+    "webRuntimeCheck": {
+      "url": "https://surfaces-academic-colon-barnes.trycloudflare.com",
+      "rootChildren": 1,
+      "runtimeErrors": [],
+      "detectedText": ["Bonjour", "Ville suivie Montpellier", "Le meilleur moyen de vous deplacer aujourd hui", "Velo recommande", "Voir sur la carte"]
+    },
+    "journeyRuntimeCheck": {
+      "result": "POST /journey works from the browser",
+      "detectedText": ["Votre trajet", "Station conseillee", "Prediction dans 30 min", "timeline"]
+    },
+    "mapRuntimeCheck": {
+      "result": "Web map is not blank",
+      "detectedText": ["Carte intelligente", "Vous etes hors Montpellier", "Velos", "Parkings", "Bus/Tram", "T", "P", "Commencer ce trajet"],
+      "tileCheck": "12 OpenStreetMap raster tiles detected and 12 loaded in Chrome"
+    },
+    "passRuntimeCheck": {
+      "result": "Browser flow passed: start Pass, active ticket with qr_data, finish trip, refund available, RewardModal shown.",
+      "detectedText": ["Pass Flow", "ACTIF", "Ticket #", "Terminer mon trajet", "Bravo", "+85 XP"]
+    },
+    "ticketApiCheck": {
+      "board": "POST /ticket/board returned 201 with ticket_id",
+      "alight": "POST /ticket/alight returned 201 with fare/refund data",
+      "journeyAliasSchema": "POST /journey with lat_a/lon_a/lat_b/lon_b returned 200"
+    }
+  },
+  "startupRoadmap": [
+    "Replace simulated environment signals with real Open-Meteo, Atmo, TAM/GTFS and GBFS integrations.",
+    "Add authentication and user preferences.",
+    "Add push notifications for empty stations, high pollution and better alternatives.",
+    "Add production observability, rate limiting and Redis cache for realtime provider data.",
+    "Train station-level RandomForest/XGBoost models from historical data.",
+    "Build B2B SaaS dashboard for cities, campuses and operators."
+  ],
+  "questionsForReviewer": [
+    "Does the current app satisfy the objective of a user-friendly recommendation based on hour, weather, AQI and traffic?",
+    "Which endpoints should be connected to real external data first?",
+    "Is the journey scoring formula product-ready or should weights be adjusted?",
+    "What is missing to make this investor-ready?"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Modality-Flow",
+    "slug": "modality-flow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Modality Flow utilise votre position pour calculer le meilleur trajet."
+      }
+    },
+    "android": {
+      "adaptiveIcon": { "backgroundColor": "#09090b" },
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    }
+  }
+}
