@@ -1843,3 +1843,45 @@ def billetterie_stats():
         }
     except Exception as e:
         return {"error": str(e)}
+
+
+@app.get("/clusters", tags=["Clustering"])
+def get_clusters():
+    """Clusters K-Means des stations Velomagg — zones prioritaires"""
+    try:
+        conn = get_pg()
+        cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cur.execute("""
+            SELECT station_id, nom, lat, lon, cluster_id, cluster_label,
+                   cluster_priority, cluster_color, dist_centre_km, capacite,
+                   avg_bikes, taux_vide, silhouette_score, computed_at
+            FROM public.dim_station_clusters
+            ORDER BY cluster_id, dist_centre_km
+        """)
+        rows = [dict(r) for r in cur.fetchall()]
+        cur.close(); conn.close()
+
+        clusters = {}
+        for row in rows:
+            cid = row["cluster_id"]
+            if cid not in clusters:
+                clusters[cid] = {
+                    "cluster_id": cid,
+                    "label": row["cluster_label"],
+                    "priority": row["cluster_priority"],
+                    "color": row["cluster_color"],
+                    "nb_stations": 0,
+                    "stations": []
+                }
+            clusters[cid]["stations"].append(row)
+            clusters[cid]["nb_stations"] += 1
+
+        return {
+            "nb_clusters": len(clusters),
+            "silhouette_score": rows[0]["silhouette_score"] if rows else None,
+            "clusters": list(clusters.values()),
+            "zones_prioritaires": [r for r in rows if r["cluster_priority"] in ["high","critical"]],
+            "timestamp": datetime.now().isoformat()
+        }
+    except Exception as e:
+        return {"error": str(e)}
