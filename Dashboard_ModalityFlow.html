@@ -287,6 +287,12 @@ footer a{color:var(--primary);text-decoration:none;font-weight:600;}
   </div>
 </div>
 
+
+<div class="section-title"><span>📍</span><h2>Clustering K-Means — Zones prioritaires</h2><div class="line"></div></div>
+<div class="kri-grid" id="clusters-grid">
+  <div class="kri-card" style="grid-column:1/-1;text-align:center;padding:28px;color:var(--muted)">Chargement des clusters...</div>
+</div>
+
 <footer>
   MODALITY-FLOW · Eco-Mobilité 2026 · Montpellier Méditerranée Métropole ·
   API : <a href="https://web-production-8fb77.up.railway.app/docs" target="_blank">Railway FastAPI</a>
@@ -389,9 +395,32 @@ async function loadParkings(){
     badge('kri-park-badge','kri-park-bar','kri-park-val',occ,70,85,occ+'% occupation · '+fr+' libres');
   }catch(e){sv('kpi-parkings','—');}
 }
+
+async function loadClusters(){
+  try{
+    const d=await(await fetch(BASE+'/clusters')).json();
+    const clusters=d.clusters||[];
+    const colors={'low':'var(--primary)','medium':'var(--warn)','high':'var(--warn)','critical':'var(--danger)'};
+    const grid=document.getElementById('clusters-grid');
+    grid.innerHTML=clusters.map(c=>{
+      const col=colors[c.priority]||'var(--primary)';
+      const nb=c.nb_stations||c.stations?.length||0;
+      return '<div class="kri-card">'
+        +'<div class="kri-header">'
+        +'<div class="kri-name" style="color:'+col+'">'+c.label+'</div>'
+        +'<div class="kri-badge '+(c.priority==='critical'?'critical':c.priority==='high'?'warn':'ok')+'">'+nb+' stations</div>'
+        +'</div>'
+        +'<div style="font-size:12px;color:var(--muted);margin-top:8px">'
+        +'Priorité : <strong style="color:'+col+'">'+c.priority+'</strong>'
+        +'</div>'
+        +'</div>';
+    }).join('');
+  }catch(e){console.error(e);}
+}
+
 async function loadAll(){
   sv('lastUpdate','Mis à jour : '+new Date().toLocaleTimeString('fr-FR'));
-  await Promise.allSettled([loadStations(),loadAQI(),loadMeteo(),loadParkings()]);
+  await Promise.allSettled([loadStations(),loadAQI(),loadMeteo(),loadParkings(),loadClusters()]);
 }
 loadAll();
 setInterval(loadAll,60000);
